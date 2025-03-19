@@ -1,0 +1,505 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    transition: .2s ease-in;
+}
+
+/* Mobile pequeno */
+@media (max-width: 359px) {
+    .loundry-banner{
+        width: 95%;
+        height: 95vh;
+        background-color: var(--PrimaryColor);
+        margin: 2% 0;
+        border-radius: 10px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+    }
+    .banner-Text-BG{
+     position: absolute;
+     left: 40%;
+     transform: translate(-50%, 0%);
+     bottom: 0%;
+     background-color: var(--BGColor);
+     width: 90%;
+     height: 45vh;
+     border-radius: 25px;
+     text-align: center;
+     display: flex;
+     align-items: center;
+    }
+    .banner-Text-BG::before{
+     content: "";
+     position: absolute;
+     top: -15%;
+     left: 5%;
+     width: 7%;
+     height: 15%;
+     border-radius: 0em 0em 0em 8em;
+     box-shadow: -10px 9px 0px 7px var(--BGColor);
+    }
+    .banner-Text-BG::after{
+     content: "";
+     position: absolute;
+     top: 87%;
+     left: 100%;
+     width: 7%;
+     height: 15%;
+     border-radius: 0em 0em 0em 6em;
+     box-shadow: -15px 19px 0px 14px var(--BGColor);
+    }
+    .banner-Text{
+        font-size: 5.5vw;
+       font-family: "Raleway", sans-serif;
+    }
+    .banner-mascot{
+        position: relative;
+        left: -20%;
+        height: 55%;
+        z-index: -1;
+    }
+    .banner-text-steps-section{
+        position: absolute;
+        bottom: 1%;
+        left: 88%;
+        height: 40%;
+        width: 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .banner-text-steps{
+        width: 27%;
+        height: 22%;
+        background-color: rgba(247, 247, 247, .4);
+        
+    }
+    .banner-text-steps:nth-child(2){
+        background-color: rgba(247, 247, 247,1);
+        border-radius: 10px;
+    }
+
+
+
+}
+  
+  /* Mobile padrão */
+  @media (min-width: 360px) and (max-width: 425px) {
+       .loundry-banner{
+        width: 95%;
+        height: 95vh;
+        background-color: var(--PrimaryColor);
+        margin: 2% 0;
+        border-radius: 10px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+    }
+    .banner-Text-BG{
+     position: absolute;
+     left: 40%;
+     transform: translate(-50%, 0%);
+     bottom: 0%;
+     background-color: var(--BGColor);
+     width: 90%;
+     height: 45vh;
+     border-radius: 25px;
+     text-align: center;
+     display: flex;
+     align-items: center;
+    }
+    .banner-Text-BG::before{
+     content: "";
+     position: absolute;
+     top: -15%;
+     left: 5%;
+     width: 7%;
+     height: 15%;
+     border-radius: 0em 0em 0em 8em;
+     box-shadow: -10px 9px 0px 7px var(--BGColor);
+    }
+    .banner-Text-BG::after{
+     content: "";
+     position: absolute;
+     top: 87%;
+     left: 100%;
+     width: 7%;
+     height: 15%;
+     border-radius: 0em 0em 0em 6em;
+     box-shadow: -15px 19px 0px 14px var(--BGColor);
+    }
+    .banner-Text{
+        font-size: 5.5vw;
+       font-family: "Raleway", sans-serif;
+    }
+    .banner-mascot{
+        position: relative;
+        left: -20%;
+        height: 55%;
+        z-index: -1;
+    }
+
+
+    .banner-text-steps-section{
+        position: absolute;
+        bottom: 1%;
+        left: 5%;
+        height: 12%;
+        width: 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+    .banner-text-steps{
+        width: 20%;
+        height: 10%;
+        background-color: rgba(247, 247, 247,.4);
+        
+    }
+    .banner-text-steps:nth-child(2){
+        background-color: rgba(247, 247, 247,1);
+        border-radius: 10px;
+    }
+    .banner-text-steps-section{
+        position: absolute;
+        bottom: 1%;
+        left: 88%;
+        height: 40%;
+        width: 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .banner-text-steps{
+        width: 27%;
+        height: 22%;
+        background-color: rgba(247, 247, 247, .4);
+        
+    }
+    .banner-text-steps:nth-child(2){
+        background-color: rgba(247, 247, 247,1);
+        border-radius: 10px;
+    }
+
+}
+  
+  /* Tablets */
+  @media (min-width: 425px) and (max-width: 768px) {
+       .loundry-banner{
+        width: 95%;
+        height: 95vh;
+        background-color: var(--PrimaryColor);
+        margin: 2% 0;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .banner-Text-BG{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        bottom: 0%;
+        background-color: var(--BGColor);
+        width: 90%;
+        height: 36vh;
+        border-radius: 25px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .banner-Text-BG::before{
+        content: "";
+        position: absolute;
+        top: 85%;
+        left: -6%;
+        width: 6%;
+        height: 15%;
+        border-radius: 0em 0em 1em 0em;
+        box-shadow: 10px 9px 0px 7px var(--BGColor);
+    }
+    .banner-Text-BG::after{
+        content: "";
+        position: absolute;
+        top: 87%;
+        left: 100%;
+        width: 6%;
+        height: 15%;
+        border-radius: 0em 0em 0em 1.3em;
+        box-shadow: -9px 15px 0px 13px var(--BGColor);
+    }
+    .banner-Text{
+        font-size: 4.3vw;
+       font-family: "Raleway", sans-serif;
+    }
+
+    .banner-mascot{
+        position: relative;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, -50%);
+        height: 65%;
+        z-index: -1;
+    }
+    .banner-text-steps-section{
+        position: absolute;
+        bottom: 38%;
+        left: 15%;
+        height: 4%;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+    .banner-text-steps{
+        width: 27%;
+        height: 22%;
+        background-color: rgba(247, 247, 247, .4);
+        
+    }
+    .banner-text-steps:nth-child(2){
+        background-color: rgba(247, 247, 247,1);
+        border-radius: 10px;
+    }
+  }
+  
+  /* Laptops/Desktop pequeno */
+  @media (min-width: 769px) and (max-width: 1024px) {
+       .loundry-banner{
+        width: 95%;
+        height: 80vh;
+        background-color: var(--PrimaryColor);
+        margin: 2% 0;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .banner-Text-BG{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        bottom: 0%;
+        background-color: var(--BGColor);
+        width: 90%;
+        height: 36vh;
+        border-radius: 25px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .banner-Text-BG::before{
+        content: "";
+        position: absolute;
+        top: 85%;
+        left: -6%;
+        width: 6%;
+        height: 15%;
+        border-radius: 0em 0em 1em 0em;
+        box-shadow: 10px 9px 0px 7px var(--BGColor);
+    }
+    .banner-Text-BG::after{
+        content: "";
+        position: absolute;
+        top: 87%;
+        left: 100%;
+        width: 6%;
+        height: 15%;
+        border-radius: 0em 0em 0em 1.3em;
+        box-shadow: -9px 15px 0px 13px var(--BGColor);
+    }
+    .banner-Text{
+        font-size: 3.5vw;
+       font-family: "Raleway", sans-serif;
+    }
+    .banner-mascot{
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        z-index: -1;
+
+    }
+    .banner-text-steps-section{
+        position: absolute;
+        bottom: 90%;
+        left: 15%;
+        height: 4%;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+    .banner-text-steps{
+        width: 27%;
+        height: 22%;
+        background-color: rgba(247, 247, 247, .4);
+        
+    }
+    .banner-text-steps:nth-child(2){
+        background-color: rgba(247, 247, 247,1);
+        border-radius: 10px;
+    }
+  }
+  
+  /* Desktops */
+  @media (min-width: 1025px) and (max-width: 1440px) {
+       .loundry-banner{
+           width: 85%;
+           height: 75vh;
+           background-color: var(--PrimaryColor);
+           margin: 2% 0;
+           border-radius: 10px;
+           position: relative;
+       }
+       .banner-Text-BG{
+        position: absolute;
+        left: -1%;
+        bottom: 50%;
+        transform: translate(0%, 50%);
+        background-color: var(--BGColor);
+        width: 50%;
+        height: 50vh;
+        border-radius: 25px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+       }
+       .banner-Text-BG::before{
+           content: "";
+           position: absolute;
+           top: -15%;
+           left: 0%;
+           width: 7%;
+           height: 15%;
+           border-radius: 0em 0em 0em 8em;
+           box-shadow: -13px 20px 0px 13px var(--BGColor);
+       }
+       .banner-Text-BG::after{
+           content: "";
+           position: absolute;
+           top: 100%;
+           left: 0%;
+           width: 7%;
+           height: 15%;
+           border-radius: 21em 0em 0em 0em;
+           box-shadow: -15px -15px 0px 14px var(--BGColor);
+       }
+       .banner-Text{
+           font-size: 2.2vw;
+          font-family: "Raleway", sans-serif;
+       }
+
+       .banner-mascot{
+        position: relative;
+        left: 60%;
+        height: 100%;
+        }
+        .banner-text-steps-section{
+            position: absolute;
+            bottom: 1%;
+            left: 5%;
+            height: 12%;
+            width: 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+        .banner-text-steps{
+            width: 20%;
+            height: 10%;
+            background-color: rgba(247, 247, 247,.4);
+            
+        }
+        .banner-text-steps:nth-child(2){
+            background-color: rgba(247, 247, 247,1);
+            border-radius: 10px;
+        }
+    
+  }
+  
+  /* Telas grandes */
+  @media (min-width: 1441px) {
+        .loundry-banner{
+            width: 95%;
+            height: 95vh;
+            background-color: #FFB433;
+            margin: 2% 0;
+            border-radius: 10px;
+            position: relative;
+        }
+        .banner-Text-BG{
+            position: absolute;
+            left: 0%;
+            bottom: 31%;
+            background-color: #F7F7F7;
+            width: 50%;
+            height: 50vh;
+            border-radius: 25px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+        .banner-Text-BG::before{
+            content: "";
+            position: absolute;
+            top: -15%;
+            left: 0%;
+            width: 7%;
+            height: 15%;
+            border-radius: 0em 0em 0em 8em;
+            box-shadow: -13px 20px 0px 13px #fff;
+        }
+        .banner-Text-BG::after{
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0%;
+            width: 7%;
+            height: 15%;
+            border-radius: 21em 0em 0em 0em;
+            box-shadow: -15px -15px 0px 14px #fff;
+        }
+        .banner-Text{
+            font-size: 2.2vw;
+           font-family: "Raleway", sans-serif;
+        }
+        .banner-mascot{
+            position: relative;
+            left: 60%;
+            height: 100%;
+        }
+
+        .banner-text-steps-section{
+            position: absolute;
+            bottom: 1%;
+            left: 5%;
+            height: 12%;
+            width: 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+        .banner-text-steps{
+            width: 20%;
+            height: 10%;
+            background-color: rgba(247, 247, 247,.4);
+        }
+        .banner-text-steps:nth-child(2){
+            background-color: rgba(247, 247, 247,1);
+            border-radius: 10px;
+        }
+  }
