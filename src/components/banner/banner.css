@@ -356,7 +356,7 @@
   /* Desktops */
   @media (min-width: 1025px) and (max-width: 1440px) {
        .loundry-banner{
-           width: 85%;
+           width: 98%;
            height: 75vh;
            background-color: var(--PrimaryColor);
            margin: 2% 0;
