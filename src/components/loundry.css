@@ -95,11 +95,13 @@ colors
         height: 100%;
         position: absolute;
         border-radius: 10px;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.9);
        }
       .service-image-text{
         color: #F7F7F7;
         background-color: rgba(0, 0, 0, 0.9);
+        background-color: var(--SecondColor);
+
         width: 100%;
         font-size: 6.2vw;
         border-radius: 0 0 10px 10px;
@@ -291,6 +293,7 @@ colors
       .service-image-text{
         color: #F7F7F7;
         background-color: rgba(0, 0, 0, 0.9);
+        background-color: var(--SecondColor);
         width: 100%;
         font-size: 6.2vw;
         border-radius: 0 0 10px 10px;
@@ -487,6 +490,7 @@ colors
     .service-image-text{
       color: #F7F7F7;
       background-color: rgba(0, 0, 0, 0.9);
+      background-color: var(--SecondColor);
       width: 100%;
       font-size: 6.2vw;
       border-radius: 0 0 10px 10px;
@@ -683,6 +687,7 @@ colors
     .service-image-text{
       color: #F7F7F7;
       background-color: rgba(0, 0, 0, 0.9);
+      background-color: var(--SecondColor);
       width: 100%;
       font-size: 6.2vw;
       border-radius: 0 0 10px 10px;
@@ -881,6 +886,7 @@ colors
       .service-image-text{
         color: #F7F7F7;
         background-color: rgba(0, 0, 0, 0.7);
+        background-color: var(--SecondColor);
         width: 100%;
         font-size: 1.6vw;
         border-radius: 0 0 10px 10px;
@@ -1086,6 +1092,7 @@ colors
         .service-image-text{
           color: #F7F7F7;
           background-color: rgba(0, 0, 0, 0.7);
+          background-color: var(--SecondColor);
           width: 100%;
           font-size: 1.6vw;
           border-radius: 0 0 10px 10px;
