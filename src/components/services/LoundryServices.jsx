@@ -46,8 +46,6 @@ function Services() {
             window.removeEventListener('resize', handleWindowSize);
         }
     },[windowSize])
-
-
     // to change the image according to window size and index from ServiceCardInfos
     let currentImage;
 
