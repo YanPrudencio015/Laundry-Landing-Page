@@ -93,7 +93,7 @@ function Services() {
                             className="circle-BG"
                                 style={{
                                     transition: '.6s ease-in-out',
-                                    transform: count === key ? 'translateY(-13em)' : 'translateY(0)'
+                                    transform: count === key ? 'translateY(-12em)' : 'translateY(0)'
                                 }}
                             >
                             </div>
