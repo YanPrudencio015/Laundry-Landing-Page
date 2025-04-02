@@ -1,0 +1,408 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    transition: .2s ease-in;
+}
+
+/* Mobile pequeno */
+@media (max-width: 359px) {
+    .promotion-section{
+        width: 98%;
+        background-color: var(--PrimaryColor);
+        height: 42em;
+        margin: 2em 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column-reverse;
+        align-items: center;
+        border-radius: 10px;
+    } 
+    .pormotion-text-section{
+        width: 95%;
+        height: 40%;
+        border-radius: 10px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-family: "Comfortaa", sans-serif;
+        font-size: 6vw;
+        background-color: var(--BGColor);
+        font-weight: 400;
+        border: solid 1px;
+    }
+    .img-Bg{
+        width: 17em;
+        height: 17em;
+        border-radius: 1em;
+        position: relative;
+        z-index: 1;
+        border: solid 0px var(--ThirdColor);
+    }
+    .img-Bg::after{
+        content: 'Promoção';
+        z-index: -1;
+        position: absolute;
+        left: 3%;
+        top: -6%;
+        transform: translate(0%, -50%);
+        width: 90%;
+        height: 1.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px 10px 0px 0;
+        font-family: "Jost", sans-serif;
+        font-size: 5.5vw;
+        text-transform: uppercase;
+        font-weight: 800;
+        border: solid 3px var(--SecondColor);
+        color: var(--BGColor);
+        background-color: var(--SecondColor);
+        letter-spacing: 5px;
+    }
+    .img{
+        width: 100%;
+        height: 100%;
+        border-radius: 1em;
+    }
+}
+  
+  /* Mobile padrão */
+  @media (min-width: 360px) and (max-width: 425px) {
+    .promotion-section{
+        width: 98%;
+        background-color: var(--PrimaryColor);
+        height: 42em;
+        margin: 2em 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column-reverse;
+        align-items: center;
+        border-radius: 10px;
+    } 
+    .pormotion-text-section{
+        width: 95%;
+        height: 40%;
+        border-radius: 10px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-family: "Comfortaa", sans-serif;
+        font-size: 6vw;
+        background-color: var(--BGColor);
+        font-weight: 400;
+        border: solid 1px;
+    }
+    .img-Bg{
+        width: 17em;
+        height: 17em;
+        border-radius: 1em;
+        position: relative;
+        z-index: 1;
+        border: solid 0px var(--ThirdColor);
+    }
+    .img-Bg::after{
+        content: 'Promoção';
+        z-index: -1;
+        position: absolute;
+        left: 3%;
+        top: -6%;
+        transform: translate(0%, -50%);
+        width: 90%;
+        height: 1.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px 10px 0px 0;
+        font-family: "Jost", sans-serif;
+        font-size: 5.5vw;
+        text-transform: uppercase;
+        font-weight: 800;
+        border: solid 3px var(--SecondColor);
+        color: var(--BGColor);
+        background-color: var(--SecondColor);
+        letter-spacing: 5px;
+    }
+    .img{
+        width: 100%;
+        height: 100%;
+        border-radius: 1em;
+    }
+
+}
+  
+
+
+  /* Tablets */
+  @media (min-width: 426px) and (max-width: 767px) {
+    .promotion-section{
+        width: 98%;
+        background-color: var(--PrimaryColor);
+        height: 42em;
+        margin: 2em 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column-reverse;
+        align-items: center;
+        border-radius: 10px;
+    } 
+    .pormotion-text-section{
+        width: 95%;
+        height: 40%;
+        border-radius: 10px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-family: "Comfortaa", sans-serif;
+        font-size: 6vw;
+        background-color: var(--BGColor);
+        font-weight: 400;
+        border: solid 1px;
+    }
+    .img-Bg{
+        width: 17em;
+        height: 17em;
+        border-radius: 1em;
+        position: relative;
+        z-index: 1;
+        border: solid 0px var(--ThirdColor);
+    }
+    .img-Bg::after{
+        content: 'Promoção';
+        z-index: -1;
+        position: absolute;
+        left: 3%;
+        top: -6%;
+        transform: translate(0%, -50%);
+        width: 90%;
+        height: 1.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px 10px 0px 0;
+        font-family: "Jost", sans-serif;
+        font-size: 5.5vw;
+        text-transform: uppercase;
+        font-weight: 800;
+        border: solid 3px var(--SecondColor);
+        color: var(--BGColor);
+        background-color: var(--SecondColor);
+        letter-spacing: 5px;
+    }
+    .img{
+        width: 100%;
+        height: 100%;
+        border-radius: 1em;
+    }
+  }
+  
+  /* Laptops/Desktop pequeno */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .promotion-section{
+        width: 98%;
+        background-color:var(--PrimaryColor);
+        height: 15em;
+        margin: 2em 0 ;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        align-items: center;
+        border-radius: 10px;
+    } 
+    .pormotion-text-section{
+        width: 35%;
+        height: 80%;
+        border-radius: 10px;
+        text-align: center;
+        align-items: center;
+        display: flex
+;
+        justify-content: center;
+        font-family: "Comfortaa", sans-serif;
+        font-size: 1.8vw;
+        background-color: var(--BGColor);
+        font-weight: 400;
+        border: solid 1px;
+    }
+    .img-Bg{
+        width: 14em;
+        height: 14em;
+        border-radius: 20em;
+        position: relative;
+        z-index: 1;
+        border: solid 3px var(--ThirdColor);
+    }
+    .img-Bg::after{
+        content: 'Promoção';
+        background-color: var(--BGColor);
+        z-index: -1;
+        position: absolute;
+        left: 8.8em;
+        top: 1.4em;
+        width: 100%;
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0px 10px 10px 0;
+        font-family: "Jost", sans-serif;
+        font-size: 2vw;
+        color: var(--ThirdColor);
+        text-transform: uppercase;
+        font-weight: 800;
+        border: solid 3px var(--ThirdColor);
+        color: var(--BGColor);
+        background-color: var(--ThirdColor);
+    }
+    .img{
+        /* object-fit: cover; */
+        width: 100%;
+        height: 100%;
+        border-radius: 20em;
+    }
+    
+  }
+  
+  /* Desktops */
+  @media (min-width: 1025px) and (max-width: 1440px) {
+.promotion-section{
+    width: 98%;
+    background-color:var(--PrimaryColor);
+    height: 15em;
+    margin: 2em 0 ;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: center;
+    border-radius: 10px;
+} 
+.pormotion-text-section{
+    width: 35%;
+    height: 80%;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    display: flex
+;
+    justify-content: center;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 1.4vw;
+    background-color: var(--BGColor);
+    font-weight: 400;
+    border: solid 1px;
+
+}
+.img-Bg{
+    width: 14em;
+    height: 14em;
+    border-radius: 20em;
+    position: relative;
+    z-index: 1;
+    border: solid 3px var(--ThirdColor);
+}
+.img-Bg::after{
+    content: 'Promoção';
+    background-color: var(--BGColor);
+    z-index: -1;
+    position: absolute;
+    left: 6.8em;
+    top: 1.4em;
+    width: 100%;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 10px 10px 0;
+    font-family: "Jost", sans-serif;
+    font-size: 2vw;
+    color: var(--ThirdColor);
+    text-transform: uppercase;
+    font-weight: 800;
+    border: solid 3px var(--ThirdColor);
+    color: var(--BGColor);
+    background-color: var(--ThirdColor);
+}
+.img{
+    /* object-fit: cover; */
+    width: 100%;
+    height: 100%;
+    border-radius: 20em;
+}
+}
+
+ 
+
+  
+  /* Telas grandes */
+  @media (min-width: 1441px) {
+    .promotion-section{
+        width: 98%;
+        background-color:var(--PrimaryColor);
+        height: 15em;
+        margin: 2em 0 ;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        align-items: center;
+        border-radius: 10px;
+    } 
+    .pormotion-text-section{
+        width: 35%;
+        height: 80%;
+        border-radius: 10px;
+        text-align: center;
+        align-items: center;
+        display: flex
+    ;
+        justify-content: center;
+        font-family: "Comfortaa", sans-serif;
+        font-size: 1.4vw;
+        background-color: var(--BGColor);
+        font-weight: 400;
+        border: solid 1px;
+    
+    }
+    .img-Bg{
+        width: 14em;
+        height: 14em;
+        border-radius: 20em;
+        position: relative;
+        z-index: 1;
+        border: solid 3px var(--ThirdColor);
+    }
+    .img-Bg::after{
+        content: 'Promoção';
+        background-color: var(--BGColor);
+        z-index: -1;
+        position: absolute;
+        left: 6.8em;
+        top: 1.4em;
+        width: 100%;
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0px 10px 10px 0;
+        font-family: "Jost", sans-serif;
+        font-size: 2vw;
+        color: var(--ThirdColor);
+        text-transform: uppercase;
+        font-weight: 800;
+        border: solid 3px var(--ThirdColor);
+        color: var(--BGColor);
+        background-color: var(--ThirdColor);
+    }
+    .img{
+        /* object-fit: cover; */
+        width: 100%;
+        height: 100%;
+        border-radius: 20em;
+    }    
+  }

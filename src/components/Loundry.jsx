@@ -6,7 +6,7 @@ import './loundry.css';
 import LoundryHeader from './header/LoundryHeader';
 import LoundryBanner from './banner/loundryBanner';
 import Services from './services/LoundryServices';
-
+import Promotion from './promotion/Promotion';
 
 
 const Loundry = () => {
@@ -15,6 +15,7 @@ const Loundry = () => {
             <LoundryHeader />
             <LoundryBanner/>
             <Services/>
+            <Promotion/>
         </div>
     );
 };
