@@ -33,7 +33,10 @@ colors
     --BGColor: #F7F7F7;
     --SecondColorLight:rgba(51, 134, 182,.9);
 }
-
+::selection{
+  background-color: var(--ThirdColor);
+  color: var(--BGColor);
+}
 *{
     margin: 0;
     padding: 0;
@@ -41,6 +44,11 @@ colors
     outline: none;
     box-sizing: border-box;
     transition: .2s ease-in;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+
 }
 
 /* Mobile pequeno */

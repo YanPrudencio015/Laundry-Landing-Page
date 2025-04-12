@@ -4,197 +4,68 @@
     .loundry-header{
         width: 100%;
         height: 15vw;
-        display: flex;
+        display: flex
+;
         flex-direction: row;
         justify-content: space-between;
         padding: 0 2%;
         align-items: center;
         color: #000;
+        position: relative;
     }
-
     .header-title{
         font-size: 8vw;
-        font-family: "Work Sans", sans-serif;
+        font-family: "Nunito", sans-serif;
+        color: var(--ThirdColor);
+        font-weight: 900;
         text-transform: uppercase;
+    }
+
+    .kiloklin-mascot{
+        width: 5em;
+        height: 5em;
     }
 
     .header-navbar{
         display: none;
-    }
-
-    .socials{
-        width: 30%;
-        height: 10vh;
-        font-size: 7vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-weight: 100;
-        color: #000;
-    }
-
-    .socials > .fa-brands{
-        border: solid 3px;
-        width: 45%;
-        height: 85%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10em;  
-    }
-    
-    .header-menu-icon{
-        font-size: 9vw;
-        width: 10%;
-        height: 10vh;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-
-
-}
-  
-  /* Mobile padrão */
-  @media (min-width: 360px) and (max-width: 425px) {
-    .loundry-header{
-        width: 100%;
-        height: 15vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0 2%;
-        align-items: center;
-        color: #000;
-    }
-
-    .header-title{
-        font-size: 8vw;
-        font-family: "Work Sans", sans-serif;
-        text-transform: uppercase;
-    }
-
-    .header-navbar{
-        display: none;
-    }
-
-    .socials{
-        width: 30%;
-        height: 10vh;
-        font-size: 7vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-weight: 100;
-    }
-
-    .socials > .fa-brands{
-        border: solid 3px;
-        width: 45%;
-        height: 70%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10em;  
-    }
-    
-    .header-menu-icon{
-        font-size: 9vw;
-        width: 10%;
-        height: 10vh;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-  }
-  
-  /* Tablets */
-  @media (min-width: 425px) and (max-width: 768px) {
-    .loundry-header{
-        width: 100%;
-        height: 9vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0 2%;
-        align-items: center;
-        color: #000;
-    }
-
-    .header-title{
-        font-size: 6vw;
-        font-family: "Work Sans", sans-serif;
-        text-transform: uppercase;
-    }
-
-    .header-navbar{
-        display: none;
-    }
-
-    .socials{
-        width: 22%;
-        height: 16vh;
-        font-size: 6vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-weight: 100;
-    }
-
-    .socials > .fa-brands{
-        border: solid 5px;
-        width: 45%;
-        height: 43%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10em;
-    }
-    
-    .header-menu-icon{
-        font-size: 7vw;
-        width: 10%;
-        height: 10vh;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-  }
-  
-  /* Laptops/Desktop pequeno */
-  @media (min-width: 769px) and (max-width: 1024px) {
-    .loundry-header{
-        width: 100%;
-        height: 9vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0 2%;
-        align-items: center;
-        color: #000;
-    }
-
-    .header-title{
-        font-size: 4vw;
-        font-family: "Work Sans", sans-serif;
-        text-transform: uppercase;
-    }
-
-    .header-navbar{
-        display: flex;
         justify-content: space-between;
         align-items: center;
         height: 100%;
-        width: 50vw;
-        font-size: 2.5vw;
-        font-family: "Work Sans", sans-serif;
+        width: 33vw;
+        font-size: 1.4vw;
+        font-family: "Jost", sans-serif;
+        font-weight: 300;
+    }
+    .header-navbar >.navbar-options{
+        cursor: pointer;
+        position: relative;    
+        z-index: 1;
+    }
+    .navbar-options:hover{
+        color: var(--BGColor);
+    }
+    .header-navbar >.navbar-options::before{
+        position: absolute;
+        top: -5.5em;
+        left: 50%;
+        transform: translate(-50%, 0px);
+        content: '';
+        width: 120%;
+        height: 5em;
+        background-color: #00879E;
+        z-index: -1;
+        border-radius: 0 0 5em 5em;
+        transition: .8s ease-in-out;
+    }
+    .navbar-options:hover::before{
+        transition: .3s ease-in-out;
+        top: -2.5em;
     }
 
     .socials{
-        width: 17%;
+        width: 5%;
         height: 16vh;
-        font-size: 4vw;
+        font-size: 1.5vw;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -213,38 +84,201 @@
     }
     
     .header-menu-icon{
-        display: none;
+        width: 15%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-around;
+        cursor: pointer;
     }
-  }
+    .bar-1,.bar-3,.bar-2{
+        background-color: rgba(0, 0, 0, .5);
+        border-radius: 1em;
+        height: 2px;
+    }
+    .bar-1,.bar-3{
+        width: 90%;
+    }
+    .bar-2{
+        width: 40%;
+    }
+    .header-menu-icon:hover > .bar-1, .header-menu-icon:hover > .bar-2, .header-menu-icon:hover > .bar-3{
+        background-color: #00879E;
+    }
+
+}
   
-  /* Desktops */
-  @media (min-width: 1025px) and (max-width: 1440px) {
+  /* Mobile padrão */
+  @media (min-width: 360px) and (max-width: 425px) {
     .loundry-header{
         width: 100%;
-        height: 5vw;
+        height: 15vw;
+        display: flex
+;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 2%;
+        align-items: center;
+        color: #000;
+        position: relative;
+    }
+    .header-title{
+        font-size: 8vw;
+        font-family: "Nunito", sans-serif;
+        color: var(--ThirdColor);
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    .kiloklin-mascot{
+        width: 5em;
+        height: 5em;
+    }
+
+    .header-navbar{
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 33vw;
+        font-size: 1.4vw;
+        font-family: "Jost", sans-serif;
+        font-weight: 300;
+    }
+    .header-navbar >.navbar-options{
+        cursor: pointer;
+        position: relative;    
+        z-index: 1;
+    }
+    .navbar-options:hover{
+        color: var(--BGColor);
+    }
+    .header-navbar >.navbar-options::before{
+        position: absolute;
+        top: -5.5em;
+        left: 50%;
+        transform: translate(-50%, 0px);
+        content: '';
+        width: 120%;
+        height: 5em;
+        background-color: #00879E;
+        z-index: -1;
+        border-radius: 0 0 5em 5em;
+        transition: .8s ease-in-out;
+    }
+    .navbar-options:hover::before{
+        transition: .3s ease-in-out;
+        top: -2.5em;
+    }
+
+    .socials{
+        width: 5%;
+        height: 16vh;
+        font-size: 1.5vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 100;
+    }
+    .socials > .fa-brands{
+        border: solid 0px;
+        width: 42%;
+        height: 37%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10em;
+        color: #00879E;
+        background-color: #fff;
+    }
+    
+    .header-menu-icon{
+        width: 15%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-around;
+        cursor: pointer;
+    }
+    .bar-1,.bar-3,.bar-2{
+        background-color: rgba(0, 0, 0, .5);
+        border-radius: 1em;
+        height: 2px;
+    }
+    .bar-1,.bar-3{
+        width: 90%;
+    }
+    .bar-2{
+        width: 40%;
+    }
+    .header-menu-icon:hover > .bar-1, .header-menu-icon:hover > .bar-2, .header-menu-icon:hover > .bar-3{
+        background-color: #00879E;
+    }
+
+  }
+  
+  /* Tablets */
+  @media (min-width: 425px) and (max-width: 768px) {
+    .loundry-header{
+        width: 100%;
+        height: 10vw;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding: 0 2%;
         align-items: center;
         color: #000;
+        position: relative;
     }
-
     .header-title{
-        font-size: 1.5vw;
-        font-family: "Work Sans", sans-serif;
+        font-size: 5vw;
+        font-family: "Nunito", sans-serif;
+        color: var(--ThirdColor);
+        font-weight: 900;
         text-transform: uppercase;
     }
 
+    .kiloklin-mascot{
+        width: 5em;
+        height: 5em;
+    }
+
     .header-navbar{
-        display: flex
-;
+        display: none;
         justify-content: space-between;
         align-items: center;
         height: 100%;
         width: 33vw;
         font-size: 1.4vw;
-        font-family: "Work Sans", sans-serif;
+        font-family: "Jost", sans-serif;
+        font-weight: 300;
+    }
+    .header-navbar >.navbar-options{
+        cursor: pointer;
+        position: relative;    
+        z-index: 1;
+    }
+    .navbar-options:hover{
+        color: var(--BGColor);
+    }
+    .header-navbar >.navbar-options::before{
+        position: absolute;
+        top: -5.5em;
+        left: 50%;
+        transform: translate(-50%, 0px);
+        content: '';
+        width: 120%;
+        height: 5em;
+        background-color: #00879E;
+        z-index: -1;
+        border-radius: 0 0 5em 5em;
+        transition: .8s ease-in-out;
+    }
+    .navbar-options:hover::before{
+        transition: .3s ease-in-out;
+        top: -2.5em;
     }
 
     .socials{
@@ -270,46 +304,99 @@
     }
     
     .header-menu-icon{
-        display: none;
-    }
-  }
-  
-  /* Telas grandes */
-  @media (min-width: 1441px) {
-    .loundry-header{
-        width: 100%;
-        height: 3vw;
+        width: 5%;
+        height: 43%;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 0px 0%;
-        align-items: center;
-        position: relative;
-        gap: 5%;
-        color: #000;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-around;
+        cursor: pointer;
+    }
+    .bar-1,.bar-3,.bar-2{
+        background-color: rgba(0, 0, 0, .5);
+        border-radius: 1em;
+        height: 2px;
+    }
+    .bar-1,.bar-3{
+        width: 90%;
+    }
+    .bar-2{
+        width: 40%;
+    }
+    .header-menu-icon:hover > .bar-1, .header-menu-icon:hover > .bar-2, .header-menu-icon:hover > .bar-3{
+        background-color: #00879E;
     }
 
+  }
+  
+  /* Laptops/Desktop pequeno */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .loundry-header{
+        width: 100%;
+        height: 10vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 2%;
+        align-items: center;
+        color: #000;
+        position: relative;
+    }
     .header-title{
-        font-size: 1.5vw;
-        font-family: "Work Sans", sans-serif;
+        font-size: 5vw;
+        font-family: "Nunito", sans-serif;
+        color: var(--ThirdColor);
+        font-weight: 900;
         text-transform: uppercase;
     }
 
+    .kiloklin-mascot{
+        width: 5em;
+        height: 5em;
+    }
+
     .header-navbar{
-        display: flex;
-        justify-content: space-around;
+        display: none;
+        justify-content: space-between;
         align-items: center;
         height: 100%;
-        width: 30%;
-        font-size: 1.3vw;
-        font-family: "Work Sans", sans-serif;
+        width: 33vw;
+        font-size: 1.4vw;
+        font-family: "Jost", sans-serif;
+        font-weight: 300;
+    }
+    .header-navbar >.navbar-options{
+        cursor: pointer;
+        position: relative;    
+        z-index: 1;
+    }
+    .navbar-options:hover{
+        color: var(--BGColor);
+    }
+    .header-navbar >.navbar-options::before{
+        position: absolute;
+        top: -5.5em;
+        left: 50%;
+        transform: translate(-50%, 0px);
+        content: '';
+        width: 120%;
+        height: 5em;
+        background-color: #00879E;
+        z-index: -1;
+        border-radius: 0 0 5em 5em;
+        transition: .8s ease-in-out;
+    }
+    .navbar-options:hover::before{
+        transition: .3s ease-in-out;
+        top: -2.5em;
     }
 
     .socials{
-        width: 7%;
+        width: 5%;
         height: 16vh;
-        font-size: 1.8vw;
-        display: flex;
+        font-size: 1.5vw;
+        display: flex
+;
         justify-content: space-between;
         align-items: center;
         font-weight: 100;
@@ -321,12 +408,253 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 0.3em;
+        border-radius: 10em;
         color: #00879E;
         background-color: #fff;
     }
     
     .header-menu-icon{
-        display: none;
+        width: 5%;
+        height: 43%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-around;
+        cursor: pointer;
     }
+    .bar-1,.bar-3,.bar-2{
+        background-color: rgba(0, 0, 0, .5);
+        border-radius: 1em;
+        height: 2px;
+    }
+    .bar-1,.bar-3{
+        width: 90%;
+    }
+    .bar-2{
+        width: 40%;
+    }
+    .header-menu-icon:hover > .bar-1, .header-menu-icon:hover > .bar-2, .header-menu-icon:hover > .bar-3{
+        background-color: #00879E;
+    }
+
+  }
+  
+  /* Desktops */
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    .loundry-header{
+        width: 100%;
+        height: 5vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 2%;
+        align-items: center;
+        color: #000;
+        position: relative;
+    }
+    .header-title{
+        font-size: 2vw;
+        font-family: "Nunito", sans-serif;
+        color: var(--ThirdColor);
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    .kiloklin-mascot{
+        width: 5em;
+        height: 5em;
+    }
+
+    .header-navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 33vw;
+        font-size: 1.4vw;
+        font-family: "Jost", sans-serif;
+        font-weight: 300;
+    }
+    .header-navbar >.navbar-options{
+        cursor: pointer;
+        position: relative;    
+        z-index: 1;
+    }
+    .navbar-options:hover{
+        color: var(--BGColor);
+    }
+    .header-navbar >.navbar-options::before{
+        position: absolute;
+        top: -5.5em;
+        left: 50%;
+        transform: translate(-50%, 0px);
+        content: '';
+        width: 120%;
+        height: 5em;
+        background-color: #00879E;
+        z-index: -1;
+        border-radius: 0 0 5em 5em;
+        transition: .8s ease-in-out;
+    }
+    .navbar-options:hover::before{
+        transition: .3s ease-in-out;
+        top: -2.5em;
+    }
+
+    .socials{
+        width: 5%;
+        height: 16vh;
+        font-size: 1.5vw;
+        display: flex
+;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 100;
+    }
+    .socials > .fa-brands{
+        border: solid 0px;
+        width: 42%;
+        height: 37%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10em;
+        color: #00879E;
+        background-color: #fff;
+    }
+    
+    .header-menu-icon{
+        width: 3%;
+        height: 46%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-around;
+        cursor: pointer;
+    }
+    .bar-1,.bar-3,.bar-2{
+        background-color: rgba(0, 0, 0, .5);
+        border-radius: 1em;
+        height: 2px;
+    }
+    .bar-1,.bar-3{
+        width: 90%;
+    }
+    .bar-2{
+        width: 40%;
+    }
+    .header-menu-icon:hover > .bar-1, .header-menu-icon:hover > .bar-2, .header-menu-icon:hover > .bar-3{
+        background-color: #00879E;
+    }
+
+  }
+  
+  /* Telas grandes */
+  @media (min-width: 1441px) {
+    .loundry-header{
+        width: 100%;
+        height: 5vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 2%;
+        align-items: center;
+        color: #000;
+        position: relative;
+    }
+    .header-title{
+        font-size: 2vw;
+        font-family: "Nunito", sans-serif;
+        color: var(--ThirdColor);
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    .kiloklin-mascot{
+        width: 5em;
+        height: 5em;
+    }
+
+    .header-navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 33vw;
+        font-size: 1.4vw;
+        font-family: "Jost", sans-serif;
+        font-weight: 300;
+    }
+    .header-navbar >.navbar-options{
+        cursor: pointer;
+        position: relative;    
+        z-index: 1;
+    }
+    .navbar-options:hover{
+        color: var(--BGColor);
+    }
+    .header-navbar >.navbar-options::before{
+        position: absolute;
+        top: -5.5em;
+        left: 50%;
+        transform: translate(-50%, 0px);
+        content: '';
+        width: 120%;
+        height: 5em;
+        background-color: #00879E;
+        z-index: -1;
+        border-radius: 0 0 5em 5em;
+        transition: .8s ease-in-out;
+    }
+    .navbar-options:hover::before{
+        transition: .3s ease-in-out;
+        top: -2.5em;
+    }
+
+    .socials{
+        width: 5%;
+        height: 16vh;
+        font-size: 1.5vw;
+        display: flex
+;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 100;
+    }
+    .socials > .fa-brands{
+        border: solid 0px;
+        width: 42%;
+        height: 37%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10em;
+        color: #00879E;
+        background-color: #fff;
+    }
+    
+    .header-menu-icon{
+        width: 3%;
+        height: 46%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-around;
+        cursor: pointer;
+    }
+    .bar-1,.bar-3,.bar-2{
+        background-color: rgba(0, 0, 0, .5);
+        border-radius: 1em;
+        height: 2px;
+    }
+    .bar-1,.bar-3{
+        width: 90%;
+    }
+    .bar-2{
+        width: 40%;
+    }
+    .header-menu-icon:hover > .bar-1, .header-menu-icon:hover > .bar-2, .header-menu-icon:hover > .bar-3{
+        background-color: #00879E;
+    }
+
   }
