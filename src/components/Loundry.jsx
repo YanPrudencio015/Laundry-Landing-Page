@@ -7,10 +7,6 @@ import {createStore} from 'redux'
 import { sidebarToggleReducer } from '../redux/sideBarToggle';
 // components
 import LoundryHeader from './header/LoundryHeader';
-import LoundryBanner from './banner/loundryBanner';
-import Services from './services/LoundryServices';
-import Promotion from './promotion/Promotion';
-import Location from './location/Location';
 import SideBarHeader from './header/sideBar';
 
 // background
