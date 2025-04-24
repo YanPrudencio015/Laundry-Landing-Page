@@ -40,6 +40,7 @@ useEffect(()=>{
                     <div className="sidebar-adress">
                         <h4 className="sidebar-adress-title">Endereço</h4>
                         <p className="sidebar-adress-info">Estr. dos Bandeirantes, 24.041 - Lj.H - Vargem Grande, Rio de Janeiro - RJ, 22785-091</p>
+                        <butto className="sidebar-adress-button"> Ver no mapa</butto>
                     </div>
                     <div className="sidebar-worktime">
                         <h4 className="sidebar-worktime-title">Horários</h4>
