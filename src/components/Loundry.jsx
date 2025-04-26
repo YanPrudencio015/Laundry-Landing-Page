@@ -8,7 +8,7 @@ import { sidebarToggleReducer } from '../redux/sideBarToggle';
 // components
 import LoundryHeader from './header/LoundryHeader';
 import SideBarHeader from './header/sideBar';
-import Banner from './header/Banner';
+import Banner from './banner/Banner';
 // background
 
 import background from '../images/Backgrounds/swirl.png'
