@@ -22,6 +22,7 @@ function keepOpen(){
 useEffect(()=>{
     console.log(selector,'from sidebar')
 },selector)
+
     return(
         <section className={selector.isOpen === false ? 'sidebar-BG-close': 'sidebar-BG'}>
             <div className={selector.isOpen === false ? 'sidebar-close': 'sidebar'}>

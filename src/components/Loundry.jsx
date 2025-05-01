@@ -9,8 +9,9 @@ import { sidebarToggleReducer } from '../redux/sideBarToggle';
 import LoundryHeader from './header/LoundryHeader';
 import SideBarHeader from './header/sideBar';
 import Banner from './banner/Banner';
+import About from './about/About';
+import AboutPage from './about/AboutPage';
 // background
-
 import background from '../images/Backgrounds/swirl.png'
 
 
@@ -25,11 +26,18 @@ const Loundry = () => {
                 <LoundryHeader/>
                 <SideBarHeader/>
                 <Banner/>
+                <About/>
+
+                {/* usaro react router para criar uma rota para esse jsx */}
+                {/* <AboutPage/> */}
+
+
                 {/* fazer a sessão de:
                     preços
                     serviços
                     nossos clientes
-                    */}
+                */}
+                    
             </div>
         </Provider>
     );
