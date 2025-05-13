@@ -1,0 +1,498 @@
+
+/* 
+  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-family: "Mulish", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Manrope", sans-serif;
+  font-family: "Jost", sans-serif;
+  font-family: "Pacifico", cursive;
+  font-family: "Comfortaa", sans-serif;
+  font-family: "Lobster", sans-serif;
+  font-family: "Urbanist", sans-serif;
+  font-family: "Bangers", system-ui;
+*/
+
+/* Mobile pequeno */
+@media (max-width: 359px) {
+    .contactSidebar{
+        margin: 5em 0 0 0;
+        width: 100%;
+        height: 20em;
+        background-color: var(--BGColor);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactSidebar-header{
+        width: 100%;
+        height: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        position: relative;
+    }
+    .contactSidebar-header::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        height: 2px;
+        background-color: var(--PrimaryColor);
+    }
+    .contactSidebar-header-title{
+        font-size: 7vw;
+        font-family: "Bebas Neue", sans-serif;
+    }
+
+    .contactSidebar-Body{
+        width: 100%;
+        height: 30em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .contactSidebar-phones-list, .contactSidebar-socials-list{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactSidebar-phones-numbers{
+        font-size: 7vw;
+        font-family: "Urbanist", sans-serif;
+    }
+    
+    .contactSidebar-socials-list{
+        flex-direction: column;
+    }
+    .contactSidebar-social-item{
+        width: 90%;
+        height: 2em;
+        margin: 1em 0;
+        border-radius: 10px;
+        background-color: var(--PrimaryColor);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 6vw;
+        gap: 5%;
+    }
+
+    .contactSidebar-iconText{
+        font-family: "Comfortaa", sans-serif;
+        font-size: 5vw;
+    }
+}
+  
+  /* Mobile padrão */
+  @media (min-width: 360px) and (max-width: 425px) {
+    .contactSidebar{
+        margin: 5em 0 0 0;
+        width: 100%;
+        height: 25em;
+        background-color: var(--BGColor);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactSidebar-header{
+        width: 100%;
+        height: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        position: relative;
+    }
+    .contactSidebar-header::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        height: 2px;
+        background-color: var(--PrimaryColor);
+    }
+    .contactSidebar-header-title{
+        font-size: 7vw;
+        font-family: "Bebas Neue", sans-serif;
+    }
+
+        .contactSidebar-Body{
+        width: 100%;
+        height: 30em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .contactSidebar-phones-list, .contactSidebar-socials-list{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactSidebar-phones-numbers{
+        font-size: 7vw;
+        font-family: "Urbanist", sans-serif;
+    }
+    
+    .contactSidebar-socials-list{
+        flex-direction: column;
+    }
+    .contactSidebar-social-item{
+        width: 90%;
+        height: 2em;
+        margin: 1em 0;
+        border-radius: 10px;
+        background-color: var(--PrimaryColor);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 6vw;
+        gap: 5%;
+    }
+
+    .contactSidebar-iconText{
+        font-family: "Comfortaa", sans-serif;
+        font-size: 5vw;
+    }
+
+}
+  
+
+
+  /* Tablets */
+  @media (min-width: 426px) and (max-width: 767px) {
+    .contactSidebar{
+        margin: 5em 0 0 0;
+        width: 100%;
+        height: 25em;
+        background-color: var(--BGColor);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactSidebar-header{
+        width: 100%;
+        height: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        position: relative;
+    }
+    .contactSidebar-header::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        height: 2px;
+        background-color: var(--PrimaryColor);
+    }
+    .contactSidebar-header-title{
+        font-size: 7vw;
+        font-family: "Bebas Neue", sans-serif;
+    }
+
+
+    .contactSidebar-Body{
+        width: 100%;
+        height: 30em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .contactSidebar-phones-list, .contactSidebar-socials-list{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactSidebar-phones-numbers{
+        font-size: 5vw;
+        font-family: "Urbanist", sans-serif;
+    }
+    
+    .contactSidebar-socials-list{
+        flex-direction: column;
+    }
+    .contactSidebar-social-item{
+        width: 90%;
+        height: 2em;
+        margin: 1em 0;
+        border-radius: 10px;
+        background-color: var(--PrimaryColor);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 6vw;
+        gap: 5%;
+    }
+
+    .contactSidebar-iconText{
+        font-family: "Comfortaa", sans-serif;
+        font-size: 5vw;
+    }
+
+
+  }
+  
+  /* Laptops/Desktop pequeno */
+  @media (min-width: 768px) and (max-width: 1024px) {
+  .contactSidebar{
+        margin: 5em 0 0 0;
+        width: 100%;
+        height: 42em;
+        background-color: var(--BGColor);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactSidebar-header{
+        width: 100%;
+        height: 5em;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        position: relative;
+    }
+    .contactSidebar-header::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        height: 2px;
+        background-color: var(--PrimaryColor);
+    }
+    .contactSidebar-header-title{
+        font-size: 7vw;
+        font-family: "Bebas Neue", sans-serif;
+    }
+
+
+    
+    .contactSidebar-Body{
+        width: 100%;
+        height: 36em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .contactSidebar-phones-list, .contactSidebar-socials-list{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactSidebar-phones-numbers{
+        font-size: 5vw;
+        font-family: "Urbanist", sans-serif;
+    }
+    
+    .contactSidebar-socials-list{
+        flex-direction: column;
+    }
+    .contactSidebar-social-item{
+        width: 90%;
+        height: 2em;
+        margin: 1em 0;
+        border-radius: 10px;
+        background-color: var(--PrimaryColor);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 6vw;
+        gap: 5%;
+    }
+
+    .contactSidebar-iconText{
+        font-family: "Comfortaa", sans-serif;
+        font-size: 5vw;
+    }
+
+
+
+  }
+  
+  /* Desktops */
+  @media (min-width: 1025px) and (max-width: 1440px) {
+ .contactSidebar{
+        margin: 0em 0;
+        width: 100%;
+        height: 30em;
+        background-color: var(--BGColor);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactSidebar-header{
+        width: 100%;
+        height: 5em;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        position: relative;
+    }
+    .contactSidebar-header::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        height: 2px;
+        background-color: var(--BGColor);
+    }
+    .contactSidebar-header-title{
+        font-size: 3vw;
+        font-family: "Bebas Neue", sans-serif;
+    }
+    
+    .contactSidebar-Body{
+        width: 100%;
+        height: 30em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .contactSidebar-phones-list, .contactSidebar-socials-list{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactSidebar-phones-numbers{
+        font-size: 1.5vw;
+        font-family: "Urbanist", sans-serif;
+    }
+    
+    .contactSidebar-socials-list{
+        flex-direction: column;
+    }
+    .contactSidebar-social-item{
+        width: 60%;
+        height: 1.5em;
+        margin: 1em 0;
+        border-radius: 10px;
+        background-color: var(--PrimaryColor);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2vw;
+        gap: 5%;
+    }
+
+    .contactSidebar-iconText{
+        font-family: "Comfortaa", sans-serif;
+        font-size: 1.5vw;
+    }
+  }
+  
+  /* Telas grandes */
+  @media (min-width: 1441px) {
+.contactSidebar{
+        margin: 0em 0;
+        width: 100%;
+        height: 30em;
+        background-color: var(--BGColor);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactSidebar-header{
+        width: 100%;
+        height: 5em;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        position: relative;
+    }
+    .contactSidebar-header::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        height: 2px;
+        background-color: var(--BGColor);
+    }
+    .contactSidebar-header-title{
+        font-size: 3vw;
+        font-family: "Bebas Neue", sans-serif;
+    }
+    
+    .contactSidebar-Body{
+        width: 100%;
+        height: 30em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .contactSidebar-phones-list, .contactSidebar-socials-list{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactSidebar-phones-numbers{
+        font-size: 1.5vw;
+        font-family: "Urbanist", sans-serif;
+    }
+    
+    .contactSidebar-socials-list{
+        flex-direction: column;
+    }
+    .contactSidebar-social-item{
+        width: 60%;
+        height: 1.5em;
+        margin: 1em 0;
+        border-radius: 10px;
+        background-color: var(--PrimaryColor);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2vw;
+        gap: 5%;
+    }
+
+    .contactSidebar-iconText{
+        font-family: "Comfortaa", sans-serif;
+        font-size: 1.5vw;
+    }
+
+
+
+  }

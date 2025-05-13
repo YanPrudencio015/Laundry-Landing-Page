@@ -796,6 +796,10 @@
         top: 1000px;
         z-index: -1;
     }
+        .sidebar .address-header-sidebar::after{
+        top: -120px;
+        transition: 2.5s ease-in-out;
+    }
     .address-title-sidebar{
         position: relative;
         top: 1000px;
@@ -804,6 +808,7 @@
         transition: .01s;
         position: relative;
     }
+
 
     .address-body-sidebar{
         width: 100%;
@@ -1205,7 +1210,7 @@ font-family: "Bebas Neue", sans-serif;
     }
     
     .linkText-sidebar-navbar{
-        font-size: 7vw;
+        font-size: 5vw;
         color: #000;
         font-family: "Comfortaa", sans-serif;
     }
@@ -1252,14 +1257,14 @@ font-family: "Bebas Neue", sans-serif;
 
     .address-body-sidebar{
         width: 100%;
-        height: 25em;
+        height: 20em;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         align-items:start;
         padding: 0 2%;
         overflow: hidden;
-        margin: 5% 0;
+        margin: 20% 0;
     }
 
     .address-body-title-sidebar{
@@ -2114,4 +2119,334 @@ font-family: "Bebas Neue", sans-serif;
   /* Telas grandes */
   @media (min-width: 1441px) {
   
+    .sidebar-BG{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-color: transparent;
+        transition: .6s ease-in;
+        overflow: hidden;
+        z-index: 10000;
+    }
+    .sidebar-BG-close:before{
+        content: " ";
+        position: absolute;
+        left: 96%;
+        top: 5%;
+        width: 1%;
+        height: 2%;
+        border-radius: 20em;
+        background-color: rgba(0,0, 0, 0.6);
+        background-color: var(--PrimaryColor);
+        transform-origin: center;
+        opacity: 0;
+        transition: .6s ease-in-out;
+    }
+    .sidebar-BG:before{
+        content: " ";
+        position: absolute;
+        left: 96%;
+        top: 5%;
+        width: 1%;
+        height: 2%;
+        border-radius: 20em;
+        background-color: rgba(0,0, 0, 0.6);
+        transform-origin: center;
+        opacity: 1;
+        transform: scale(400);
+        transition: .6s ease-in-out;
+        z-index: -1;
+    }
+    .sidebar-BG-close:after{
+        content: " ";
+        position: absolute;
+        left: 96%;
+        top: 5%;
+        width: 1%;
+        height: 2%;
+        border-radius: 20em;
+        background-color: rgba(0,0,0,.5);
+        transform-origin: center;
+        opacity: 0;
+        transition: .1s ease-in-out;
+    }
+    .sidebar-BG:after{
+        content: " ";
+        position: absolute;
+        left: 96%;
+        top: 5%;
+        width: 1%;
+        height: 2%;
+        border-radius: 20em;
+        background-color: rgba(0,0, 0, 0.5);
+        transform-origin: center;
+        opacity: 1;
+        transform: scale(400);
+        transition: 1s ease-in-out;
+        z-index: -1;
+    }
+
+    .sidebar-BG-close{
+        width: 100%;
+        height: 100%;
+        transition: .6s ease-in;
+        background-color: transparent;
+        pointer-events: none;
+        position: fixed;
+        z-index: 10;
+    }
+    
+    /* styling sidebar */
+    .sidebar{
+        position: fixed;
+        right: 0;
+        width: 30em;
+        height: 100%;
+        background-color: var(--BGColor);
+        /* transition: right 0.9s cubic-bezier(0.68, -0.6, 0.32, 1.1); */
+        transition: right 0.9s;
+        overflow-x: hidden;
+    }
+    .sidebar-close{
+        position: fixed; 
+        transition: .1s ease-in-out;
+        right: -1000em;
+    }
+
+    .sidebar-header{ /* header from side bar */
+        width: 100%;
+        height: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .sidebar-header-close-button{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 25%;
+        height: 58%;
+        background-color: var(--PrimaryColor);
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2vw;
+        font-family: "Cal Sans", sans-serif;
+        font-family: "Bebas Neue", sans-serif;
+        cursor: pointer;
+    }
+    .sidebar-close .sidebar-header-title{
+        font-family: "Bangers", system-ui;
+        font-size: 3vw;
+        color: var(--ThirdColor);
+        letter-spacing: 3px;
+        position: relative;
+        top: 300%;  
+        transition: .3s ease-in-out;          
+    }
+    
+    .sidebar .sidebar-header-title{
+        font-family: "Bangers", system-ui;
+        font-size: 3vw;
+        color: var(--ThirdColor);
+        letter-spacing: 3px;
+        position: relative;
+        top: 0%;  
+        transition: 1.5s ease-in;         
+    }
+
+     .sidebar-close .sidebar-header:after{
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 10%;
+        left: 50%;
+        top: 90%;
+        transform: translate(-50%,0%);
+        transform-origin: center;
+        background-color: var(--PrimaryColor);
+        transition: .6s ease-in-out;
+    }
+
+    .sidebar .sidebar-header:after{
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 90%;
+        left: 50%;
+        top: 90%;
+        transform: translate(-50%,0%);
+        transform-origin: center;
+        background-color: var(--PrimaryColor);
+        transition: 1.5s ease-in-out;
+    }
+
+
+
+             /* ==== SideBar Navbar ===== */
+
+    .sidebar-navbar{
+        margin: 3% 0;
+        width: 100%;
+        height: 30em;
+        background-color: var(--BGColor);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3%;
+        color: #000;
+        overflow: hidden;
+    }
+    .link-sidebar-navbar{
+        width: 50%;
+        height: 3em;
+        background-color: var(--BGColor);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px 10px  0px 0px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        border: solid 3px transparent;
+        border-bottom: solid 3px var(--PrimaryColor);
+    }
+    .link-sidebar-navbar::after{
+        content: '';
+        position: absolute;
+        top: 500%;
+        width: 100%;
+        height: 300vw;
+        background-color: var(--PrimaryColor);
+        transition: .6s ease-in;
+        border-radius: 20em;
+        z-index: -1;
+    }
+    .link-sidebar-navbar:hover::after{
+        top: -300%;
+        transition: .6s ease-in;
+    }
+    
+    .linkText-sidebar-navbar{
+        font-size: 2vw;
+        color: #000;
+        font-family: "Comfortaa", sans-serif;
+    }
+
+
+    /* ==== address-navbar ====== */
+
+    .address-navbar{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        position: relative; 
+        left: -1000px; 
+        z-index: 1;
+        overflow: hidden;
+        margin: 5vh 0;
+    }
+    .sidebar .address-navbar{
+        left: 0;
+        transition: 2s ease-in-out; 
+    }
+    
+    .address-navbar:after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: -1000%;
+        left: 50%;
+        transform-origin: top;
+        transform: translate(-50%, -50%);
+        background-color: var(--PrimaryColor);
+        z-index: -1;
+        transition: 2s;
+    }
+    .sidebar .address-navbar:after{
+        top: 50%;
+        transition: 2s;
+        transform: translate(-50%, -50%);
+    }
+    .address-header-sidebar{
+        width: 100%;
+        height: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .address-title-sidebar{
+        font-family: "Cal Sans", sans-serif;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 3vw;
+        position: relative;    
+        top: -1000px;
+        transition: 2.1s ease-in-out;
+    }
+    .sidebar .address-title-sidebar{
+        transition: 5s ease-in-out;
+        top: 0;
+    }
+    .address-body-sidebar{
+        width: 100%;
+        padding: 0 5%;
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+    .address-body-title-sidebar{
+        align-self: self-start;
+        font-size: 2vw;
+        font-family: "Open Sans", sans-serif;
+        font-family: "Montserrat", sans-serif;
+        position: relative;
+        left: -1000px;
+    }
+    .sidebar  .address-body-title-sidebar{
+        transition: 2.6s ease-in-out;
+        left: 0px;
+    }
+    .address-body-text-sidebar{
+        font-family: "Comfortaa", sans-serif;
+        font-size: 1.5vw;
+        font-weight: 300;
+        position: relative;
+        left: -1000px;
+    }
+    .sidebar .address-body-text-sidebar{
+        left: 0px;
+        transition: 3s ease-in;
+    }
+    .address-body-link-sidebar{
+        width: 35%;
+        height: 3em;
+        background-color: var(--BGColor);
+        border-radius: 10px 10px 0 0;
+        border-left: solid 3px var(--BGColor);
+        border-right: solid 3px var(--BGColor);
+        border-top: solid 3px var(--BGColor);
+        background-color: var(--PrimaryColor);
+    }
+    .address-body-link-Button-sidebar{
+        width: 100%;
+        height: 100%;
+        font-size: 2vw;
+        font-family: "Cal Sans", sans-serif;
+        font-family: "Bebas Neue", sans-serif;
+        border-radius: 10px 10px 0 0;
+        background-color: transparent;
+    }
+    
+    
   }

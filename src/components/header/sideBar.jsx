@@ -12,6 +12,11 @@ import { closeSidebar,openSidebar } from "../../redux/sideBarToggle";
 import { Link } from "react-router-dom";
 
 
+// components
+
+import HorarySidebar from "./sidebarcomponents/horary/HorarySidebar";
+import ContactSidebar from "./sidebarcomponents/contacts/ContactsSideBar";
+
 
 const allButtonLinks = [
     {name: 'Menu', url: "/"},
@@ -75,6 +80,8 @@ return(
                         </a>
                     </div>
                 </div>
+                <HorarySidebar/>
+                <ContactSidebar/>
             </div>
         </section>
     )
