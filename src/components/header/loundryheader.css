@@ -40,6 +40,7 @@
         cursor: pointer;
         position: relative;    
         z-index: 1;
+        color: #000;
     }
     .navbar-options:hover{
         color: var(--BGColor);
@@ -150,6 +151,7 @@
         cursor: pointer;
         position: relative;    
         z-index: 1;
+        color: #000;
     }
     .navbar-options:hover{
         color: var(--BGColor);
@@ -259,6 +261,7 @@
         cursor: pointer;
         position: relative;    
         z-index: 1;
+        color: #000;
     }
     .navbar-options:hover{
         color: var(--BGColor);
@@ -369,6 +372,7 @@
         cursor: pointer;
         position: relative;    
         z-index: 1;
+        color: #000;
     }
     .navbar-options:hover{
         color: var(--BGColor);
@@ -479,6 +483,7 @@
         cursor: pointer;
         position: relative;    
         z-index: 1;
+        color: #000;
     }
     .navbar-options:hover{
         color: var(--BGColor);
@@ -589,6 +594,7 @@
         cursor: pointer;
         position: relative;    
         z-index: 1;
+        color: #000;
     }
     .navbar-options:hover{
         color: var(--BGColor);

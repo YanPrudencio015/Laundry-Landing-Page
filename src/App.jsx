@@ -1,34 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect } from 'react'
+import { Routes, Route, useLocation } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import { sidebarToggleReducer } from './redux/sideBarToggle'
+
+// Components
+import LoundryHeader from './components/header/LoundryHeader'
+import SideBarHeader from './components/header/sideBar'
+import Loundry from './components/Loundry'
+import AboutPage from './components/about/AboutPage'
+
+// Background
+import background from './images/Backgrounds/swirl.png'
+
+// Create Redux store
+const store = createStore(sidebarToggleReducer)
 
 function App() {
-  const [count, setCount] = useState(0)
+  const location = useLocation();
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <Provider store={store}>
+      <div className='loundry' 
+        style={{
+          backgroundImage: `url(${background})`, 
+          backgroundAttachment: 'fixed'
+        }}>
+        <LoundryHeader />
+        <SideBarHeader />
+          <Routes location={location} key={location.pathname}>
+            <Route index element={<Loundry />} />
+            <Route path='/sobre' element={<AboutPage />} />
+          </Routes>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </Provider>
   )
 }
 

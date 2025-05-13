@@ -1,5 +1,4 @@
 import React from "react";
-// import MascotImage from '../../../images/kiloklin-mascot.png';
 import './aboutbanner.css'
 import mascot from '../../../../images/kiloklin-mascot.png'
 export default function AboutBanner(props) {

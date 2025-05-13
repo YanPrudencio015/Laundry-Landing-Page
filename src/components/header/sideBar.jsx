@@ -9,6 +9,19 @@ import whatsAppIcon from '../../icons/whatsapp.png'
 
 import { useDispatch, useSelector } from "react-redux";
 import { closeSidebar,openSidebar } from "../../redux/sideBarToggle";
+import { Link } from "react-router-dom";
+
+
+
+const allButtonLinks = [
+    {name: 'Menu', url: "/"},
+    {name: 'Serviços', url: "/servicos"},
+    {name: 'Sobre', url: "/sobre"},
+    {name: 'Precos', url: "/precos"},
+    {name: 'Contatos', url: "/contatos"},
+]
+
+
 function SideBarHeader(props){
 const dispatch = useDispatch();
 const selector = useSelector((state)=> state);
@@ -23,59 +36,43 @@ useEffect(()=>{
     console.log(selector,'from sidebar')
 },selector)
 
-    return(
-        <section className={selector.isOpen === false ? 'sidebar-BG-close': 'sidebar-BG'}>
+return(
+     <section className={selector.isOpen === false ? 'sidebar-BG-close': 'sidebar-BG'}>
+     {/* <section onClick={()=>{closeMenu()}} className={'sidebar-BG'}> */}
             <div className={selector.isOpen === false ? 'sidebar-close': 'sidebar'}>
-                <div className="sidebar-title-section">
-                    <h1 className="sidebar-title">Kiloklin</h1>
-                    <p className="sidebar-closeBtn" onClick={()=>{closeMenu()}}>X</p>
+               <div className="sidebar-header">
+                <p className="sidebar-header-close-button" onClick={()=>{closeMenu()}}>Fechar</p>
+                <h1 className="sidebar-header-title"> Kilo Klin</h1>
+               </div>
+                <div className="sidebar-navbar">
+                    {allButtonLinks.map((value,index)=>(
+                        <Link 
+                            onClick={()=>{closeMenu()}} 
+                            key={index} to={`${value.url}`} 
+                            className="link-sidebar-navbar">
+                        <p className="linkText-sidebar-navbar">{value.name}</p>
+                    </Link>
+                    ))}
                 </div>
-                <ul className="menu-sidebar-list">
-                    <li className="menu-sidebar-item">Início</li>
-                    <li className="menu-sidebar-item">Serviços</li>
-                    <li className="menu-sidebar-item">Preços</li>
-                    <li className="menu-sidebar-item">Contatos</li>
-                </ul>
-                <div className="sidebar-info">
-                    <h1 className="sidebar-info-title">Informações de contato</h1>
-                    <div className="sidebar-adress">
-                        <h4 className="sidebar-adress-title">Endereço</h4>
-                        <p className="sidebar-adress-info">Estr. dos Bandeirantes, 24.041 - Lj.H - Vargem Grande, Rio de Janeiro - RJ, 22785-091</p>
-                        <butto className="sidebar-adress-button"> Ver no mapa</butto>
+                {/* Contact information section */}
+                <div className="address-navbar">
+                    <div className="address-header-sidebar">
+                        <h1 className="address-title-sidebar">Nossa Localização</h1>
                     </div>
-                    <div className="sidebar-worktime">
-                        <h4 className="sidebar-worktime-title">Horários</h4>
-                        <p className="sidebar-worktime-days">Segunda - feira <span className="sidebar-worktime-hour">8:00 - 17:00</span> </p>
-                        <p className="sidebar-worktime-days">Terça - feira <span className="sidebar-worktime-hour">8:00 - 17:00</span> </p>
-                        <p className="sidebar-worktime-days">Quarta - feira <span className="sidebar-worktime-hour">8:00 - 17:00</span> </p>
-                        <p className="sidebar-worktime-days">Quinta - feira <span className="sidebar-worktime-hour">8:00 - 17:00</span> </p>
-                        <p className="sidebar-worktime-days">Sexta - feira <span className="sidebar-worktime-hour">8:00 - 17:00</span> </p>
-                        <p className="sidebar-worktime-days">Sábado <span className="sidebar-worktime-hour">8:00 - 12:00</span> </p>
-                        <p className="sidebar-worktime-days">Domingo <span className="sidebar-worktime-hour">--</span> </p>
-                    </div>
-                    <div className="sidebar-phone">
-                        <h4 className="sidebar-phone-title">Telefone</h4>
-                        <p  className="sidebar-phone-number">(21)96016-2497</p>
-                    </div>
-                    <div className="sidebar-sociais">
-                        <span className="sidebar-sociais-icons-span">
-                            <div className="sidebar-sociais-icons-BG">
-                            <img className="sidebar-sociais-icons" src={facebookIcon} alt="Facebook icon" />
-                            </div>
-                            <p className="sidebar-sociais-icons-title">Facebook</p>
-                        </span>
-                        <span className="sidebar-sociais-icons-span">
-                            <div className="sidebar-sociais-icons-BG">
-                            <img className="sidebar-sociais-icons" src={instagramIcon} alt="Facebook icon" />
-                            </div>
-                            <p className="sidebar-sociais-icons-title">Instagram</p>
-                        </span>
-                        <span className="sidebar-sociais-icons-span">
-                            <div className="sidebar-sociais-icons-BG">
-                            <img className="sidebar-sociais-icons" src={whatsAppIcon} alt="Facebook icon" />
-                            </div>
-                            <p className="sidebar-sociais-icons-title">Whatsapp</p>
-                        </span>
+                    <div className="address-body-sidebar">
+                        <h1 className="address-body-title-sidebar">Endereço</h1>
+                        <p className="address-body-text-sidebar">
+                            Estr. dos Bandeirantes, 24.041 - Lj.H 
+                            - Vargem Grande, Rio de Janeiro - RJ, 22785-091
+                        </p>
+                        <a  
+                            className="address-body-link-sidebar"
+                            href='https://www.google.com.br/maps/place/Lavanderia+Kilo+Klin/@-22.9777238,-43.494906,17z/data=!4m6!3m5!1s0x9bdd3395ecc88d:0x873ce0e4c651b833!8m2!3d-22.9775038!4d-43.493721!16s%2Fg%2F1pt_1dd4d?hl=pt-PT&entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D'
+                        >
+                            <button className="address-body-link-Button-sidebar">
+                                Ver no mapa
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>

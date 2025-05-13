@@ -1,13 +1,14 @@
 import React, { useEffect } from "react";
 import './loundryheader.css';
-import SidebarMenu from './sideBar';
 
-// redux
+// React Router
+import { Link } from "react-router-dom";
+
+// Redux
 import { useSelector, useDispatch } from 'react-redux';
 import { openSidebar } from "../../redux/sideBarToggle";
 
-function LoundryHeader(props) {
-    // Move useSelector inside the component
+function LoundryHeader() {
     const sidebarState = useSelector((state) => state);
     const dispatch = useDispatch();
     
@@ -21,11 +22,28 @@ function LoundryHeader(props) {
     
     return (
         <div className='loundry-header'>
-            <h1 className='header-title'>KiloKlin</h1>
+            <Link to='/'>
+                <h1 className='header-title'>
+                    Kilo Klin
+                </h1>
+            </Link>
             <nav className='header-navbar'>
-                <p className="navbar-options">Serviços</p>
-                <p className="navbar-options">Preços</p>
-                <p className="navbar-options">Contatos</p>
+                <Link className="navbar-options" to='/servicos'>
+                    <p>
+                        Serviços
+                    </p>
+                </Link> 
+                <Link className="navbar-options" to='/sobre'>
+                    <p>
+                        Sobre
+                    </p>
+                </Link> 
+                <Link className="navbar-options" to='/precos'>
+                    <p>Preços</p>
+                </Link>
+                <Link className="navbar-options" to='/contatos'>
+                    <p>Contatos</p>
+                </Link>
             </nav>
             <div className='header-menu-icon' onClick={handleMenuClick}>
                 <div className="bar-1"></div>
