@@ -21,10 +21,6 @@ function HorarySidebar(props){
                         <span className="horarySidebar-span">Sábado</span>
                         <p className="horarySidebar-hours">08:00 - 12:00</p>
                     </li>
-                    <li className="horarySidebar-item">
-                        <span className="horarySidebar-span">Domingo</span>
-                        <p className="horarySidebar-hours">---</p>
-                    </li>
                 </ul>
             </div>
     )
