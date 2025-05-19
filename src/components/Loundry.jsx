@@ -5,8 +5,9 @@ import './loundry.css';
 // Components
 import Banner from './banner/Banner';
 import About from './about/About';
-import LoundryServices from './services/LoundryServices'
 import Service from './Service/Service';
+import Promotion from './promotion/Promotion'
+import Costumers from './costumer/Costumer';
 
 const Loundry = () => {
   return (
@@ -14,7 +15,8 @@ const Loundry = () => {
       <Banner />
       <About />
       <Service/>
-
+      <Promotion/>
+      {/* <Costumers/> */}
       {/* Future sections:
         - serviços => [
                         lavar e Secar (Por cestos), 
@@ -26,9 +28,8 @@ const Loundry = () => {
                         Vestidos de Noiva
                       ]
         - promoção
-        - Nossos diferenciais
-        - Nossos clientes => Hosteis, Pousadas, Hostels, indústrias, Eventos
-        -  Onde atendemos => Recreio, Barra, Peninsula, Rio 2, Curicica, Vargem Grande, vargem Pequena
+        - principais clientes => Hosteis, Pousadas, Hostels, indústrias, Eventos
+        -  Bairros que atendemos => Recreio, Barra, Peninsula, Rio 2, Curicica, Vargem Grande, vargem Pequena
         - metrica
       */}
   {/* Corrigir erro no background do sidebar:
@@ -39,4 +40,11 @@ const Loundry = () => {
   );
 };
 
+/*
+Inspiração para a sessão que mostra onde atendem e quais os possíveis clientes
+https://i.pinimg.com/736x/b8/9c/52/b89c52313c750b52d5f2cbfdac28d49e.jpg
+https://i.pinimg.com/736x/37/e5/10/37e510adef9c044614b8918595f3ff33.jpg
+https://i.pinimg.com/736x/0b/d2/b7/0bd2b701f1987a9f63ed8ed64fc5cc71.jpg
+
+*/
 export default Loundry;

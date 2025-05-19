@@ -1,27 +1,35 @@
 import React from "react";
-import './promotion.css'
-import PromotionImg from '../../images/Desktop/Promocao.jpg'
-
-// background
-
-import background from '../../images/Backgrounds/subtle-carbon.png'
+import './promotion.css';
+import img from '../../images/Desktop/Promocao-semBG.jpg'
+// import bgImg from '../../images/Backgrounds/random-grey-variations.png'
+import bgImg from '../../images/Backgrounds/subtle-carbon.png'
 
 
 function Promotion(props){
-    return(
-    <section className="promotion-section" style={{backgroundImage:`url(${background})`}}>
-        <div className="pormotion-text-section">
-            <p className="promotion-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias magnam deserunt laborum, sapiente maxime consectetur est dicta eaque nemo tenetur, architecto quam, qui exercitationem libero aut fugiat ipsa. Dolor, laborum.</p>
-        </div>
-        <div className="promotion-image-section">
-            {/* <h3 className="promotion-image-title">Promotion</h3> */}
-            <div className="img-Bg">
-                <img className="img" src={PromotionImg}></img>
-            </div>
-        </div>
-    </section>
-    )
-} 
 
+    const promoTexts = ["Lavar", "Por", "Cesto"];
+    return(
+        <section className="promotion">
+            <div className="promotion-BG"></div>
+            <div className="promotion-text-div">
+                <h2 className="promotion-title">Promoção</h2>
+                <div className="promotion-sub-div">
+                  {promoTexts.map((text, index) => (
+                    <p key={index} className={`line line-${index + 1}`}>{text}</p>
+                    ))}
+                </div>
+            </div>
+            <div className="promotion-price-div">
+                <h1 className="promotion-price">
+                    <span className="promotion-price-span">R$</span>17,00</h1>
+            </div>
+            {/* <div className="promotion-img-square"></div> */}
+                <img className="promotion-img" src={img}/>
+        </section>
+    )
+}
+
+// mobile: https://i.pinimg.com/736x/2e/e7/e6/2ee7e632570056670f23f19f30e658cd.jpg
+// Desktop: https://i.pinimg.com/736x/63/8f/fe/638ffe43365c5edd9cf1b49317337bf0.jpg
 
 export default Promotion

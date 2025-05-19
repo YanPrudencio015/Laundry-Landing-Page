@@ -3,7 +3,7 @@ import { ServicesImages } from "./imgs"
 export const ServiceCardInfos = [
     {
         frontTitle:'Lavar e Secar',
-        icon: icons[0],
+        icon: icons[6],
         // img:[LavareSecarDesk, LavareSecartablet, LavareSecarMobile],
         img:[ServicesImages.desktop[2], ServicesImages.tablet[2], ServicesImages.mobile[2]],
         backTitle:'Lavar e Secar',

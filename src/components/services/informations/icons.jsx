@@ -30,4 +30,9 @@
                 import IconWashingRed from '../../../icons/washing-red.png';
 
 
-export const icons = [IconLoundry, IconIronBoard,IconCarpet,IconColorpalette,IconBasket,IconWashing]
+                // teste
+
+                import teste from '../../../icons/teste.png'
+
+
+export const icons = [IconLoundry, IconIronBoard,IconCarpet,IconColorpalette,IconBasket,IconWashing, teste]
