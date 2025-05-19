@@ -36,7 +36,6 @@
         z-index: 1;
         position: relative;
         overflow: hidden;
-        border: solid 1px #3386B6;
     }
     .promotion-BG{
         position: absolute;
@@ -52,19 +51,17 @@
 
     .promotion-sub-div {
         position: absolute;
-        top: 53%;
+        top: 66%;
         left: 50%;
         transform: translate(-50%, -110%);
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 0%;
+        gap: 10%;
         flex-direction: column;
-        font-family: "Cal Sans", sans-serif;
         font-family: "Bebas Neue", sans-serif;
         color: #f7f7f7;
-        height: 10em;
-        /* background-color: #AA3D39; */
+        height: 13em;
     }
 
     /* base to all the <p> */
@@ -81,7 +78,7 @@
     }
 
     .line-2 {
-      font-size: 18vw;
+      font-size: 31vw;
     }
 
     .line-3 {
@@ -115,8 +112,19 @@
 
     .promotion-price{
       font-size: 20vw;
-      color: #fff;
+        text-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+        1px  1px 0 #fff;
+        color: hsl(2, 100%, 31%);
       font-family: "Bebas Neue", sans-serif;
+      text-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+        1px  1px 0 #fff;
+      color: hsl(2, 100%, 31%);
     }
 
     .promotion-img{
@@ -140,7 +148,6 @@
         z-index: 1;
         position: relative;
         overflow: hidden;
-        border: solid 1px #3386B6;
     }
     .promotion-BG{
         position: absolute;
@@ -156,13 +163,13 @@
 
     .promotion-sub-div {
         position: absolute;
-        top: 53%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -110%);
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 0%;
+        gap: 13%;
         flex-direction: column;
         font-family: "Cal Sans", sans-serif;
         font-family: "Bebas Neue", sans-serif;
@@ -185,7 +192,7 @@
     }
 
     .line-2 {
-      font-size: 14vw;
+      font-size: 26vw;
     }
 
     .line-3 {
@@ -219,7 +226,12 @@
 
     .promotion-price{
       font-size: 20vw;
-      color: #fff;
+        text-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+        1px  1px 0 #fff;
+        color: hsl(2, 100%, 31%);
       font-family: "Bebas Neue", sans-serif;
     }
 
@@ -246,7 +258,6 @@
         z-index: 1;
         position: relative;
         overflow: hidden;
-        border: solid 1px #3386B6;
     }
     .promotion-BG{
         position: absolute;
@@ -262,13 +273,13 @@
 
     .promotion-sub-div {
         position: absolute;
-        top: 53%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%, -110%);
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 0%;
+        gap: 10%;
         flex-direction: column;
         font-family: "Cal Sans", sans-serif;
         font-family: "Bebas Neue", sans-serif;
@@ -291,7 +302,7 @@
     }
 
     .line-2 {
-      font-size: 14vw;
+      font-size: 22vw;
     }
 
     .line-3 {
@@ -325,7 +336,12 @@
 
     .promotion-price{
       font-size: 20vw;
-      color: #fff;
+        text-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+        1px  1px 0 #fff;
+        color: hsl(2, 100%, 31%);
       font-family: "Bebas Neue", sans-serif;
     }
 
@@ -344,12 +360,11 @@
     @media (min-width: 768px) and (max-width: 1024px) {
    .promotion{
         width: 99%;
-        height: 40em;
+        height: 30em;
         margin: 2em 0;
         z-index: 1;
         position: relative;
         overflow: hidden;
-        border: solid 1px #3386B6;
         background-color: hsl(202, 100%, 46%);
         border-radius: 1em 1em 15em 15em;
     }
@@ -360,7 +375,7 @@
         transform: translateX(-50%);
         z-index: -1;
         width: 80%;
-        height: 45%;
+        height: 60%;
         background-color: hsl(0, 100%, 100%);
         border-radius: 5em 5em 50em 50em;
         background-attachment: fixed;
@@ -436,8 +451,12 @@
     .promotion-price{
       font-size: 20vw;
       font-family: "Bebas Neue", sans-serif;
-      color: hsl(202, 100%, 46%);
-      color: #fff;
+        text-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+        1px  1px 0 #fff;
+        color: hsl(2, 100%, 31%);
     }
 
     .promotion-img{
@@ -455,20 +474,18 @@
   /* Desktops */
   @media (min-width: 1025px) and (max-width: 1440px) {
    .promotion{
-        width: 95%;
+        width: 70%;
         height: 40em;
         margin: 2em 0;
         z-index: 1;
         position: relative;
         overflow: hidden;
-        border: none;
-        background-color: #AA3D39;
+        background-color: hsl(202, 100%, 46%);
         border-radius: 2em;
-        background-image: url('../../images/Backgrounds/random-grey-variations.png');
-        background-image: url('../../images/Backgrounds/swirl.png');
+        background-image: url(/src/images/Backgrounds/random-grey-variations.png);
         background-attachment: fixed;
-        background-repeat:repeat;
-        /* background-size: cover; */
+        background-repeat: repeat;
+        background-size: inherit;
     }
     .promotion-BG{
         position: absolute;
@@ -490,20 +507,20 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, 0%);
         display: flex;
         justify-content: center;
-        align-items: start;
-        gap: 20%;
+        align-items: center;
+        text-align: center;
+        gap: 5%;
         flex-direction: column;
         font-family: "Bebas Neue", sans-serif;
         color: hsl(202, 90%, 60%);
         color: #fff;
-        height: 100%;
+        height: 50%;
         width: 100%;
         text-transform: uppercase;
         font-weight: 900;
-        opacity: 0.3;
     }
 
     /* base to all the <p> */
@@ -511,16 +528,16 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 18%;
+      height: 25%;
     }
 
     /* Individuals styles by position*/
     .line-1 {
-        font-size: 13vw;
+      font-size: 13vw;
     }
 
     .line-2 {
-      font-size: 7vw;
+      font-size: 4vw;
     }
 
     .line-3 {
@@ -543,8 +560,8 @@
 
     .promotion-price-div{
       position: absolute;
-      left: 73%;
-      top: 84%;
+      left: 50%;
+      top: 34%;
       transform: translate(-50%, -50%);
       height: 25%;
       width: 69vw;
@@ -552,13 +569,18 @@
       justify-content: center;
       align-items: center;
       border-radius: 20em;
-      opacity: 0.5;
     }
 
     .promotion-price{
         font-size: 15vw;
         font-family: "Bebas Neue", sans-serif;
         color: #fff;
+        text-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+        1px  1px 0 #fff;
+        color: hsl(2, 100%, 31%);
     }
 
     .promotion-img{
@@ -582,7 +604,6 @@
         z-index: 1;
         position: relative;
         overflow: hidden;
-        border: none;
         background-color: #AA3D39;
         border-radius: 2em;
         background-image: url('../../images/Backgrounds/random-grey-variations.png');
@@ -657,8 +678,6 @@
       letter-spacing: 15px;
         font-size: 23vw;
         font-family: "Bebas Neue", sans-serif;
-        color: hsl(202, 100%, 60%);
-        color: hsl(2, 50%, 45%);
         color: hsl(2, 50%, 40%);
     }
 
@@ -679,7 +698,12 @@
     .promotion-price{
         font-size: 15vw;
         font-family: "Bebas Neue", sans-serif;
-        color: #fff;
+        text-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+        1px  1px 0 #fff;
+        color: hsl(2, 100%, 31%);
     }
 
     .promotion-img{

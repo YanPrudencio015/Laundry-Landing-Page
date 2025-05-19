@@ -16,6 +16,7 @@ const Loundry = () => {
       <About />
       <Service/>
       <Promotion/>
+      {/* ver os erros no desing da promotion e corrigi-los antes de continuar */}
       {/* <Costumers/> */}
       {/* Future sections:
         - serviços => [

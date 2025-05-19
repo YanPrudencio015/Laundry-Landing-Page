@@ -12,7 +12,7 @@ function Promotion(props){
         <section className="promotion">
             <div className="promotion-BG"></div>
             <div className="promotion-text-div">
-                <h2 className="promotion-title">Promoção</h2>
+                {/* <h2 className="promotion-title">Promoção</h2> */}
                 <div className="promotion-sub-div">
                   {promoTexts.map((text, index) => (
                     <p key={index} className={`line line-${index + 1}`}>{text}</p>
