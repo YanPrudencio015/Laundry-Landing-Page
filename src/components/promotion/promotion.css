@@ -44,9 +44,6 @@
         height: 80%;
         background-color: hsl(202, 100%, 46%);
         border-radius: 15px 15px 20em 20em;
-        background-attachment: fixed;
-        background-repeat: repeat;
-        background-size: cover;
     }
 
     .promotion-sub-div {
@@ -156,9 +153,6 @@
         height: 80%;
         background-color: hsl(202, 100%, 46%);
         border-radius: 15px 15px 20em 20em;
-        background-attachment: fixed;
-        background-repeat: repeat;
-        background-size: cover;
     }
 
     .promotion-sub-div {
@@ -266,9 +260,6 @@
         height: 80%;
         background-color: hsl(202, 100%, 46%);
         border-radius: 15px 15px 20em 20em;
-        background-attachment: fixed;
-        background-repeat: repeat;
-        background-size: cover;
     }
 
     .promotion-sub-div {
@@ -378,9 +369,6 @@
         height: 60%;
         background-color: hsl(0, 100%, 100%);
         border-radius: 5em 5em 50em 50em;
-        background-attachment: fixed;
-        background-repeat: repeat;
-        background-size: cover;
     }
 
     .promotion-sub-div {

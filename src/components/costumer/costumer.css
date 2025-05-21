@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comfortaa:wght@300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
+
+
+/* Mobile pequeno */
+@media (max-width: 359px) {
+.costumers-section{
+  width: 99%;
+  height: 100em;
+  display: flex;
+  gap: 5%;
+  flex-direction: column;
+}
+.costumers-header{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cos-header-title{
+  font-family: "Urbanist", sans-serif;  
+  font-size: 8vw;
+  letter-spacing: 3vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+.costumers-body{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2% 0;
+  gap: 5%;
+}
+.cos-square{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10%;
+}
+.square2{
+  gap: 2%;
+}
+
+.cos-square-header{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cos-square-title{
+  font-family: "Urbanist", sans-serif;  
+  font-size: 6vw;
+  letter-spacing: 1vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+.cos-square-body{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1%;
+  justify-content: center;
+  align-items: center;
+}
+.cos-square-items{
+  width: 99%;
+  height: 19%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #DDDDDD;
+  font-size: 12vw;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.cos-square-neighborhoods{
+  width: 99%;
+  height: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #DDDDDD;
+  font-size: 12vw;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+}
+  
+  /* Mobile padrão */
+  @media (min-width: 360px) and (max-width: 425px) {
+.costumers-section{
+  width: 99%;
+  height: 100em;
+  display: flex;
+  gap: 5%;
+  flex-direction: column;
+}
+.costumers-header{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cos-header-title{
+  font-family: "Urbanist", sans-serif;  
+  font-size: 8vw;
+  letter-spacing: 3vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+.costumers-body{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2% 0;
+  gap: 5%;
+}
+.cos-square{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10%;
+  
+}
+.square2{
+  gap: 2%;
+}
+
+.cos-square-header{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cos-square-title{
+  font-family: "Urbanist", sans-serif;  
+  font-size: 6vw;
+  letter-spacing: 1vw;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+.cos-square-body{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1%;
+  justify-content: center;
+  align-items: center;
+  
+}
+.cos-square-items{
+  width: 99%;
+  height: 19%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #DDDDDD;
+  font-size: 12vw;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.cos-square-neighborhoods{
+  width: 99%;
+  height: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #DDDDDD;
+  font-size: 12vw;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+
+}
+  
+
+
+  /* Tablets */
+  @media (min-width: 426px) and (max-width: 767px) {
+.costumers-section{
+  width: 99%;
+  height: 100em;
+  display: flex;
+  gap: 5%;
+  flex-direction: column;
+}
+.costumers-header{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cos-header-title{
+  font-family: "Urbanist", sans-serif;  
+  font-size: 8vw;
+  letter-spacing: 3vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+.costumers-body{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2% 0;
+  gap: 5%;
+}
+.cos-square{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10%;
+  
+}
+.square2{
+  gap: 2%;
+}
+
+.cos-square-header{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cos-square-title{
+  font-family: "Urbanist", sans-serif;  
+  font-size: 6vw;
+  letter-spacing: 1vw;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+.cos-square-body{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1%;
+  justify-content: center;
+  align-items: center;
+  
+}
+.cos-square-items{
+  width: 99%;
+  height: 19%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #DDDDDD;
+  font-size: 12vw;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.cos-square-neighborhoods{
+  width: 99%;
+  height: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #DDDDDD;
+  font-size: 12vw;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+
+  }
+  
+  /* Laptops/Desktop pequeno */
+  @media (min-width: 768px) and (max-width: 1024px) {
+.costumers-section{
+  width: 99%;
+  height: 100em;
+  display: flex;
+  gap: 5%;
+  flex-direction: column;
+}
+.costumers-header{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+}
+.cos-header-title{
+  font-family: "Urbanist", sans-serif;  
+  font-size: 5vw;
+  letter-spacing: 3vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+.costumers-body{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2% 0;
+  gap: 5%;
+}
+.cos-square{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10%;
+  
+}
+.square2{
+  gap: 2%;
+}
+
+.cos-square-header{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cos-square-title{
+  font-family: "Urbanist", sans-serif;  
+  font-size: 4vw;
+  letter-spacing: 1vw;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+.cos-square-body{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1%;
+  justify-content: center;
+  align-items: center;
+  
+}
+.cos-square-items{
+  width: 50%;
+  height: 19%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #DDDDDD;
+  font-size: 7vw;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.cos-square-neighborhoods{
+  width: 50%;
+  height: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #DDDDDD;
+  font-size: 7vw;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+
+  }
+  
+  /* Desktops */
+  @media (min-width: 1025px) and (max-width: 1440px) {
+.costumers-section{
+  width: 100%;
+  height: 40em;
+  display: flex;
+  gap: 5%;
+  flex-direction: column;
+  margin-bottom: 10em;
+}
+.costumers-header{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+}
+.cos-header-title{
+  font-family: "Urbanist", sans-serif;
+  font-size: 3vw;
+  letter-spacing: 1vw;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+.costumers-body{
+  width: 90%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 0;
+  gap: 5%;
+  align-self: center;
+}
+.cos-square{
+  width: 100%;
+  height: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10%;
+  border: solid 1px hsl(0, 0%, 87%);
+}
+.square2{
+  gap: 2%;
+}
+
+.cos-square-header{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cos-square-title{
+  font-family: "Urbanist", sans-serif;
+  font-size: 1.5vw;
+  letter-spacing: 2vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+.cos-square-body{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1%;
+  justify-content: center;
+  align-items: center;
+  
+}
+.cos-square-items{
+  width: 30%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #AA3D39;
+  font-size: 2.5vw;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.cos-square-neighborhoods{
+  width: 30%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #AA3D39;
+  font-size: 2vw;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+
+/* Animation Hover */
+
+.cos-square-neighborhoods, .cos-square-items{
+  cursor: default;
+  position: relative;
+  transition: .1s ease-in;
+  overflow: hidden;
+  z-index: 1;
+}
+.cos-square-neighborhoods:hover, .cos-square-items:hover{
+  color: #fff;
+  transition: .4s ease-in;
+  border: solid 1px #fff;
+}
+
+  .cos-square-neighborhoods::before, .cos-square-items::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 35em;
+    background-color: #AA3D39;
+    transition: .6s ease-in-out;
+    z-index: -1;
+  }
+  
+  .cos-square-neighborhoods:hover::before, .cos-square-items:hover::before{
+    top: 0%;
+    /* transition: .6s ease-in-out; */
+  transition: top 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+   }
+
+  }
+  
+  /* Telas grandes */
+  @media (min-width: 1441px) {
+.costumers-section{
+  width: 100%;
+  height: 40em;
+  display: flex;
+  gap: 5%;
+  flex-direction: column;
+  margin-bottom: 10em;
+}
+.costumers-header{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+}
+.cos-header-title{
+  font-family: "Urbanist", sans-serif;
+  font-size: 3vw;
+  letter-spacing: 1vw;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+.costumers-body{
+  width: 90%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 0;
+  gap: 5%;
+  align-self: center;
+}
+.cos-square{
+  width: 100%;
+  height: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10%;
+  border: solid 1px hsl(0, 0%, 87%);
+}
+.square2{
+  gap: 2%;
+}
+
+.cos-square-header{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cos-square-title{
+  font-family: "Urbanist", sans-serif;
+  font-size: 1.5vw;
+  letter-spacing: 2vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+.cos-square-body{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1%;
+  justify-content: center;
+  align-items: center;
+  
+}
+.cos-square-items{
+  width: 30%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #AA3D39;
+  font-size: 2.5vw;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.cos-square-neighborhoods{
+  width: 30%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #AA3D39;
+  font-size: 2vw;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+
+  }

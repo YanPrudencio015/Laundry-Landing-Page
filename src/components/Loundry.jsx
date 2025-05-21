@@ -17,7 +17,7 @@ const Loundry = () => {
       <Service/>
       <Promotion/>
       {/* ver os erros no desing da promotion e corrigi-los antes de continuar */}
-      {/* <Costumers/> */}
+      <Costumers/>
       {/* Future sections:
         - serviços => [
                         lavar e Secar (Por cestos), 
@@ -30,7 +30,7 @@ const Loundry = () => {
                       ]
         - promoção
         - principais clientes => Hosteis, Pousadas, Hostels, indústrias, Eventos
-        -  Bairros que atendemos => Recreio, Barra, Peninsula, Rio 2, Curicica, Vargem Grande, vargem Pequena
+        -  Bairros que atendemos => Recreio, Barra, Peninsula,Rio 2, Curicica, Vargem Grande, Vargem Pequena
         - metrica
       */}
   {/* Corrigir erro no background do sidebar:
@@ -41,11 +41,5 @@ const Loundry = () => {
   );
 };
 
-/*
-Inspiração para a sessão que mostra onde atendem e quais os possíveis clientes
-https://i.pinimg.com/736x/b8/9c/52/b89c52313c750b52d5f2cbfdac28d49e.jpg
-https://i.pinimg.com/736x/37/e5/10/37e510adef9c044614b8918595f3ff33.jpg
-https://i.pinimg.com/736x/0b/d2/b7/0bd2b701f1987a9f63ed8ed64fc5cc71.jpg
 
-*/
 export default Loundry;
