@@ -28,11 +28,7 @@ const Loundry = () => {
                         Couro e Edredons
                         Vestidos de Noiva
                       ]
-        - promoção
-        - principais clientes => Hosteis, Pousadas, Hostels, indústrias, Eventos
-        -  Bairros que atendemos => Recreio, Barra, Peninsula,Rio 2, Curicica, Vargem Grande, Vargem Pequena
-        - metrica
-      */}
+}
   {/* Corrigir erro no background do sidebar:
     quando rola muito rápido a tela, p menu buga e o circulo amarelo fica menor
     que a lista do sidebar

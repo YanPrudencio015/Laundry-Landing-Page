@@ -84,6 +84,7 @@
   border: solid 1px #DDDDDD;
   font-size: 12vw;
   font-family: "Bebas Neue", sans-serif;
+    color: var(--SecondColor);
 }
 
 .cos-square-neighborhoods{
@@ -95,6 +96,7 @@
   border: solid 1px #DDDDDD;
   font-size: 12vw;
   font-family: "Bebas Neue", sans-serif;
+    color: var(--SecondColor);
 }
 
 }
@@ -180,6 +182,7 @@
   border: solid 1px #DDDDDD;
   font-size: 12vw;
   font-family: "Bebas Neue", sans-serif;
+  color: var(--SecondColor);
 }
 
 .cos-square-neighborhoods{
@@ -191,6 +194,7 @@
   border: solid 1px #DDDDDD;
   font-size: 12vw;
   font-family: "Bebas Neue", sans-serif;
+    color: var(--SecondColor);
 }
 
 
@@ -279,6 +283,7 @@
   border: solid 1px #DDDDDD;
   font-size: 12vw;
   font-family: "Bebas Neue", sans-serif;
+    color: var(--SecondColor);
 }
 
 .cos-square-neighborhoods{
@@ -290,6 +295,7 @@
   border: solid 1px #DDDDDD;
   font-size: 12vw;
   font-family: "Bebas Neue", sans-serif;
+    color: var(--SecondColor);
 }
 
 
@@ -377,9 +383,11 @@
   border: solid 1px #DDDDDD;
   font-size: 7vw;
   font-family: "Bebas Neue", sans-serif;
+    color: var(--SecondColor);
 }
 
 .cos-square-neighborhoods{
+    color: var(--SecondColor);
   width: 50%;
   height: 13%;
   display: flex;
@@ -478,6 +486,7 @@
   border: solid 1px #AA3D39;
   font-size: 2.5vw;
   font-family: "Bebas Neue", sans-serif;
+    color: var(--SecondColor);
 }
 
 .cos-square-neighborhoods{
@@ -489,6 +498,7 @@
   border: solid 1px #AA3D39;
   font-size: 2vw;
   font-family: "Bebas Neue", sans-serif;
+    color: var(--SecondColor);
 }
 
 
@@ -611,6 +621,7 @@
   border: solid 1px #AA3D39;
   font-size: 2.5vw;
   font-family: "Bebas Neue", sans-serif;
+  color: var(--SecondColor);
 }
 
 .cos-square-neighborhoods{
@@ -622,6 +633,7 @@
   border: solid 1px #AA3D39;
   font-size: 2vw;
   font-family: "Bebas Neue", sans-serif;
+    color: var(--SecondColor);
 }
 
 
