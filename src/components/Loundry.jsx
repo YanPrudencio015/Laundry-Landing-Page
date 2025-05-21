@@ -13,9 +13,9 @@ const Loundry = () => {
   return (
     <>
       <Banner />
-      <About />
-      <Service/>
       <Promotion/>
+      <Service/>
+      <About />
       {/* ver os erros no desing da promotion e corrigi-los antes de continuar */}
       <Costumers/>
       {/* Future sections:

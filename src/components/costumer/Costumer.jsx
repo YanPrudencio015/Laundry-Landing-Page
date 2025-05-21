@@ -1,7 +1,8 @@
 import React from 'react'
 import './costumer.css'
-
-
+// components
+import Neighborhoods from './Neightborhood'
+import Industries from './Industries'
 function Costumers(props){
     return(
         <section className='costumers-section'>
@@ -9,32 +10,8 @@ function Costumers(props){
                 <h1 className='cos-header-title'>Quem Atendemos</h1>
             </div>
             <div className='costumers-body'>
-                <div className='cos-square'>
-                    <div className='cos-square-header'>
-                        <h1 className='cos-square-title'>Segmentos atendidos</h1>
-                    </div>
-                    <div className='cos-square-body'>
-                        <p className='cos-square-items'>Hosteis</p>
-                        <p className='cos-square-items'>Pousadas</p>
-                        <p className='cos-square-items'>Hostels</p>
-                        <p className='cos-square-items'>Indústrias</p>
-                        <p className='cos-square-items'>Eventos</p>
-                    </div>
-                </div>
-                <div className='cos-square square2'>
-                    <div className='cos-square-header'>
-                        <h1 className='cos-square-title'>Bairros Atendidos</h1>
-                    </div>
-                    <div className='cos-square-body'>
-                        <p className='cos-square-neighborhoods'>Recreio</p>
-                        <p className='cos-square-neighborhoods'>Barra</p>
-                        <p className='cos-square-neighborhoods'>Peninsula</p>
-                        <p className='cos-square-neighborhoods'>Rio 2</p>
-                        <p className='cos-square-neighborhoods'>Curicica</p>
-                        <p className='cos-square-neighborhoods'>Vargem Grande</p>
-                        <p className='cos-square-neighborhoods'>Vargem Pequena</p>
-                    </div>
-                </div>
+                <Neighborhoods/>
+                <Industries/>
             </div>
         </section>
     )
