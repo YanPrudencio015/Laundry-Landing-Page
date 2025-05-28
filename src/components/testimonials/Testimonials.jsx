@@ -13,6 +13,7 @@ import { Pagination, Autoplay } from 'swiper/modules';
 
 import img from '../../images/kiloklin-mascot.png'
 
+
 export default function Testimonials() {
 
     // Changes the number of Swiper slides according to the window size
@@ -38,10 +39,10 @@ export default function Testimonials() {
 
         if(windowsize.width < 425){
             setSlidesPerView(1);
-        } else if(windowsize.width >= 768 && windowsize.width <= 1024){
+        } else if(windowsize.width >= 426 && windowsize.width <= 1024){
             setSlidesPerView(2);    
         }  else if(windowsize.width >= 1025){
-            setSlidesPerView(3);    
+            setSlidesPerView(4);    
         }
     },[windowsize.width])
 
@@ -73,7 +74,32 @@ export default function Testimonials() {
                     <i className=" testi-card-icon fa-solid fa-star"></i>
                     <i className=" testi-card-icon fa-solid fa-star"></i>
                     <i className=" testi-card-icon fa-solid fa-star"></i>
-                    <i className=" testi-card-icon fa-regular fa-star-half-stroke"></i>
+                </div>
+                <div className='testi-swiper-card-name'>
+                    <p className='testi-swiper-card-costumer-Name'>Lavanderia</p>
+                </div>
+                <div className='testi-swiper-card-text'>
+                    <h1 className='testi-swiper-card-text-comma'>"</h1>
+                    <p className='testi-swiper-card-costumers-testimonials'>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Possimus consequatur numquam sequi, minus doloremque 
+                        rerum ducimus non quam cupiditate laboriosam sapiente, 
+                        {/* testando. Está no centro ? */}
+                    </p>
+                </div>
+            </div>
+        </SwiperSlide>
+
+        <SwiperSlide className='testi-swiper-slide'>
+            <div className='testi-swiper-card'>
+                <div className='testi-swiper-card-img-border'>
+                    <img src={img} className='testi-swiper-card-img'/>
+                </div>
+                <div className='testi-swiper-card-stars'>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
                 </div>
                 <div className='testi-swiper-card-name'>
                     <p className='testi-swiper-card-costumer-Name'>Lavanderia</p>

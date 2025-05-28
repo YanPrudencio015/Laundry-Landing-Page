@@ -29,7 +29,5 @@ function Promotion(props){
     )
 }
 
-// mobile: https://i.pinimg.com/736x/2e/e7/e6/2ee7e632570056670f23f19f30e658cd.jpg
-// Desktop: https://i.pinimg.com/736x/63/8f/fe/638ffe43365c5edd9cf1b49317337bf0.jpg
 
 export default Promotion

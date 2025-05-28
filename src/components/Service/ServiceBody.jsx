@@ -9,9 +9,6 @@ function ServiceBody(props){
                 {ServiceCardInfos.map((value, index)=>(
                 <div key={index} className="service-card">
                     <div className="service-card-header">
-                        <div className="service-icon">
-                            <img className="service-iconIMG" src={value.icon} />
-                        </div>
                         <div className="service-title">{value.frontTitle}</div>
                     </div>
                     <div className="service-description">

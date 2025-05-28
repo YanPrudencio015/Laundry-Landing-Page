@@ -150,7 +150,7 @@
         position: absolute;
         z-index: -1;
         width: 100%;
-        height: 80%;
+        height: 65%;
         background-color: hsl(202, 100%, 46%);
         border-radius: 15px 15px 20em 20em;
     }
@@ -255,11 +255,13 @@
     }
     .promotion-BG{
         position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
         z-index: -1;
-        width: 100%;
-        height: 80%;
+        width: 88%;
+        height: 60%;
         background-color: hsl(202, 100%, 46%);
-        border-radius: 15px 15px 20em 20em;
+        border-radius: 5px 5px 20em 20em;
     }
 
     .promotion-sub-div {
@@ -276,7 +278,6 @@
         font-family: "Bebas Neue", sans-serif;
         color: #f7f7f7;
         height: 10em;
-        /* background-color: #AA3D39; */
     }
 
     /* base to all the <p> */
@@ -289,15 +290,15 @@
 
     /* Individuals styles by position*/
     .line-1 {
-      font-size: 16vw;
+      font-size: 10vw;
     }
 
     .line-2 {
-      font-size: 22vw;
+      font-size: 12vw;
     }
 
     .line-3 {
-      font-size: 16vw;
+      font-size: 10vw;
     }
 
     .promotion-title{
@@ -326,7 +327,7 @@
     }
 
     .promotion-price{
-      font-size: 20vw;
+      font-size: 15vw;
         text-shadow:
         -1px -1px 0 #fff,
         1px -1px 0 #fff,
@@ -337,8 +338,8 @@
     }
 
     .promotion-img{
-        width: 126vw;
-        height: 69%;
+        width: 92vw;
+        height: 70%;
         position: absolute;
         z-index: -1;
         bottom: 0%;
@@ -462,14 +463,14 @@
   /* Desktops */
   @media (min-width: 1025px) and (max-width: 1440px) {
    .promotion{
-        width: 70%;
+        width: 100%;
         height: 40em;
         margin: 2em 0;
         z-index: 1;
         position: relative;
         overflow: hidden;
         background-color: hsl(202, 100%, 46%);
-        border-radius: 2em;
+        border-radius: 0em;
         background-image: url(/src/images/Backgrounds/random-grey-variations.png);
         background-attachment: fixed;
         background-repeat: repeat;
@@ -586,7 +587,7 @@
   /* Telas grandes */
   @media (min-width: 1441px) {
  .promotion{
-        width: 95%;
+        width: 100%;
         height: 40em;
         margin: 2em 0;
         z-index: 1;
