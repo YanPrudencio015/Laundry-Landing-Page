@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comfortaa:wght@300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+/* 
+  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-family: "Mulish", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Manrope", sans-serif;
+  font-family: "Jost", sans-serif;
+  font-family: "Pacifico", cursive;
+  font-family: "Comfortaa", sans-serif;
+  font-family: "Lobster", sans-serif;
+  font-family: "Urbanist", sans-serif;  
+  font-family: "Cal Sans", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bangers", system-ui;
+
+*/
+
+/* Mobile pequeno */
+@media (max-width: 359px) {
+ .testimonials-section{
+    width: 100%;
+    height: 45em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    margin: 8% 0;
+ }
+
+ .testi-header{
+    width: 100%;
+    height: 8em;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     }
+
+ .testi-header-title{
+    font-size: 11vw;
+    font-family: "Bebas Neue", sans-serif;
+ }
+ .testi-header-subtitle{
+        font-size: 5vw;
+        width: 60%;
+        text-align: center;
+        font-family: "Cal Sans", sans-serif;
+ }
+
+ /* ===== testi-body ===== */
+
+ .testi-body{
+   width: 100%;
+   height: 80%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 5%;
+   position: relative;
+   }
+
+   /* =====Swiper===== */
+
+   .testi-mySwiper{
+      width: 100%;
+      height: 100%;
+   }
+   .testi-swiper-slide{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      background-color: rgba(0, 0, 0, 0.1);
+   }
+    .testi-swiper-card{
+        width: 100%;
+        height: 80%;
+        background-color: hsl(202, 100%, 46%);
+        border-radius: 30px;
+        position: relative;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        flex-direction: column;
+        padding: 2% 0;
+        gap: 4%;
+   }
+
+   .testi-swiper-card-img-border{
+        position: absolute;
+        top: -16%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 48%;
+        height: 33%;
+        border-radius: 20em;
+        border: solid 12px transparent;
+        outline: solid 2px hsl(202, 100%, 55%);
+        overflow: hidden;
+   }
+
+
+   .testi-swiper-card-img{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+   }
+
+   .testi-swiper-card-stars{
+      color: #fff;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .testi-card-icon{
+      margin: 0 2%;
+      font-size: 6vw;
+   }
+   .testi-swiper-card-name{
+      width: 100%;
+      height: 8%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+   }
+   .testi-swiper-card-costumer-Name{
+      font-size: 10vw;
+      font-family: "Urbanist", sans-serif; 
+      color: #fff;
+   }
+   .testi-swiper-card-text{
+        height: 63%;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        text-align: center;
+        gap: 5%;
+        flex-direction: column;
+        position: relative;
+   }
+   .testi-swiper-card-text-comma{
+      position: absolute;
+      font-size: 45vw;
+      top: 20%;
+      font-family: "Open Sans", sans-serif;
+      font-family: "Jost", sans-serif;
+      transform: translateY(-50%);
+      color: hsl(202, 100%, 25%); 
+      }
+
+   .testi-swiper-card-costumers-testimonials{
+        width: 100%;
+        height: 80%;
+        font-size: 8vw;
+        font-family: "Urbanist", sans-serif;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+
+
+
+
+}
+
+  
+  /* Mobile padrão */
+  @media (min-width: 360px) and (max-width: 425px) {
+ .testimonials-section{
+    width: 100%;
+    height: 50em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 10% 0;
+ }
+
+ .testi-header{
+    width: 100%;
+    height: 8em;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     }
+
+ .testi-header-title{
+    font-size: 15vw;
+    font-family: "Bebas Neue", sans-serif;
+ }
+ .testi-header-subtitle{
+        font-size: 6vw;
+        width: 60%;
+        text-align: center;
+        font-family: "Cal Sans", sans-serif;
+ }
+
+ /* ===== testi-body ===== */
+
+ .testi-body{
+   width: 100%;
+   height: 80%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 5%;
+   position: relative;
+   }
+
+   /* =====Swiper===== */
+
+   .testi-mySwiper{
+      width: 100%;
+      height: 100%;
+   }
+   .testi-swiper-slide{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+   }
+    .testi-swiper-card{
+        width: 100%;
+        height: 80%;
+        background-color: hsl(202, 100%, 46%);
+        border-radius: 30px;
+        position: relative;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        flex-direction: column;
+        padding: 2% 0;
+        gap: 4%;
+   }
+
+   .testi-swiper-card-img-border{
+        position: absolute;
+        top: -16%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 45%;
+        height: 33%;
+        border-radius: 20em;
+        border: solid 12px transparent;
+        outline: solid 2px hsl(202, 100%, 55%);
+        overflow: hidden;
+   }
+
+
+   .testi-swiper-card-img{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+   }
+
+   .testi-swiper-card-stars{
+      color: #fff;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .testi-card-icon{
+      margin: 0 2%;
+      font-size: 6vw;
+   }
+   .testi-swiper-card-name{
+      width: 100%;
+      height: 8%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+   }
+   .testi-swiper-card-costumer-Name{
+      font-size: 10vw;
+      font-family: "Urbanist", sans-serif; 
+      color: #fff;
+   }
+   .testi-swiper-card-text{
+        height: 63%;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        text-align: center;
+        gap: 5%;
+        flex-direction: column;
+        position: relative;
+   }
+   .testi-swiper-card-text-comma{
+      position: absolute;
+      font-size: 45vw;
+      top: 20%;
+      font-family: "Open Sans", sans-serif;
+      font-family: "Jost", sans-serif;
+      transform: translateY(-50%);
+      color: hsl(202, 100%, 25%); 
+      }
+
+   .testi-swiper-card-costumers-testimonials{
+        width: 100%;
+        height: 80%;
+        font-size: 7vw;
+        font-family: "Urbanist", sans-serif;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+
+
+}
+  
+
+
+  /* Tablets */
+  @media (min-width: 426px) and (max-width: 767px) {
+ .testimonials-section{
+    width: 100%;
+    height: 40em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 0;
+ }
+
+ .testi-header{
+    width: 100%;
+    height: 8em;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     }
+
+ .testi-header-title{
+    font-size: 15vw;
+    font-family: "Bebas Neue", sans-serif;
+ }
+ .testi-header-subtitle{
+        font-size: 5vw;
+        width: 87%;
+        text-align: center;
+        font-family: "Cal Sans", sans-serif;
+ }
+
+
+
+ /* ===== testi-body ===== */
+
+ .testi-body{
+   width: 100%;
+   height: 80%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 5%;
+   position: relative;
+   }
+
+   /* =====Swiper===== */
+
+   .testi-mySwiper{
+      width: 100%;
+      height: 100%;
+   }
+   .testi-swiper-slide{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+   }
+    .testi-swiper-card{
+        width: 100%;
+        height: 80%;
+        background-color: hsl(202, 100%, 46%);
+        border-radius: 30px;
+        position: relative;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        flex-direction: column;
+        padding: 2% 0;
+        gap: 4%;
+   }
+
+   .testi-swiper-card-img-border{
+        position: absolute;
+        top: -16%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 31%;
+        height: 31%;
+        border-radius: 20em;
+        border: solid 12px transparent;
+        overflow: hidden;
+   }
+
+
+   .testi-swiper-card-img{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+   }
+
+   .testi-swiper-card-stars{
+      color: #fff;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .testi-card-icon{
+      margin: 0 2%;
+      font-size: 6vw;
+   }
+   .testi-swiper-card-name{
+      width: 100%;
+      height: 8%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+   }
+   .testi-swiper-card-costumer-Name{
+      font-size: 10vw;
+      font-family: "Urbanist", sans-serif; 
+      color: #fff;
+   }
+   .testi-swiper-card-text{
+        height: 63%;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        text-align: center;
+        gap: 5%;
+        flex-direction: column;
+        position: relative;
+   }
+   .testi-swiper-card-text-comma{
+      position: absolute;
+      font-size: 45vw;
+      top: 30%;
+      font-family: "Open Sans", sans-serif;
+      font-family: "Jost", sans-serif;
+      transform: translateY(-50%);
+      color: hsl(202, 100%, 25%); 
+      }
+
+   .testi-swiper-card-costumers-testimonials{
+        width: 100%;
+        height: 80%;
+        font-size: 5vw;
+        font-family: "Urbanist", sans-serif;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+
+
+  }
+  
+  /* Laptops/Desktop pequeno */
+  @media (min-width: 768px) and (max-width: 1024px) {
+ .testimonials-section{
+    width: 100%;
+    border: solid 2px  blue;
+    height: 60em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .testi-header{
+    width: 100%;
+    height: 8em;
+    height: 40%;
+    background-color: hsl(50, 100%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     }
+
+ .testi-header-title{
+    font-size: 15vw;
+    font-family: "Bebas Neue", sans-serif;
+ }
+ .testi-header-subtitle{
+        font-size: 6vw;
+        width: 60%;
+        text-align: center;
+        font-family: "Cal Sans", sans-serif;
+ }
+  }
+  
+  /* Desktops */
+  @media (min-width: 1025px) and (max-width: 1440px) {
+.testimonials-section{
+    width: 100%;
+    border: solid 2px  blue;
+    height: 60em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .testi-header{
+    width: 100%;
+    height: 8em;
+    height: 30%;
+    background-color: hsl(50, 100%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+
+ .testi-header-title{
+    font-size: 10vw;
+    font-family: "Bebas Neue", sans-serif;
+ }
+ .testi-header-subtitle{
+        font-size: 3vw;
+        width: 50%;
+        text-align: center;
+        font-family: "Cal Sans", sans-serif;
+ }
+  }
+  
+  /* Telas grandes */
+  @media (min-width: 1441px) {
+ .testimonials-section{
+    width: 100%;
+    border: solid 2px  blue;
+    height: 60em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .testi-header{
+    width: 100%;
+    height: 8em;
+    height: 30%;
+    background-color: hsl(50, 100%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     }
+
+ .testi-header-title{
+    font-size: 10vw;
+    font-family: "Bebas Neue", sans-serif;
+ }
+ .testi-header-subtitle{
+        font-size: 3vw;
+        width: 50%;
+        text-align: center;
+        font-family: "Cal Sans", sans-serif;
+ }
+  }
