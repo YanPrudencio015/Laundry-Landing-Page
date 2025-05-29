@@ -180,7 +180,7 @@
   justify-content: center;
   align-items: center;
   border: solid 1px #DDDDDD;
-  font-size: 12vw;
+  font-size: 9vw;
   font-family: "Bebas Neue", sans-serif;
   color: var(--SecondColor);
 }
@@ -192,7 +192,7 @@
   justify-content: center;
   align-items: center;
   border: solid 1px #DDDDDD;
-  font-size: 12vw;
+  font-size: 9vw;
   font-family: "Bebas Neue", sans-serif;
     color: var(--SecondColor);
 }
@@ -281,7 +281,7 @@
   justify-content: center;
   align-items: center;
   border: solid 1px #DDDDDD;
-  font-size: 12vw;
+  font-size: 6vw;
   font-family: "Bebas Neue", sans-serif;
     color: var(--SecondColor);
 }
@@ -293,7 +293,7 @@
   justify-content: center;
   align-items: center;
   border: solid 1px #DDDDDD;
-  font-size: 12vw;
+  font-size: 6vw;
   font-family: "Bebas Neue", sans-serif;
     color: var(--SecondColor);
 }

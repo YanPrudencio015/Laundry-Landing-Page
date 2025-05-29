@@ -176,6 +176,7 @@ colors
   background-color: #3386B6;
   z-index: 1;
   position: relative;
+  overflow: hidden;
 }
 .banner-image-BG{
   object-fit: cover;
