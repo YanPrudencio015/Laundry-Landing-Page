@@ -9,7 +9,7 @@ import Service from './Service/Service';
 import Promotion from './promotion/Promotion'
 import Costumers from './costumer/Costumer';
 import Testimonials from './testimonials/Testimonials';
-import Footer from './footer/footer';
+import Footer from './footer/Footer';
 
 const Loundry = () => {
   return (
