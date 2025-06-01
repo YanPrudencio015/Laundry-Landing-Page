@@ -12,7 +12,6 @@ import AboutPage from './components/about/AboutPage'
 
 // Background
 import background from './images/Backgrounds/swirl.png'
-import Arrow from './arrow'
 
 // Create Redux store
 const store = createStore(sidebarToggleReducer)
@@ -29,7 +28,6 @@ function App() {
         }}>
         <LoundryHeader />
         <SideBarHeader />
-        {/* <Arrow/> */}
           <Routes location={location} key={location.pathname}>
             <Route index element={<Loundry />} />
             <Route path='/sobre' element={<AboutPage />} />
