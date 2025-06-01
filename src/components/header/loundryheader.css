@@ -4,8 +4,7 @@
     .loundry-header{
         width: 100%;
         height: 15vw;
-        display: flex
-;
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding: 0 2%;
@@ -13,12 +12,94 @@
         color: #000;
         position: relative;
     }
-    .header-title{
-        font-size: 8vw;
-        font-family: "Nunito", sans-serif;
-        color: var(--ThirdColor);
+.header-title{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2%;
+        width: 37vw;
+        height: 100%;
+        padding: 0 2%;
+        position: relative;
+        z-index: 1;
+    }
+    .header-title::after{
+        content: '';
+        width: 100%;
+        height: 10vh;
+        background-color: var(--PrimaryColor);
+        position: absolute;
+        top: -1vw;
+        top: -2vw;
+        z-index: -1;
+        border-radius: 0px 0 10px 10px;
+        transition: .6s ease-in-out;
+    }
+    .header-title:hover::after{
+        transition: .6s ease-in-out;
+        top: -2vw;
+
+    }
+    .header-sub-title{
+        font-size: 1.5vw;
+        color: #000;
+        letter-spacing: 3px;
         font-weight: 900;
         text-transform: uppercase;
+        font-family: "Comfortaa", sans-serif;
+    }
+    .header-title-letters{
+        width: 100%;
+        font-size: 7vw;
+        color: #000;
+        letter-spacing: 5px;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-family: "Cal Sans", sans-serif;
+        font-family: "Nunito", sans-serif;
+        letter-spacing: -2px;
+        color: hsl(2, 76%, 50%);
+        text-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+        1px  1px 0 #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .letter {
+        display: inline-block;
+    }
+
+    .letter:nth-child(4){
+        margin-right: 2%;
+    }
+    .letter:nth-child(1),.letter:nth-child(5){
+        transform: rotateZ(10deg);
+    }
+    .letter:nth-child(2),.letter:nth-child(7){
+        transform: rotateZ(8deg);
+    }
+    .letter:nth-child(3),.letter:nth-child(6){
+        transform: rotateZ(5deg);
+    }
+    .letter:nth-child(8){
+        transform: rotateZ(-8deg);
+    }
+
+
+    .header-title-icon{
+        position: absolute;
+        top: 39%;
+        transform: translateY(-40%);
+        right: 5%;
+        font-size: 0.6vw;
+        color: hsl(202, 100%, 46%);
+        transform: rotateY(180deg);
     }
 
     .kiloklin-mascot{
@@ -47,7 +128,7 @@
     }
     .header-navbar >.navbar-options::before{
         position: absolute;
-        top: -5.5em;
+        top: -10em;
         left: 50%;
         transform: translate(-50%, 0px);
         content: '';
@@ -107,6 +188,44 @@
     .header-menu-icon:hover > .bar-1, .header-menu-icon:hover > .bar-2, .header-menu-icon:hover > .bar-3{
         background-color: #00879E;
     }
+
+
+
+
+    
+/* ==== Arrow-icon ==== */
+.arrow-icon{
+position: fixed;
+        top: 80%;
+        right: -50%;
+        right: 5%;
+        transform: translateY(-50%);
+        z-index: 10000;
+        width: 20%;
+        height: 12vh;
+        font-size: 11vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 2px #fff;
+        cursor: pointer;
+        transition: right 0.9s cubic-bezier(0.65, -0.25, 0.35, 1.25), transform 0.5s ease;
+        overflow: hidden;
+        background-color: transparent;
+}
+
+
+.arrow-icon-bg{
+  position: absolute;
+  top: 100%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: var(--PrimaryColor);
+}
+
+
+
 
 }
   
@@ -115,8 +234,7 @@
     .loundry-header{
         width: 100%;
         height: 15vw;
-        display: flex
-;
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding: 0 2%;
@@ -124,12 +242,94 @@
         color: #000;
         position: relative;
     }
-    .header-title{
-        font-size: 8vw;
-        font-family: "Nunito", sans-serif;
-        color: var(--ThirdColor);
+.header-title{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2%;
+        width: 37vw;
+        height: 100%;
+        padding: 0 2%;
+        position: relative;
+        z-index: 1;
+    }
+    .header-title::after{
+        content: '';
+        width: 100%;
+        height: 8vh;
+        background-color: var(--PrimaryColor);
+        position: absolute;
+        top: -1vw;
+        top: -5vw;
+        z-index: -1;
+        border-radius: 0px 0 10px 10px;
+        transition: .6s ease-in-out;
+    }
+    .header-title:hover::after{
+        transition: .6s ease-in-out;
+        top: -1vw;
+
+    }
+    .header-sub-title{
+        font-size: 1.5vw;
+        color: #000;
+        letter-spacing: 3px;
         font-weight: 900;
         text-transform: uppercase;
+        font-family: "Comfortaa", sans-serif;
+    }
+    .header-title-letters{
+        width: 100%;
+        font-size: 7vw;
+        color: #000;
+        letter-spacing: 5px;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-family: "Cal Sans", sans-serif;
+        font-family: "Nunito", sans-serif;
+        letter-spacing: -2px;
+        color: hsl(2, 76%, 50%);
+        text-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+        1px  1px 0 #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .letter {
+        display: inline-block;
+    }
+
+    .letter:nth-child(4){
+        margin-right: 2%;
+    }
+    .letter:nth-child(1),.letter:nth-child(5){
+        transform: rotateZ(10deg);
+    }
+    .letter:nth-child(2),.letter:nth-child(7){
+        transform: rotateZ(8deg);
+    }
+    .letter:nth-child(3),.letter:nth-child(6){
+        transform: rotateZ(5deg);
+    }
+    .letter:nth-child(8){
+        transform: rotateZ(-8deg);
+    }
+
+
+    .header-title-icon{
+        position: absolute;
+        top: 39%;
+        transform: translateY(-40%);
+        right: 5%;
+        font-size: 0.6vw;
+        color: hsl(202, 100%, 46%);
+        transform: rotateY(180deg);
     }
 
     .kiloklin-mascot{
@@ -158,7 +358,7 @@
     }
     .header-navbar >.navbar-options::before{
         position: absolute;
-        top: -5.5em;
+        top: -10em;
         left: 50%;
         transform: translate(-50%, 0px);
         content: '';
@@ -218,6 +418,41 @@
     .header-menu-icon:hover > .bar-1, .header-menu-icon:hover > .bar-2, .header-menu-icon:hover > .bar-3{
         background-color: #00879E;
     }
+
+
+
+    
+/* ==== Arrow-icon ==== */
+.arrow-icon{
+position: fixed;
+        top: 80%;
+        right: -50%;
+        right: 5%;
+        transform: translateY(-50%);
+        z-index: 10000;
+        width: 17%;
+        height: 8vh;
+        font-size: 8vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 2px #fff;
+        cursor: pointer;
+        transition: right 0.9s cubic-bezier(0.65, -0.25, 0.35, 1.25), transform 0.5s ease;
+        overflow: hidden;
+        background-color: transparent;
+}
+
+
+.arrow-icon-bg{
+  position: absolute;
+  top: 100%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: var(--PrimaryColor);
+}
+
 
   }
   
@@ -234,12 +469,92 @@
         color: #000;
         position: relative;
     }
-    .header-title{
-        font-size: 5vw;
-        font-family: "Nunito", sans-serif;
-        color: var(--ThirdColor);
+.header-title{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2%;
+        width: 22vw;
+        height: 100%;
+        padding: 0 2%;
+        position: relative;
+        z-index: 1;
+    }
+    .header-title::after{
+        content: '';
+        width: 100%;
+        height: 12vh;
+        background-color: var(--PrimaryColor);
+        position: absolute;
+        top: -2vw;
+        z-index: -1;
+        border-radius: 0px 0 10px 10px;
+        transition: .6s ease-in-out;
+    }
+    .header-title:hover::after{
+        transition: .6s ease-in-out;
+        top: -2vw;
+    }
+    .header-sub-title{
+        font-size: 1.5vw;
+        color: #000;
+        letter-spacing: 3px;
         font-weight: 900;
         text-transform: uppercase;
+        font-family: "Comfortaa", sans-serif;
+    }
+    .header-title-letters{
+        width: 100%;
+        font-size: 4vw;
+        color: #000;
+        letter-spacing: 5px;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-family: "Cal Sans", sans-serif;
+        font-family: "Nunito", sans-serif;
+        letter-spacing: -2px;
+        color: hsl(2, 76%, 50%);
+        text-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+        1px  1px 0 #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .letter {
+        display: inline-block;
+    }
+
+    .letter:nth-child(4){
+        margin-right: 2%;
+    }
+    .letter:nth-child(1),.letter:nth-child(5){
+        transform: rotateZ(10deg);
+    }
+    .letter:nth-child(2),.letter:nth-child(7){
+        transform: rotateZ(8deg);
+    }
+    .letter:nth-child(3),.letter:nth-child(6){
+        transform: rotateZ(5deg);
+    }
+    .letter:nth-child(8){
+        transform: rotateZ(-8deg);
+    }
+
+
+    .header-title-icon{
+        position: absolute;
+        top: 37%;
+        transform: translateY(-40%);
+        right: 5%;
+        font-size: 1vw;
+        color: hsl(202, 100%, 46%);
+        transform: rotateY(180deg);
     }
 
     .kiloklin-mascot{
@@ -268,7 +583,7 @@
     }
     .header-navbar >.navbar-options::before{
         position: absolute;
-        top: -5.5em;
+        top: -10em;
         left: 50%;
         transform: translate(-50%, 0px);
         content: '';
@@ -330,6 +645,40 @@
         background-color: #00879E;
     }
 
+
+      
+/* ==== Arrow-icon ==== */
+.arrow-icon{
+position: fixed;
+        top: 80%;
+        right: -50%;
+        right: 5%;
+        transform: translateY(-50%);
+        z-index: 10000;
+        width: 15%;
+        height: 13vh;
+        font-size: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 2px #fff;
+        cursor: pointer;
+        transition: right 0.9s cubic-bezier(0.65, -0.25, 0.35, 1.25), transform 0.5s ease;
+        overflow: hidden;
+        background-color: transparent;
+}
+
+
+.arrow-icon-bg{
+  position: absolute;
+  top: 100%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: var(--PrimaryColor);
+}
+
+
   }
   
   /* Laptops/Desktop pequeno */
@@ -345,12 +694,93 @@
         color: #000;
         position: relative;
     }
-    .header-title{
-        font-size: 5vw;
-        font-family: "Nunito", sans-serif;
-        color: var(--ThirdColor);
+.header-title{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2%;
+        width: 27vw;
+        height: 100%;
+        padding: 0 2%;
+        position: relative;
+        z-index: 1;
+    }
+    .header-title::after{
+        content: '';
+        width: 100%;
+        height: 10vh;
+        background-color: var(--PrimaryColor);
+        position: absolute;
+        top: -6vw;
+        z-index: -1;
+        border-radius: 0px 0 10px 10px;
+        transition: .6s ease-in-out;
+    }
+    .header-title:hover::after{
+        transition: .6s ease-in-out;
+        top: -6vw;
+
+    }
+    .header-sub-title{
+        font-size: 1.5vw;
+        color: #000;
+        letter-spacing: 3px;
         font-weight: 900;
         text-transform: uppercase;
+        font-family: "Comfortaa", sans-serif;
+    }
+    .header-title-letters{
+        width: 100%;
+        font-size: 5vw;
+        color: #000;
+        letter-spacing: 5px;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-family: "Cal Sans", sans-serif;
+        font-family: "Nunito", sans-serif;
+        letter-spacing: -2px;
+        color: hsl(2, 76%, 50%);
+        text-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+        1px  1px 0 #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .letter {
+        display: inline-block;
+    }
+
+    .letter:nth-child(4){
+        margin-right: 2%;
+    }
+    .letter:nth-child(1),.letter:nth-child(5){
+        transform: rotateZ(10deg);
+    }
+    .letter:nth-child(2),.letter:nth-child(7){
+        transform: rotateZ(8deg);
+    }
+    .letter:nth-child(3),.letter:nth-child(6){
+        transform: rotateZ(5deg);
+    }
+    .letter:nth-child(8){
+        transform: rotateZ(-8deg);
+    }
+
+
+    .header-title-icon{
+        position: absolute;
+        top: 39%;
+        transform: translateY(-40%);
+        right: 5%;
+        font-size: 0.6vw;
+        color: hsl(202, 100%, 46%);
+        transform: rotateY(180deg);
     }
 
     .kiloklin-mascot{
@@ -379,7 +809,7 @@
     }
     .header-navbar >.navbar-options::before{
         position: absolute;
-        top: -5.5em;
+        top: -10em;
         left: 50%;
         transform: translate(-50%, 0px);
         content: '';
@@ -399,8 +829,7 @@
         width: 5%;
         height: 16vh;
         font-size: 1.5vw;
-        display: flex
-;
+        display: flex;
         justify-content: space-between;
         align-items: center;
         font-weight: 100;
@@ -441,6 +870,42 @@
         background-color: #00879E;
     }
 
+
+    
+      
+/* ==== Arrow-icon ==== */
+.arrow-icon{
+position: fixed;
+        top: 80%;
+        right: -50%;
+        right: 5%;
+        transform: translateY(-50%);
+        z-index: 10000;
+        width: 15%;
+        height: 13vh;
+        font-size: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 2px #fff;
+        cursor: pointer;
+        transition: right 0.9s cubic-bezier(0.65, -0.25, 0.35, 1.25), transform 0.5s ease;
+        overflow: hidden;
+        background-color: transparent;
+}
+
+
+.arrow-icon-bg{
+  position: absolute;
+  top: 100%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: var(--PrimaryColor);
+}
+
+
+
   }
   
   /* Desktops */
@@ -455,13 +920,95 @@
         align-items: center;
         color: #000;
         position: relative;
+        z-index: 1000;
     }
     .header-title{
-        font-size: 2vw;
-        font-family: "Nunito", sans-serif;
-        color: var(--ThirdColor);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2%;
+        width: 11vw;
+        height: 100%;
+        padding: 0 2%;
+        position: relative;
+    }
+    .header-title::after{
+        content: '';
+        width: 100%;
+        height: 10vh;
+        background-color: var(--PrimaryColor);
+        position: absolute;
+        top: -1vw;
+        top: -50vw;
+        z-index: -1;
+        border-radius: 0px 0 10px 10px;
+        transition: .6s ease-in-out;
+    }
+    .header-title:hover::after{
+        transition: .6s ease-in-out;
+        top: -1vw;
+
+    }
+    .header-sub-title{
+        font-size: 0.7vw;
+        color: #000;
+        letter-spacing: 3px;
         font-weight: 900;
         text-transform: uppercase;
+        font-family: "Comfortaa", sans-serif;
+    }
+    .header-title-letters{
+        width: 100%;
+        font-size: 2vw;
+        color: #000;
+        letter-spacing: 5px;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-family: "Cal Sans", sans-serif;
+        font-family: "Nunito", sans-serif;
+        letter-spacing: -2px;
+        color: hsl(2, 76%, 50%);
+        text-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+        1px  1px 0 #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .letter {
+        display: inline-block;
+    }
+
+    .letter:nth-child(4){
+        margin-right: 2%;
+    }
+    .letter:nth-child(1),.letter:nth-child(5){
+        transform: rotateZ(10deg);
+    }
+    .letter:nth-child(2),.letter:nth-child(7){
+        transform: rotateZ(8deg);
+    }
+    .letter:nth-child(3),.letter:nth-child(6){
+        transform: rotateZ(5deg);
+    }
+    .letter:nth-child(8){
+        transform: rotateZ(-8deg);
+    }
+
+
+    .header-title-icon{
+        position: absolute;
+        top: 39%;
+        transform: translateY(-40%);
+        right: 5%;
+        font-size: 0.6vw;
+        color: hsl(202, 100%, 46%);
+        transform: rotateY(180deg);
     }
 
     .kiloklin-mascot{
@@ -490,13 +1037,13 @@
     }
     .header-navbar >.navbar-options::before{
         position: absolute;
-        top: -5.5em;
+        top: -10em;
         left: 50%;
         transform: translate(-50%, 0px);
         content: '';
         width: 120%;
         height: 5em;
-        background-color: #00879E;
+        background-color: hsl(189, 100%, 31%);
         z-index: -1;
         border-radius: 0 0 5em 5em;
         transition: .8s ease-in-out;
@@ -510,8 +1057,7 @@
         width: 5%;
         height: 16vh;
         font-size: 1.5vw;
-        display: flex
-;
+        display: flex;
         justify-content: space-between;
         align-items: center;
         font-weight: 100;
@@ -549,8 +1095,42 @@
         width: 40%;
     }
     .header-menu-icon:hover > .bar-1, .header-menu-icon:hover > .bar-2, .header-menu-icon:hover > .bar-3{
-        background-color: #00879E;
+        background-color: hsl(189, 100%, 31%);
     }
+
+
+/* ==== Arrow-icon ==== */
+.arrow-icon{
+    position: fixed;
+    top: 80%;
+    right: -50%;
+    right: 5%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 5%;
+    height: 12vh;
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #fff;
+    cursor: pointer;
+    transition: right 0.9s cubic-bezier(0.65, -0.25, 0.35, 1.25), transform 0.5s ease;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+
+.arrow-icon-bg{
+  position: absolute;
+  top: 100%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: var(--PrimaryColor);
+}
+
+
 
   }
   
@@ -567,12 +1147,93 @@
         color: #000;
         position: relative;
     }
-    .header-title{
-        font-size: 2vw;
-        font-family: "Nunito", sans-serif;
-        color: var(--ThirdColor);
+ .header-title{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2%;
+        width: 11vw;
+        height: 100%;
+        padding: 0 2%;
+        position: relative;
+    }
+    .header-title::after{
+        content: '';
+        width: 100%;
+        height: 10vh;
+        background-color: var(--PrimaryColor);
+        position: absolute;
+        top: -1vw;
+        top: -50vw;
+        z-index: -1;
+        border-radius: 0px 0 10px 10px;
+        transition: .6s ease-in-out;
+    }
+    .header-title:hover::after{
+        transition: .6s ease-in-out;
+        top: -1vw;
+
+    }
+    .header-sub-title{
+        font-size: 0.7vw;
+        color: #000;
+        letter-spacing: 3px;
         font-weight: 900;
         text-transform: uppercase;
+        font-family: "Comfortaa", sans-serif;
+    }
+    .header-title-letters{
+        width: 100%;
+        font-size: 2vw;
+        color: #000;
+        letter-spacing: 5px;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-family: "Cal Sans", sans-serif;
+        font-family: "Nunito", sans-serif;
+        letter-spacing: -2px;
+        color: hsl(2, 76%, 50%);
+        text-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+        1px  1px 0 #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .letter {
+        display: inline-block;
+    }
+
+    .letter:nth-child(4){
+        margin-right: 2%;
+    }
+    .letter:nth-child(1),.letter:nth-child(5){
+        transform: rotateZ(10deg);
+    }
+    .letter:nth-child(2),.letter:nth-child(7){
+        transform: rotateZ(8deg);
+    }
+    .letter:nth-child(3),.letter:nth-child(6){
+        transform: rotateZ(5deg);
+    }
+    .letter:nth-child(8){
+        transform: rotateZ(-8deg);
+    }
+
+
+    .header-title-icon{
+        position: absolute;
+        top: 39%;
+        transform: translateY(-40%);
+        right: 5%;
+        font-size: 0.6vw;
+        color: hsl(202, 100%, 46%);
+        transform: rotateY(180deg);
     }
 
     .kiloklin-mascot{
@@ -601,7 +1262,7 @@
     }
     .header-navbar >.navbar-options::before{
         position: absolute;
-        top: -5.5em;
+        top: -10em;
         left: 50%;
         transform: translate(-50%, 0px);
         content: '';
@@ -662,5 +1323,42 @@
     .header-menu-icon:hover > .bar-1, .header-menu-icon:hover > .bar-2, .header-menu-icon:hover > .bar-3{
         background-color: #00879E;
     }
+
+
+
+    
+/* ==== Arrow-icon ==== */
+.arrow-icon{
+    position: fixed;
+    top: 80%;
+    right: -50%;
+    right: 5%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 5%;
+    height: 12vh;
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #fff;
+    cursor: pointer;
+    transition: right 0.9s cubic-bezier(0.65, -0.25, 0.35, 1.25), transform 0.5s ease;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+
+.arrow-icon-bg{
+  position: absolute;
+  top: 100%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: var(--PrimaryColor);
+}
+
+
+
 
   }

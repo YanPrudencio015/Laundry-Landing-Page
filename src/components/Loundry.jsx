@@ -9,36 +9,27 @@ import Service from './Service/Service';
 import Promotion from './promotion/Promotion'
 import Costumers from './costumer/Costumer';
 import Testimonials from './testimonials/Testimonials';
+import Footer from './footer/footer';
 
 const Loundry = () => {
   return (
     <>
       <Banner />
-      {/* ver os erros no desing da promotion e corrigi-los antes de continuar */}
       <Promotion/>
       <Service/>
       <Costumers/>
       <Testimonials/>
       <About />
-      {/* Future sections:
-        - serviços => [
-                        lavar e Secar (Por cestos), 
-                        Passar (Por peça), 
-                        conserto de roupas, 
-                        tingimento, 
-                        tapetes e curtinas
-                        Couro e Edredons
-                        Vestidos de Noiva
-                      ]
-}
-  {/* Corrigir erro no background do sidebar:
-    quando rola muito rápido a tela, p menu buga e o circulo amarelo fica menor
-    que a lista do sidebar
+      <Footer/>
 
+  {/* 
+    A fazer:
 
-
-    corrigir a responsividade entre o (min-width: 426px) and (max-width: 767px)
-      da página principal toda e colocar o tamanho das letras menores (mobile)
+    quando a barra de menu sumir, uma outra aparecerá para acompanhar durante a rolagem do usuário.
+    criar o footer.
+    criar um texto genérico na página Sobre.
+    criar a transição de página com o framer motion.
+    refazer o menu sidebar sem a opção contato.
   */}
     </>
   );
