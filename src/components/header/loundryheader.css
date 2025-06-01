@@ -40,7 +40,6 @@
     .header-title:hover::after{
         transition: .6s ease-in-out;
         top: -2vw;
-
     }
     .header-sub-title{
         font-size: 1.5vw;
@@ -261,16 +260,14 @@ position: fixed;
         height: 8vh;
         background-color: var(--PrimaryColor);
         position: absolute;
-        top: -1vw;
-        top: -5vw;
+        top: -2vw;
         z-index: -1;
         border-radius: 0px 0 10px 10px;
         transition: .6s ease-in-out;
     }
     .header-title:hover::after{
         transition: .6s ease-in-out;
-        top: -1vw;
-
+        top: -2vw;
     }
     .header-sub-title{
         font-size: 1.5vw;
@@ -488,14 +485,14 @@ position: fixed;
         height: 12vh;
         background-color: var(--PrimaryColor);
         position: absolute;
-        top: -2vw;
+        top: -7vw;
         z-index: -1;
         border-radius: 0px 0 10px 10px;
         transition: .6s ease-in-out;
     }
     .header-title:hover::after{
         transition: .6s ease-in-out;
-        top: -2vw;
+        top: -7vw;
     }
     .header-sub-title{
         font-size: 1.5vw;
@@ -655,9 +652,9 @@ position: fixed;
         right: 5%;
         transform: translateY(-50%);
         z-index: 10000;
-        width: 15%;
-        height: 13vh;
-        font-size: 5vw;
+        width: 2em;
+        height: 2em;
+        font-size: 2.5em;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -713,14 +710,14 @@ position: fixed;
         height: 10vh;
         background-color: var(--PrimaryColor);
         position: absolute;
-        top: -6vw;
+        top: -5vw;
         z-index: -1;
         border-radius: 0px 0 10px 10px;
         transition: .6s ease-in-out;
     }
     .header-title:hover::after{
         transition: .6s ease-in-out;
-        top: -6vw;
+        top: -5vw;
 
     }
     .header-sub-title{

@@ -1,0 +1,493 @@
+
+/* Mobile pequeno */
+@media (max-width: 359px) {
+ .footer-section{
+    background-image: url('../../images/wave-haikei.png');
+    background-color: transparent;
+    background-size: cover;
+    width: 100%;
+    height: 30em;
+    border: none;
+    padding: 29% 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+ }
+
+
+/* === footer-section1 ==== */
+.footer-section1{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2%;
+    flex-direction: column;
+}
+.footer-title-letters{
+    width: 50%;
+    font-size: 12vw;
+    font-weight: 900;
+    display: flex;
+    align-self: flex-start;
+}
+
+.footer-letter {
+        display: inline-block;
+        color: #fff;
+        font-family: "Nunito", sans-serif;
+}
+
+    .footer-letter:nth-child(4){
+        margin-right: 2%;
+    }
+    .footer-letter:nth-child(1),.letter:nth-child(5){
+        transform: rotateZ(10deg);
+    }
+    .footer-letter:nth-child(2),.letter:nth-child(7){
+        transform: rotateZ(8deg);
+    }
+    .footer-letter:nth-child(3),.letter:nth-child(6){
+        transform: rotateZ(5deg);
+    }
+    .footer-letter:nth-child(8){
+        transform: rotateZ(-8deg);
+    }
+
+
+.socials{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2%;
+}
+.icon-BG{
+    width: 19%;
+    height: 100%;
+    border-radius: 20em;
+    background-color: rgba(255, 255, 255, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7vw;
+}
+
+
+
+
+}
+  
+  /* Mobile padrão */
+  @media (min-width: 360px) and (max-width: 425px) {
+   .footer-section{
+    background-image: url('../../images/wave-haikei.png');
+    background-color: transparent;
+    background-size: cover;
+    width: 100%;
+    height: 30em;
+    border: none;
+    padding: 29% 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+ }
+
+
+/* === footer-section1 ==== */
+.footer-section1{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2%;
+    flex-direction: column;
+}
+.footer-title-letters{
+    width: 50%;
+    font-size: 12vw;
+    font-weight: 900;
+    display: flex;
+    align-self: flex-start;
+}
+
+.footer-letter {
+        display: inline-block;
+        color: #fff;
+        font-family: "Nunito", sans-serif;
+}
+
+    .footer-letter:nth-child(4){
+        margin-right: 2%;
+    }
+    .footer-letter:nth-child(1),.letter:nth-child(5){
+        transform: rotateZ(10deg);
+    }
+    .footer-letter:nth-child(2),.letter:nth-child(7){
+        transform: rotateZ(8deg);
+    }
+    .footer-letter:nth-child(3),.letter:nth-child(6){
+        transform: rotateZ(5deg);
+    }
+    .footer-letter:nth-child(8){
+        transform: rotateZ(-8deg);
+    }
+
+
+.socials{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2%;
+}
+.icon-BG{
+    width: 15%;
+    height: 100%;
+    border-radius: 20em;
+    background-color: rgba(255, 255, 255, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vw;
+}
+
+
+
+
+  }
+  
+  /* Tablets */
+  @media (min-width: 425px) and (max-width: 768px) {
+      .footer-section{
+    background-image: url('../../images/wave-haikei.png');
+    background-color: transparent;
+    background-size: cover;
+    width: 100%;
+    height: 30em;
+    border: none;
+    padding: 29% 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+ }
+
+
+/* === footer-section1 ==== */
+.footer-section1{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2%;
+    flex-direction: column;
+}
+.footer-title-letters{
+    width: 50%;
+    font-size: 3em;
+    font-weight: 900;
+    display: flex;
+    align-self: flex-start;
+}
+
+.footer-letter {
+        display: inline-block;
+        color: #fff;
+        font-family: "Nunito", sans-serif;
+}
+
+    .footer-letter:nth-child(4){
+        margin-right: 2%;
+    }
+    .footer-letter:nth-child(1),.letter:nth-child(5){
+        transform: rotateZ(10deg);
+    }
+    .footer-letter:nth-child(2),.letter:nth-child(7){
+        transform: rotateZ(8deg);
+    }
+    .footer-letter:nth-child(3),.letter:nth-child(6){
+        transform: rotateZ(5deg);
+    }
+    .footer-letter:nth-child(8){
+        transform: rotateZ(-8deg);
+    }
+
+
+.socials{
+    width: 100%;
+    height: 6em;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2%;
+}
+.icon-BG{
+    width: 2em;
+    height: 100%;
+    border-radius: 20em;
+    background-color: rgba(255, 255, 255, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+}
+
+
+
+
+  }
+  
+  /* Laptops/Desktop pequeno */
+  @media (min-width: 769px) and (max-width: 1024px) {
+        .footer-section{
+    background-image: url('../../images/wave-haikei.png');
+    background-color: transparent;
+    background-size: cover;
+    width: 100%;
+    height: 30em;
+    border: none;
+    padding: 29% 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+ }
+
+
+/* === footer-section1 ==== */
+.footer-section1{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2%;
+    flex-direction: column;
+}
+.footer-title-letters{
+    width: 50%;
+    font-size: 3em;
+    font-weight: 900;
+    display: flex;
+    align-self: flex-start;
+}
+
+.footer-letter {
+        display: inline-block;
+        color: #fff;
+        font-family: "Nunito", sans-serif;
+}
+
+    .footer-letter:nth-child(4){
+        margin-right: 2%;
+    }
+    .footer-letter:nth-child(1),.letter:nth-child(5){
+        transform: rotateZ(10deg);
+    }
+    .footer-letter:nth-child(2),.letter:nth-child(7){
+        transform: rotateZ(8deg);
+    }
+    .footer-letter:nth-child(3),.letter:nth-child(6){
+        transform: rotateZ(5deg);
+    }
+    .footer-letter:nth-child(8){
+        transform: rotateZ(-8deg);
+    }
+
+
+.socials{
+    width: 100%;
+    height: 6em;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2%;
+}
+.icon-BG{
+    width: 2em;
+    height: 100%;
+    border-radius: 20em;
+    background-color: rgba(255, 255, 255, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vw;
+}
+
+
+  }
+  
+  /* Desktops */
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    .footer-section{
+        background-color: hsl(202, 100%, 46%);
+        background-size: cover;
+        width: 100%;
+        height: 30em;
+        border: none;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 2%;
+    }
+
+
+/* === footer-section1 ==== */
+.footer-section1{
+    width: 25%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2%;
+    flex-direction: column;
+}
+.footer-title-letters{
+        width: 100%;
+        font-size: 3em;
+        font-weight: 900;
+        display: flex;
+        align-self: auto;
+        justify-content: center;
+    
+}
+
+.footer-letter {
+        display: inline-block;
+        color: #fff;
+        font-family: "Nunito", sans-serif;
+}
+
+    .footer-letter:nth-child(4){
+        margin-right: 2%;
+    }
+    .footer-letter:nth-child(1),.letter:nth-child(5){
+        transform: rotateZ(10deg);
+    }
+    .footer-letter:nth-child(2),.letter:nth-child(7){
+        transform: rotateZ(8deg);
+    }
+    .footer-letter:nth-child(3),.letter:nth-child(6){
+        transform: rotateZ(5deg);
+    }
+    .footer-letter:nth-child(8){
+        transform: rotateZ(-8deg);
+    }
+
+
+.socials{
+    width: 100%;
+    height: 6em;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2%;
+}
+.icon-BG{
+    width: 2em;
+    height: 100%;
+    border-radius: .5em;
+    background-color: rgba(255, 255, 255, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+
+  }
+  
+  /* Telas grandes */
+  @media (min-width: 1441px) {
+        .footer-section{
+        background-color: hsl(202, 100%, 46%);
+        background-size: cover;
+        width: 100%;
+        height: 30em;
+        border: none;
+        padding: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 2%;
+    }
+
+
+/* === footer-section1 ==== */
+.footer-section1{
+    width: 25%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2%;
+    flex-direction: column;
+}
+.footer-title-letters{
+        width: 100%;
+        font-size: 3em;
+        font-weight: 900;
+        display: flex;
+        align-self: auto;
+        justify-content: center;
+    
+}
+
+.footer-letter {
+        display: inline-block;
+        color: #fff;
+        font-family: "Nunito", sans-serif;
+}
+
+    .footer-letter:nth-child(4){
+        margin-right: 2%;
+    }
+    .footer-letter:nth-child(1),.letter:nth-child(5){
+        transform: rotateZ(10deg);
+    }
+    .footer-letter:nth-child(2),.letter:nth-child(7){
+        transform: rotateZ(8deg);
+    }
+    .footer-letter:nth-child(3),.letter:nth-child(6){
+        transform: rotateZ(5deg);
+    }
+    .footer-letter:nth-child(8){
+        transform: rotateZ(-8deg);
+    }
+
+
+.socials{
+    width: 100%;
+    height: 6em;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2%;
+}
+.icon-BG{
+    width: 2em;
+    height: 100%;
+    border-radius: .5em;
+    background-color: rgba(255, 255, 255, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+
+
+  }
