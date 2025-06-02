@@ -4,22 +4,23 @@
  .footer-section{
     background-image: url('../../images/wave-haikei.png');
     background-color: transparent;
+    background-color: aqua;
     background-size: cover;
     width: 100%;
     height: 30em;
     border: none;
-    padding: 29% 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2%;
+    flex-direction: column;
  }
 
 
-/* === footer-section1 ==== */
-.footer-section1{
+/* === footer-column-1 ==== */
+.footer-column-1{
     width: 100%;
-    height: 50%;
+    height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,13 +32,22 @@
     font-size: 12vw;
     font-weight: 900;
     display: flex;
-    align-self: flex-start;
+    position: relative;
+    color: rgba(255, 255, 255, 0.2);
+}
+.footer-title-letters::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color:#fff;
 }
 
 .footer-letter {
         display: inline-block;
-        color: #fff;
         font-family: "Nunito", sans-serif;
+
 }
 
     .footer-letter:nth-child(4){
@@ -56,26 +66,55 @@
         transform: rotateZ(-8deg);
     }
 
+    /* footer-column-2 */
 
-.socials{
-    width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 2%;
-}
-.icon-BG{
-    width: 19%;
-    height: 100%;
-    border-radius: 20em;
-    background-color: rgba(255, 255, 255, .5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 7vw;
-}
+    .footer-column-2{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-titles{
+        font-family: "Open Sans", sans-serif;
+        font-size: 11vw;
+        color: rgba(255, 255, 255, 0.2);
+        position: relative;
+    }
+    .footer-link-list, .footer-sociais-list{
+        list-style: none;
+        font-size: 8vw;
+        color: #fff;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3%;
+        flex-direction: column;
+        font-family: "Jost", sans-serif;
+    }
 
+    /* ==== footer-column-3 ===== */
+    .footer-column-3{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+    }
+
+    .footer-sociais-list{
+        flex-direction: row;
+    }
+    .footer-sociais-btn{
+        font-size: 5.5vw;
+        color: #fff;
+        border: none;
+        background-color: transparent;
+        font-family: "Urbanist", sans-serif;  
+    }
 
 
 
@@ -83,25 +122,26 @@
   
   /* Mobile padrão */
   @media (min-width: 360px) and (max-width: 425px) {
-   .footer-section{
+  .footer-section{
     background-image: url('../../images/wave-haikei.png');
     background-color: transparent;
+    background-color: aqua;
     background-size: cover;
     width: 100%;
-    height: 30em;
+    height: 40em;
     border: none;
-    padding: 29% 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2%;
+    flex-direction: column;
  }
 
 
-/* === footer-section1 ==== */
-.footer-section1{
+/* === footer-column-1 ==== */
+.footer-column-1{
     width: 100%;
-    height: 50%;
+    height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,12 +153,21 @@
     font-size: 12vw;
     font-weight: 900;
     display: flex;
-    align-self: flex-start;
+    position: relative;
+    color: rgba(255, 255, 255, 0.2);
+
+}
+.footer-title-letters::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color:#fff;
 }
 
 .footer-letter {
         display: inline-block;
-        color: #fff;
         font-family: "Nunito", sans-serif;
 }
 
@@ -138,69 +187,108 @@
         transform: rotateZ(-8deg);
     }
 
+ /* footer-column-2 */
 
-.socials{
-    width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 2%;
-}
-.icon-BG{
-    width: 15%;
-    height: 100%;
-    border-radius: 20em;
-    background-color: rgba(255, 255, 255, .5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 6vw;
-}
+    .footer-column-2{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-titles{
+        font-family: "Open Sans", sans-serif;
+        font-size: 11vw;
+        color: rgba(255, 255, 255, 0.2);
+        position: relative;
+    }
+    .footer-link-list, .footer-sociais-list{
+        list-style: none;
+        font-size: 8vw;
+        color: #fff;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3%;
+        flex-direction: column;
+        font-family: "Jost", sans-serif;
+    }
 
+    /* ==== footer-column-3 ===== */
+    .footer-column-3{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+    }
 
+    .footer-sociais-list{
+        flex-direction: row;
+    }
+    .footer-sociais-btn{
+        font-size: 5.5vw;
+        color: #fff;
+        border: none;
+        background-color: transparent;
+        font-family: "Urbanist", sans-serif;  
+    }
 
 
   }
   
   /* Tablets */
   @media (min-width: 425px) and (max-width: 768px) {
-      .footer-section{
+.footer-section{
     background-image: url('../../images/wave-haikei.png');
     background-color: transparent;
+    background-color: aqua;
     background-size: cover;
     width: 100%;
     height: 30em;
     border: none;
-    padding: 29% 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2%;
+    flex-direction: column;
  }
 
 
-/* === footer-section1 ==== */
-.footer-section1{
+/* === footer-column-1 ==== */
+.footer-column-1{
     width: 100%;
-    height: 50%;
+    height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 2%;
-    flex-direction: column;
+    flex-direction: row;
 }
 .footer-title-letters{
-    width: 50%;
+    width: 4em;
     font-size: 3em;
     font-weight: 900;
     display: flex;
-    align-self: flex-start;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: rgba(255, 255, 255, 0.2);
+}
+.footer-title-letters::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color:#fff;
 }
 
 .footer-letter {
         display: inline-block;
-        color: #fff;
         font-family: "Nunito", sans-serif;
 }
 
@@ -220,50 +308,79 @@
         transform: rotateZ(-8deg);
     }
 
+     /* footer-column-2 */
 
-.socials{
-    width: 100%;
-    height: 6em;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 2%;
-}
-.icon-BG{
-    width: 2em;
-    height: 100%;
-    border-radius: 20em;
-    background-color: rgba(255, 255, 255, .5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 4vw;
-}
+    .footer-column-2{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-titles{
+        font-family: "Open Sans", sans-serif;
+        font-size: 2em;
+        color: rgba(255, 255, 255, 0.2);
+        position: relative;
+    }
+    .footer-link-list, .footer-sociais-list{
+        list-style: none;
+        font-size: 1.5em;
+        color: #fff;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3%;
+        flex-direction: column;
+        font-family: "Jost", sans-serif;
+    }
 
 
+      /* ==== footer-column-3 ===== */
+    .footer-column-3{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+    }
 
+    .footer-sociais-list{
+        flex-direction: row;
+    }
+    .footer-sociais-btn{
+        font-size: 1em;
+        color: #fff;
+        border: none;
+        background-color: transparent;
+        font-family: "Urbanist", sans-serif;  
+    }
 
   }
   
   /* Laptops/Desktop pequeno */
   @media (min-width: 769px) and (max-width: 1024px) {
-        .footer-section{
+ .footer-section{
     background-image: url('../../images/wave-haikei.png');
     background-color: transparent;
+    background-color: aqua;
     background-size: cover;
     width: 100%;
     height: 30em;
     border: none;
-    padding: 29% 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2%;
+    flex-direction: row;
  }
 
 
-/* === footer-section1 ==== */
-.footer-section1{
+/* === footer-column-1 ==== */
+.footer-column-1{
     width: 100%;
     height: 50%;
     display: flex;
@@ -273,17 +390,28 @@
     flex-direction: column;
 }
 .footer-title-letters{
-    width: 50%;
+    width: 4em;
     font-size: 3em;
     font-weight: 900;
     display: flex;
-    align-self: flex-start;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: rgba(255, 255, 255, 0.2);
+}
+.footer-title-letters::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color:#fff;
 }
 
 .footer-letter {
         display: inline-block;
-        color: #fff;
         font-family: "Nunito", sans-serif;
+
 }
 
     .footer-letter:nth-child(4){
@@ -303,49 +431,84 @@
     }
 
 
-.socials{
-    width: 100%;
-    height: 6em;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 2%;
-}
-.icon-BG{
-    width: 2em;
-    height: 100%;
-    border-radius: 20em;
-    background-color: rgba(255, 255, 255, .5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 4vw;
-}
+       /* footer-column-2 */
+
+    .footer-column-2{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-titles{
+        font-family: "Open Sans", sans-serif;
+        font-size: 2em;
+        color: rgba(255, 255, 255, 0.2);
+        position: relative;
+    }
+    .footer-link-list, .footer-sociais-list{
+        list-style: none;
+        font-size: 1.5em;
+        color: #fff;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3%;
+        flex-direction: column;
+        font-family: "Jost", sans-serif;
+    }
+
+
+
+
+       /* ==== footer-column-3 ===== */
+    .footer-column-3{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+    }
+
+    .footer-sociais-list{
+        flex-direction: column;
+    }
+    .footer-sociais-btn{
+        font-size: 1em;
+        color: #fff;
+        border: none;
+        background-color: transparent;
+        font-family: "Urbanist", sans-serif;  
+    }
 
 
   }
   
   /* Desktops */
   @media (min-width: 1025px) and (max-width: 1440px) {
-    .footer-section{
-        background-color: hsl(202, 100%, 46%);
-        background-size: cover;
-        width: 100%;
-        height: 30em;
-        border: none;
-        padding: 0%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        gap: 2%;
-    }
+   .footer-section{
+    background-image: url('../../images/wave-haikei.png');
+    background-color: transparent;
+    background-color: aqua;
+    background-size: cover;
+    width: 100%;
+    height: 30em;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2%;
+    flex-direction: row;
+ }
 
 
-/* === footer-section1 ==== */
-.footer-section1{
-    width: 25%;
-    height: 25%;
+/* === footer-column-1 ==== */
+.footer-column-1{
+    width: 20%;
+    height: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -353,19 +516,27 @@
     flex-direction: column;
 }
 .footer-title-letters{
-        width: 100%;
-        font-size: 3em;
-        font-weight: 900;
-        display: flex;
-        align-self: auto;
-        justify-content: center;
-    
+    width: 100%;
+    font-size: 3.5vw;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: rgba(255, 255, 255, 0.2);
+}
+.footer-title-letters::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color:#fff;
 }
 
 .footer-letter {
-        display: inline-block;
-        color: #fff;
-        font-family: "Nunito", sans-serif;
+    display: inline-block;
+    font-family: "Nunito", sans-serif;
 }
 
     .footer-letter:nth-child(4){
@@ -385,50 +556,83 @@
     }
 
 
-.socials{
-    width: 100%;
-    height: 6em;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 2%;
-}
-.icon-BG{
-    width: 2em;
-    height: 100%;
-    border-radius: .5em;
-    background-color: rgba(255, 255, 255, .5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2vw;
-    cursor: pointer;
-}
+     /* footer-column-2 */
+
+    .footer-column-2{
+        width: 15%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-titles{
+        font-family: "Open Sans", sans-serif;
+        font-size: 2em;
+        color: rgba(255, 255, 255, 0.2);
+        position: relative;
+    }
+    .footer-link-list, .footer-sociais-list{
+        list-style: none;
+        font-size: 1.5em;
+        color: #fff;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3%;
+        flex-direction: column;
+        font-family: "Jost", sans-serif;
+    }
+
+   /* ==== footer-column-3 ===== */
+    .footer-column-3{
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+    }
+
+    .footer-sociais-list{
+        flex-direction: column;
+    }
+    .footer-sociais-btn{
+        font-size: 1em;
+        color: #fff;
+        border: none;
+        background-color: transparent;
+        font-family: "Urbanist", sans-serif;  
+        cursor: pointer;
+    }
+
 
 
   }
   
   /* Telas grandes */
   @media (min-width: 1441px) {
-        .footer-section{
-        background-color: hsl(202, 100%, 46%);
-        background-size: cover;
-        width: 100%;
-        height: 30em;
-        border: none;
-        padding: 0%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        gap: 2%;
-    }
+  .footer-section{
+    background-image: url('../../images/wave-haikei.png');
+    background-color: transparent;
+    background-color: aqua;
+    background-size: cover;
+    width: 100%;
+    height: 30em;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2%;
+    flex-direction: row;
+ }
 
 
-/* === footer-section1 ==== */
-.footer-section1{
-    width: 25%;
-    height: 25%;
+/* === footer-column-1 ==== */
+.footer-column-1{
+    width: 20%;
+    height: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -436,19 +640,27 @@
     flex-direction: column;
 }
 .footer-title-letters{
-        width: 100%;
-        font-size: 3em;
-        font-weight: 900;
-        display: flex;
-        align-self: auto;
-        justify-content: center;
-    
+    width: 100%;
+    font-size: 3.5vw;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: rgba(255, 255, 255, 0.2);
+}
+.footer-title-letters::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color:#fff;
 }
 
 .footer-letter {
-        display: inline-block;
-        color: #fff;
-        font-family: "Nunito", sans-serif;
+    display: inline-block;
+    font-family: "Nunito", sans-serif;
 }
 
     .footer-letter:nth-child(4){
@@ -468,26 +680,56 @@
     }
 
 
-.socials{
-    width: 100%;
-    height: 6em;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 2%;
-}
-.icon-BG{
-    width: 2em;
-    height: 100%;
-    border-radius: .5em;
-    background-color: rgba(255, 255, 255, .5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2vw;
-    cursor: pointer;
-}
+      /* footer-column-2 */
 
+    .footer-column-2{
+        width: 15%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-titles{
+        font-family: "Open Sans", sans-serif;
+        font-size: 2em;
+        color: rgba(255, 255, 255, 0.2);
+        position: relative;
+    }
+    .footer-link-list, .footer-sociais-list{
+        list-style: none;
+        font-size: 1.5em;
+        color: #fff;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3%;
+        flex-direction: column;
+        font-family: "Jost", sans-serif;
+    }
+
+   /* ==== footer-column-3 ===== */
+    .footer-column-3{
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+    }
+
+    .footer-sociais-list{
+        flex-direction: column;
+    }
+    .footer-sociais-btn{
+        font-size: 1em;
+        color: #fff;
+        border: none;
+        background-color: transparent;
+        font-family: "Urbanist", sans-serif;  
+        cursor: pointer;
+    }
 
 
   }

@@ -25,11 +25,12 @@ const Loundry = () => {
   {/* 
     A fazer:
 
-    quando a barra de menu sumir, uma outra aparecerá para acompanhar durante a rolagem do usuário.
-    criar o footer.
-    criar um texto genérico na página Sobre.
-    criar a transição de página com o framer motion.
-    refazer o menu sidebar sem a opção contato.
+    criar o footer. - feito
+    condicionar quando chegar no footer a seta apra de descer - a fazer
+    criar um texto genérico na página Sobre. - a fazer
+    criar a transição de página com o framer motion. - a fazer
+    refazer o menu sidebar sem a opção contato. - a fazer
+
   */}
     </>
   );
