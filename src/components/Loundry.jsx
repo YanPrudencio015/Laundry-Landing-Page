@@ -24,12 +24,10 @@ const Loundry = () => {
 
   {/* 
     A fazer:
-
-    criar o footer. - feito
-    condicionar quando chegar no footer a seta apra de descer - a fazer
-    criar um texto genérico na página Sobre. - a fazer
-    criar a transição de página com o framer motion. - a fazer
     refazer o menu sidebar sem a opção contato. - a fazer
+    criar a transição de página com o framer motion. - a fazer
+    criar um texto genérico na página Sobre. - a fazer
+    corrigir erros de design - a fazer
 
   */}
     </>

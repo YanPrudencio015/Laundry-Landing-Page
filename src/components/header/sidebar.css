@@ -75,6 +75,7 @@
     position: fixed;  
     top: 0;
     z-index: 1000;
+    transition: 0s;
 }
 
 .sidebar-BG{
@@ -494,6 +495,7 @@
     position: fixed;  
     top: 0;
     z-index: 1000;
+    transition: 0s;
 }
 
 .sidebar-BG{
@@ -890,6 +892,7 @@ font-family: "Bebas Neue", sans-serif;
     position: fixed;  
     top: 0;
     z-index: 1000;
+    transition: 0s;
 }
 
 .sidebar-BG{
@@ -1340,6 +1343,7 @@ font-family: "Bebas Neue", sans-serif;
     position: fixed;  
     top: 0;
     z-index: 1000;
+    transition: 0s;
 }
 
 .sidebar-BG{
@@ -1794,6 +1798,7 @@ font-family: "Bebas Neue", sans-serif;
         transition: .6s ease-in;
         overflow: hidden;
         z-index: 10000;
+        transition: 0s;
     }
     .sidebar-BG-close:before{
         content: " ";
@@ -2129,6 +2134,7 @@ font-family: "Bebas Neue", sans-serif;
         transition: .6s ease-in;
         overflow: hidden;
         z-index: 10000;
+        transition: 0s;
     }
     .sidebar-BG-close:before{
         content: " ";

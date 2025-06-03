@@ -56,8 +56,10 @@ function LoundryHeader() {
    
   } else {
     arrowElement.current.style.right = "-50%";
-  }
+}
     },[windowHeightSize])
+
+
 
     // action to go on top
 
