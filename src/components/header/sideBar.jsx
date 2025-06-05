@@ -16,6 +16,8 @@ import { Link } from "react-router-dom";
 
 import HorarySidebar from "./sidebarcomponents/horary/HorarySidebar";
 import ContactSidebar from "./sidebarcomponents/contacts/ContactsSideBar";
+import Address from "./sidebarcomponents/address/Address";
+import BusinessHour from "./sidebarcomponents/businessHour/businessHour";
 
 
 const allButtonLinks = [
@@ -41,15 +43,12 @@ useEffect(()=>{
     console.log(selector,'from sidebar')
 },selector)
 
-return(
-     <section className={selector.isOpen === false ? 'sidebar-BG-close': 'sidebar-BG'}>
-     {/* <section onClick={()=>{closeMenu()}} className={'sidebar-BG'}> */}
-            <div className={selector.isOpen === false ? 'sidebar-close': 'sidebar'}>
-               <div className="sidebar-header">
-                <p className="sidebar-header-close-button" onClick={()=>{closeMenu()}}>Fechar</p>
-                <h1 className="sidebar-header-title"> Kilo Klin</h1>
-               </div>
-                <div className="sidebar-navbar">
+    {/*
+        ==== Elementos que têm eventos ======
+        <p className="sidebar-header-close-button" onClick={()=>{closeMenu()}}>Fechar</p> 
+        <div className={selector.isOpen === false ? 'sidebar-close': 'sidebar'}>
+        
+                    <div className="sidebar-navbar">
                     {allButtonLinks.map((value,index)=>(
                         <Link 
                             onClick={()=>{closeMenu()}} 
@@ -58,30 +57,31 @@ return(
                         <p className="linkText-sidebar-navbar">{value.name}</p>
                     </Link>
                     ))}
-                </div>
-                {/* Contact information section */}
-                <div className="address-navbar">
-                    <div className="address-header-sidebar">
-                        <h1 className="address-title-sidebar">Nossa Localização</h1>
+    */}
+return(
+        <section className={selector.isOpen === false ? 'sidebar-BG-close': 'sidebar-BG'}>
+            <div className={selector.isOpen === false ? 'sidebar-close': 'sidebar'}>
+                <div className="sidebar-header">
+                <div className="header-title-letters">
+                        <span className='letter'>k</span>
+                        <span className='letter'>i</span>
+                        <span className='letter'>l</span>
+                        <span className='letter'>o</span>
+                        <span className='letter'>k</span>
+                        <span className='letter'>l</span>
+                        <span className='letter'>i</span>
+                        <span className='letter'>n</span>
                     </div>
-                    <div className="address-body-sidebar">
-                        <h1 className="address-body-title-sidebar">Endereço</h1>
-                        <p className="address-body-text-sidebar">
-                            Estr. dos Bandeirantes, 24.041 - Lj.H 
-                            - Vargem Grande, Rio de Janeiro - RJ, 22785-091
-                        </p>
-                        <a  
-                            className="address-body-link-sidebar"
-                            href='https://www.google.com.br/maps/place/Lavanderia+Kilo+Klin/@-22.9777238,-43.494906,17z/data=!4m6!3m5!1s0x9bdd3395ecc88d:0x873ce0e4c651b833!8m2!3d-22.9775038!4d-43.493721!16s%2Fg%2F1pt_1dd4d?hl=pt-PT&entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D'
-                        >
-                            <button className="address-body-link-Button-sidebar">
-                                Ver no mapa
-                            </button>
-                        </a>
-                    </div>
+                        <i onClick={()=>{closeMenu()}} className="side-header-icon fa-solid fa-xmark"></i>
                 </div>
-                <HorarySidebar/>
-                <ContactSidebar/>
+                <ul className="sidebar-links-list">
+                   <Link onClick={()=>{closeMenu()}} to={'/'} className="sidebar-links"><li>Menu</li></Link>
+                   <Link className="sidebar-links"><li>Serviços</li></Link>
+                   <Link onClick={()=>{closeMenu()}} to={'/sobre'} className="sidebar-links"><li>Sobre</li></Link>
+                   <Link className="sidebar-links"><li>Preços</li></Link>
+                </ul>
+                <Address/>
+                <BusinessHour/>
             </div>
         </section>
     )

@@ -18,7 +18,7 @@
 /* Mobile pequeno */
 @media (max-width: 359px) {
     .contactSidebar{
-        margin: 5em 0 0 0;
+        margin: 2em 0 0 0;
         width: 100%;
         height: 20em;
         background-color: var(--BGColor);
