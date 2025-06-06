@@ -1,0 +1,391 @@
+
+
+/* Mobile pequeno */
+@media (max-width: 359px) {
+    .get-in-touch{
+        width: 95%;
+        height: 30em;
+        background-color: var(--PrimaryColor);
+        background-image: url('../../images/Backgrounds/checkered-pattern.png');
+        background-image: url('../../images/Backgrounds/subtle-carbon.png');
+        background-image: url('../../images/Backgrounds/swirl.png');
+        background-image: url('../../images/Backgrounds/worn-dots.png');
+        background-image: url('../../images/Backgrounds/navy.png');
+        background-image: url('../../images/Backgrounds/ps-neutral.png');
+        background-attachment: fixed;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1;
+        gap: 2%;
+        padding: 2%;
+    }
+    .get-in-touch-img{
+        position: absolute;
+        bottom: -10em;
+        left: 50%;
+        transform: translate(-50%);
+        width: 100vh;
+        height: 113vw;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .get-in-touch-title{
+        width: 65%;
+        height: 4em;
+        font-size: 15vw;
+        color: hsl(50, 60%, 41%);
+        background-color: transparent;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: start;
+        font-family: "Bebas Neue", sans-serif;
+        border: solid 2px #fff;
+        border-radius: 5px;
+        padding: 1% ;
+    }
+    .get-in-touch-btn-link{
+        width: 70%;
+        height: 3em;
+        color: black;
+        background-color: transparent;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    .get-in-touch-btn{
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        font-size: 9vw;
+        text-transform: lowercase;
+        font-family: "Urbanist", sans-serif;
+    }
+}
+  
+  /* Mobile padrão */
+  @media (min-width: 360px) and (max-width: 425px) {
+      .get-in-touch{
+        width: 95%;
+        height: 30em;
+        background-color: var(--PrimaryColor);
+        background-image: url('../../images/Backgrounds/checkered-pattern.png');
+        background-image: url('../../images/Backgrounds/subtle-carbon.png');
+        background-image: url('../../images/Backgrounds/swirl.png');
+        background-image: url('../../images/Backgrounds/worn-dots.png');
+        background-image: url('../../images/Backgrounds/navy.png');
+        background-image: url('../../images/Backgrounds/ps-neutral.png');
+        background-attachment: fixed;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1;
+        gap: 2%;
+        padding: 2%;
+        border-radius: 10px;
+
+    }
+    .get-in-touch-img{
+        position: absolute;
+        bottom: -13em;
+        left: 50%;
+        transform: translate(-50%);
+        width: 75vh;
+        height: 113vw;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .get-in-touch-title{
+        width: 65%;
+        height: 4em;
+        font-size: 15vw;
+        color: hsl(50, 60%, 41%);
+        background-color: transparent;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: "Bebas Neue", sans-serif;
+        border: solid 2px #fff;
+        border-radius: 5px;
+        padding: 1% ;
+    }
+    .get-in-touch-btn-link{
+        width: 70%;
+        height: 3em;
+        color: black;
+        background-color: transparent;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    .get-in-touch-btn{
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        font-size: 9vw;
+        text-transform: lowercase;
+        font-family: "Urbanist", sans-serif;
+    }
+}
+  
+
+
+  /* Tablets */
+  @media (min-width: 426px) and (max-width: 767px) {
+  .get-in-touch{
+        width: 95%;
+        height: 30em;
+        background-color: var(--PrimaryColor);
+        background-image: url('../../images/Backgrounds/checkered-pattern.png');
+        background-image: url('../../images/Backgrounds/subtle-carbon.png');
+        background-image: url('../../images/Backgrounds/swirl.png');
+        background-image: url('../../images/Backgrounds/worn-dots.png');
+        background-image: url('../../images/Backgrounds/navy.png');
+        background-image: url('../../images/Backgrounds/ps-neutral.png');
+        background-attachment: fixed;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1;
+        gap: 2%;
+        padding: 2%;
+        border-radius: 10px;
+    }
+    .get-in-touch-img{
+        position: absolute;
+        bottom: -13em;
+        left: 50%;
+        transform: translate(-50%);
+        width: 37em;
+        height: 28em;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .get-in-touch-title{
+        width: 5em;
+        height: 4em;
+        font-size: 2.5em;
+        color: hsl(50, 60%, 41%);
+        background-color: transparent;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: "Bebas Neue", sans-serif;
+        border: solid 2px #fff;
+        border-radius: 5px;
+        padding: 1%;
+    }
+    .get-in-touch-btn-link{
+        width: 15em;
+        height: 3em;
+        color: black;
+        background-color: transparent;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    .get-in-touch-btn{
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        font-size: 2em;
+        text-transform: lowercase;
+        font-family: "Urbanist", sans-serif;
+    }
+  }
+  
+  /* Laptops/Desktop pequeno */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .get-in-touch{
+        width: 95%;
+        height: 30em;
+        background-color: var(--PrimaryColor);
+        background-image: url('../../images/Backgrounds/checkered-pattern.png');
+        background-image: url('../../images/Backgrounds/subtle-carbon.png');
+        background-image: url('../../images/Backgrounds/swirl.png');
+        background-image: url('../../images/Backgrounds/worn-dots.png');
+        background-image: url('../../images/Backgrounds/navy.png');
+        background-image: url('../../images/Backgrounds/ps-neutral.png');
+        background-attachment: fixed;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        flex-direction: column;
+        z-index: 1;
+        gap: 2%;
+        padding: 2%;
+        border-radius: 10px;
+    }
+    .get-in-touch-img{
+        position: absolute;
+        bottom: -19em;
+        left: 28%;
+        transform: translate(-50%);
+        width: 52em;
+        height: 40em;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .get-in-touch-title{
+        width: 4em;
+        height: 4em;
+        font-size: 5em;
+        color: hsl(50, 60%, 41%);
+        background-color: transparent;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: "Bebas Neue", sans-serif;
+        border: solid 2px #fff;
+        border-radius: 5px;
+        padding: 1%;
+    }
+    .get-in-touch-btn-link{
+        width: 20em;
+        height: 6em;
+        color: black;
+        background-color: transparent;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    .get-in-touch-btn{
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        font-size: 2.5em;
+        text-transform: lowercase;
+        font-family: "Urbanist", sans-serif;
+    }
+  }
+  
+  /* Desktops */
+  @media (min-width: 1025px) and (max-width: 1440px) {
+.get-in-touch{
+        width: 95%;
+        height: 15em;
+        background-color: var(--PrimaryColor);
+        background-image: url('../../images/Backgrounds/checkered-pattern.png');
+        background-attachment: fixed;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        flex-direction: row;
+        z-index: 1;
+        gap: 2%;
+        padding: 2%;
+        border-radius: 10px;
+    }
+    .get-in-touch-img{
+        position: absolute;
+bottom: -26em;
+        left: 28%;
+        transform: translate(-50%);
+        width: 59em;
+        height: 40em;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .get-in-touch-title{
+        width: 35%;
+        height: 100%;
+        font-size: 5vw;
+        color: hsl(50, 60%, 41%);
+        background-color: transparent;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: "Bebas Neue", sans-serif;
+        border: solid 2px #fff;
+        border-radius: 5px;
+        padding: 1%;
+    }
+    .get-in-touch-btn-link{
+        width: 16%;
+        height: 30%;
+        color: black;
+        background-color: transparent;
+        background-color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .get-in-touch-btn{
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        font-size: 2vw;
+        text-transform: lowercase;
+        font-family: "Urbanist", sans-serif;
+    }  
+  }
+  
+  /* Telas grandes */
+  @media (min-width: 1441px) {
+.get-in-touch{
+        width: 95%;
+        height: 15em;
+        background-color: var(--PrimaryColor);
+        background-image: url('../../images/Backgrounds/checkered-pattern.png');
+        background-attachment: fixed;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        flex-direction: row;
+        z-index: 1;
+        gap: 2%;
+        padding: 2%;
+        border-radius: 10px;
+    }
+    .get-in-touch-img{
+        position: absolute;
+bottom: -26em;
+        left: 28%;
+        transform: translate(-50%);
+        width: 59em;
+        height: 40em;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .get-in-touch-title{
+        width: 35%;
+        height: 100%;
+        font-size: 5vw;
+        color: hsl(50, 60%, 41%);
+        background-color: transparent;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: "Bebas Neue", sans-serif;
+        border: solid 2px #fff;
+        border-radius: 5px;
+        padding: 1%;
+    }
+    .get-in-touch-btn-link{
+        width: 16%;
+        height: 30%;
+        color: black;
+        background-color: transparent;
+        background-color: #fff;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .get-in-touch-btn{
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        font-size: 2vw;
+        text-transform: lowercase;
+        font-family: "Urbanist", sans-serif;
+    }  
+  }

@@ -105,9 +105,6 @@ function LoundryHeader() {
                 <Link className="navbar-options" to='/precos'>
                     <p>Preços</p>
                 </Link>
-                <Link className="navbar-options" to='/contatos'>
-                    <p>Contatos</p>
-                </Link>
             </nav>
             <div className='header-menu-icon' onClick={handleMenuClick}>
                 <div className="bar-1"></div>

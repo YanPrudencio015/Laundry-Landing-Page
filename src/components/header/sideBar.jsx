@@ -25,7 +25,6 @@ const allButtonLinks = [
     {name: 'Serviços', url: "/servicos"},
     {name: 'Sobre', url: "/sobre"},
     {name: 'Precos', url: "/precos"},
-    {name: 'Contatos', url: "/contatos"},
 ]
 
 
@@ -43,21 +42,7 @@ useEffect(()=>{
     console.log(selector,'from sidebar')
 },selector)
 
-    {/*
-        ==== Elementos que têm eventos ======
-        <p className="sidebar-header-close-button" onClick={()=>{closeMenu()}}>Fechar</p> 
-        <div className={selector.isOpen === false ? 'sidebar-close': 'sidebar'}>
-        
-                    <div className="sidebar-navbar">
-                    {allButtonLinks.map((value,index)=>(
-                        <Link 
-                            onClick={()=>{closeMenu()}} 
-                            key={index} to={`${value.url}`} 
-                            className="link-sidebar-navbar">
-                        <p className="linkText-sidebar-navbar">{value.name}</p>
-                    </Link>
-                    ))}
-    */}
+
 return(
         <section className={selector.isOpen === false ? 'sidebar-BG-close': 'sidebar-BG'}>
             <div className={selector.isOpen === false ? 'sidebar-close': 'sidebar'}>
@@ -75,13 +60,19 @@ return(
                         <i onClick={()=>{closeMenu()}} className="side-header-icon fa-solid fa-xmark"></i>
                 </div>
                 <ul className="sidebar-links-list">
-                   <Link onClick={()=>{closeMenu()}} to={'/'} className="sidebar-links"><li>Menu</li></Link>
-                   <Link className="sidebar-links"><li>Serviços</li></Link>
-                   <Link onClick={()=>{closeMenu()}} to={'/sobre'} className="sidebar-links"><li>Sobre</li></Link>
-                   <Link className="sidebar-links"><li>Preços</li></Link>
+                    {allButtonLinks.map((value, index)=>(
+                        <Link 
+                            onClick={()=>{closeMenu()}} 
+                            to={`${value.url}`} 
+                            className="sidebar-links"
+                            >
+                                <li>{value.name}</li>
+                            </Link>
+                    ))}
                 </ul>
                 <Address/>
                 <BusinessHour/>
+                <ContactSidebar/>
             </div>
         </section>
     )
