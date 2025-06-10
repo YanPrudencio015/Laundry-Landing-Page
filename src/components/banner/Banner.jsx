@@ -4,6 +4,7 @@ import './banner.css'
 import BGBannerDesktop from '../../images/Desktop/laundry-Banner-BG.jpg';
 import BGBannertablet from '../../images/Tablet/laundry-Banner-BG.jpg';
 import BGBannerMobile from '../../images/Mobile/laundry-Banner-BG.jpg';
+import { Link } from "react-router-dom";
 
 
 function Banner(props){
@@ -104,10 +105,14 @@ return (
                 </h4>
             </div>
             <div className="banner-text-footer">
-                <button className="banner-btn">
-                    <i className="banner-whatsApp-icon fa-brands fa-whatsapp"></i>
-                    <p className="banner-btn-font">Envie mensagem</p>
-                </button>
+                <Link 
+                className="banner-btn" 
+                to={"https://wa.me/5521979721419?text=Olá,%20esse%20é%20um%20texto%20genérico!%20...%20Para%20falar%20com%20a%20Anõna"} target="_blank">
+                    <button>
+                        <i className="banner-whatsApp-icon fa-brands fa-whatsapp"></i>
+                        <p className="banner-btn-font">Envie mensagem</p>
+                    </button>
+                </Link>
             </div>
         </div>
     </div>

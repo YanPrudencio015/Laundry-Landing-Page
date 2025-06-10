@@ -115,6 +115,156 @@ export default function Testimonials() {
                 </div>
             </div>
         </SwiperSlide>
+        <SwiperSlide className='testi-swiper-slide'>
+            <div className='testi-swiper-card'>
+                <div className='testi-swiper-card-img-border'>
+                    <img src={img} className='testi-swiper-card-img'/>
+                </div>
+                <div className='testi-swiper-card-stars'>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
+                </div>
+                <div className='testi-swiper-card-name'>
+                    <p className='testi-swiper-card-costumer-Name'>Lavanderia</p>
+                </div>
+                <div className='testi-swiper-card-text'>
+                    <h1 className='testi-swiper-card-text-comma'>"</h1>
+                    <p className='testi-swiper-card-costumers-testimonials'>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Possimus consequatur numquam sequi, minus doloremque 
+                        rerum ducimus non quam cupiditate laboriosam sapiente, 
+                        {/* testando. Está no centro ? */}
+                    </p>
+                </div>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide className='testi-swiper-slide'>
+            <div className='testi-swiper-card'>
+                <div className='testi-swiper-card-img-border'>
+                    <img src={img} className='testi-swiper-card-img'/>
+                </div>
+                <div className='testi-swiper-card-stars'>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
+                </div>
+                <div className='testi-swiper-card-name'>
+                    <p className='testi-swiper-card-costumer-Name'>Lavanderia</p>
+                </div>
+                <div className='testi-swiper-card-text'>
+                    <h1 className='testi-swiper-card-text-comma'>"</h1>
+                    <p className='testi-swiper-card-costumers-testimonials'>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Possimus consequatur numquam sequi, minus doloremque 
+                        rerum ducimus non quam cupiditate laboriosam sapiente, 
+                        {/* testando. Está no centro ? */}
+                    </p>
+                </div>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide className='testi-swiper-slide'>
+            <div className='testi-swiper-card'>
+                <div className='testi-swiper-card-img-border'>
+                    <img src={img} className='testi-swiper-card-img'/>
+                </div>
+                <div className='testi-swiper-card-stars'>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
+                </div>
+                <div className='testi-swiper-card-name'>
+                    <p className='testi-swiper-card-costumer-Name'>Lavanderia</p>
+                </div>
+                <div className='testi-swiper-card-text'>
+                    <h1 className='testi-swiper-card-text-comma'>"</h1>
+                    <p className='testi-swiper-card-costumers-testimonials'>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Possimus consequatur numquam sequi, minus doloremque 
+                        rerum ducimus non quam cupiditate laboriosam sapiente, 
+                        {/* testando. Está no centro ? */}
+                    </p>
+                </div>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide className='testi-swiper-slide'>
+            <div className='testi-swiper-card'>
+                <div className='testi-swiper-card-img-border'>
+                    <img src={img} className='testi-swiper-card-img'/>
+                </div>
+                <div className='testi-swiper-card-stars'>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
+                </div>
+                <div className='testi-swiper-card-name'>
+                    <p className='testi-swiper-card-costumer-Name'>Lavanderia</p>
+                </div>
+                <div className='testi-swiper-card-text'>
+                    <h1 className='testi-swiper-card-text-comma'>"</h1>
+                    <p className='testi-swiper-card-costumers-testimonials'>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Possimus consequatur numquam sequi, minus doloremque 
+                        rerum ducimus non quam cupiditate laboriosam sapiente, 
+                        {/* testando. Está no centro ? */}
+                    </p>
+                </div>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide className='testi-swiper-slide'>
+            <div className='testi-swiper-card'>
+                <div className='testi-swiper-card-img-border'>
+                    <img src={img} className='testi-swiper-card-img'/>
+                </div>
+                <div className='testi-swiper-card-stars'>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
+                </div>
+                <div className='testi-swiper-card-name'>
+                    <p className='testi-swiper-card-costumer-Name'>Lavanderia</p>
+                </div>
+                <div className='testi-swiper-card-text'>
+                    <h1 className='testi-swiper-card-text-comma'>"</h1>
+                    <p className='testi-swiper-card-costumers-testimonials'>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Possimus consequatur numquam sequi, minus doloremque 
+                        rerum ducimus non quam cupiditate laboriosam sapiente, 
+                        {/* testando. Está no centro ? */}
+                    </p>
+                </div>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide className='testi-swiper-slide'>
+            <div className='testi-swiper-card'>
+                <div className='testi-swiper-card-img-border'>
+                    <img src={img} className='testi-swiper-card-img'/>
+                </div>
+                <div className='testi-swiper-card-stars'>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
+                </div>
+                <div className='testi-swiper-card-name'>
+                    <p className='testi-swiper-card-costumer-Name'>Lavanderia</p>
+                </div>
+                <div className='testi-swiper-card-text'>
+                    <h1 className='testi-swiper-card-text-comma'>"</h1>
+                    <p className='testi-swiper-card-costumers-testimonials'>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Possimus consequatur numquam sequi, minus doloremque 
+                        rerum ducimus non quam cupiditate laboriosam sapiente, 
+                        {/* testando. Está no centro ? */}
+                    </p>
+                </div>
+            </div>
+        </SwiperSlide>
         </Swiper>
         </div>
     </section>

@@ -74,7 +74,8 @@
     .contactSidebar-socials-list{
         flex-direction: column;
     }
-    .contactSidebar-social-item{
+
+    .contactSidebar-social-item-link{
         width: 90%;
         height: 2em;
         margin: 1em 0;
@@ -86,6 +87,20 @@
         font-size: 6vw;
         gap: 5%;
     }
+    .contactSidebar-social-item{
+        width: 100%;
+        height: 100%;
+        margin: 1em 0;
+        border-radius: 10px;
+        background-color: var(--PrimaryColor);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 6vw;
+        gap: 5%;
+        color: #000;
+    }
+
 
     .contactSidebar-iconText{
         font-family: "Comfortaa", sans-serif;
@@ -152,9 +167,16 @@
     .contactSidebar-socials-list{
         flex-direction: column;
     }
-    .contactSidebar-social-item{
+
+    .contactSidebar-social-item-link{
         width: 90%;
-        height: 2em;
+        height: 3em;
+        margin: 1em 0;
+        color: #000;
+    }
+    .contactSidebar-social-item{
+        width: 100%;
+        height: 100%;
         margin: 1em 0;
         border-radius: 10px;
         background-color: var(--PrimaryColor);
@@ -227,12 +249,18 @@
         align-items: center;
     }
     .contactSidebar-phones-numbers{
-        font-size: 5vw;
+        font-size: 1em;
         font-family: "Urbanist", sans-serif;
     }
     
     .contactSidebar-socials-list{
         flex-direction: column;
+    }
+    .contactSidebar-social-item-link{
+        width: 90%;
+        height: 3em;
+        margin: 1em 0;
+        color: #000;        
     }
     .contactSidebar-social-item{
         width: 90%;
@@ -243,13 +271,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 6vw;
+        font-size: 1em;
         gap: 5%;
     }
 
     .contactSidebar-iconText{
         font-family: "Comfortaa", sans-serif;
-        font-size: 5vw;
+        font-size: 1em;
     }
 
 
@@ -316,22 +344,27 @@
     .contactSidebar-socials-list{
         flex-direction: column;
     }
-    .contactSidebar-social-item{
+    .contactSidebar-social-item-link{
         width: 90%;
-        height: 2em;
+        height: 4em;
         margin: 1em 0;
+        color: #000;
+    }
+    .contactSidebar-social-item{
+        width:100%;
+        height:100%;
         border-radius: 10px;
         background-color: var(--PrimaryColor);
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 6vw;
+        font-size: 5vw;
         gap: 5%;
     }
 
     .contactSidebar-iconText{
         font-family: "Comfortaa", sans-serif;
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
 
@@ -397,10 +430,15 @@
     .contactSidebar-socials-list{
         flex-direction: column;
     }
-    .contactSidebar-social-item{
-        width: 60%;
-        height: 1.5em;
+    .contactSidebar-social-item-link{
+        width: 80%;
+        height: 2em;
         margin: 1em 0;
+        color: #000;
+    }
+    .contactSidebar-social-item{
+        width: 100%;
+        height: 100%;
         border-radius: 10px;
         background-color: var(--PrimaryColor);
         display: flex;
@@ -475,10 +513,15 @@
     .contactSidebar-socials-list{
         flex-direction: column;
     }
-    .contactSidebar-social-item{
-        width: 60%;
-        height: 1.5em;
+    .contactSidebar-social-item-link{
+        width: 80%;
+        height: 2em;
         margin: 1em 0;
+        color: #000;
+    }
+    .contactSidebar-social-item{
+        width: 100%;
+        height: 100%;
         border-radius: 10px;
         background-color: var(--PrimaryColor);
         display: flex;

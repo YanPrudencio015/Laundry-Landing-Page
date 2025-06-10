@@ -116,6 +116,9 @@
         font-family: "Urbanist", sans-serif;  
     }
 
+    .footer-link-item{
+        color: #fff;
+    }
 
 
 }
@@ -238,6 +241,10 @@
     }
 
 
+    .footer-link-item{
+        color: #fff;
+    }
+
   }
   
   /* Tablets */
@@ -357,6 +364,11 @@
         border: none;
         background-color: transparent;
         font-family: "Urbanist", sans-serif;  
+    }
+
+
+    .footer-link-item{
+        color: #fff;
     }
 
   }
@@ -485,6 +497,11 @@
     }
 
 
+    .footer-link-item{
+        color: #fff;
+    }
+
+
   }
   
   /* Desktops */
@@ -608,7 +625,9 @@
     }
 
 
-
+    .footer-link-item{
+        color: #fff;
+    }
   }
   
   /* Telas grandes */
@@ -731,5 +750,7 @@
         cursor: pointer;
     }
 
-
+    .footer-link-item{
+        color: #fff;
+    }
   }

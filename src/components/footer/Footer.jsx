@@ -22,25 +22,47 @@ export default function Footer (props){
             <div className="footer-column-2">
                 <h1 className="footer-titles">Links</h1>
                     <ul className="footer-link-list">
-                        <li className="footer-links">Serviços</li>
-                        <li className="footer-links">Sobre nós</li>
-                        <li className="footer-links">Preços</li>
+                        <Link 
+                            className="footer-link-item" 
+                            to={'/servicos'}>
+                                <li className="footer-links">Serviços</li>
+                        </Link>
+                        <Link 
+                            className=" footer-link-item" 
+                            to={'/sobre'}>
+                                <li className="footer-links">Sobre nós</li>
+                        </Link>
+                        <Link 
+                            className=" footer-link-item" 
+                            to={'/preco'}>
+                                <li className="footer-links">Preços</li>
+                        </Link>
                     </ul>
             </div>
             <div className="footer-column-3">
                 <h1 className="footer-titles">Sociais</h1>
                 <ul className="footer-sociais-list">
-                    <Link className="footer-sociais">
+                    <Link 
+                        to={'https://www.instagram.com/kiloklinlavanderia/'} 
+                        target="_blank" 
+                        className="footer-sociais">
                         <li className="footer-sociais-item">
                             <button className="footer-sociais-btn">Instagram</button>
                         </li>
                     </Link>
-                    <Link className="footer-sociais">
+                    <Link 
+                        className="footer-sociais" 
+                      to={"https://wa.me/5521979721419?text=Olá,%20esse%20é%20um%20texto%20genérico!%20...%20Para%20falar%20com%20a%20Anõna"} 
+                target="_blank" 
+                rel="noopener noreferrer">
                         <li className="footer-sociais-item">
                             <button className="footer-sociais-btn">WhatsApp</button>    
                         </li>
                     </Link>
-                    <Link className="footer-sociais">
+                    <Link   
+                            className="footer-sociais"
+                            to={'https://www.facebook.com/p/Lavanderia-Kilo-Klin-100040378464721/'}  
+                            target="_blank">
                         <li className="footer-sociais-item">
                            <button className="footer-sociais-btn">Facebook</button>
                         </li>

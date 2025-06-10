@@ -1,7 +1,7 @@
 import React from "react";
 import './aboutpage.css';
 import MascotImage from '../../images/kiloklin-mascot.png';
-
+import transition from "../../transition";
 
 // component
 import Metrics from "./aboutPageComponent/metrics/Metrics";
@@ -17,4 +17,4 @@ function AboutPage(props) {
     );
 }
 
-export default AboutPage
+export default transition(AboutPage)

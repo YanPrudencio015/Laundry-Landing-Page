@@ -11,6 +11,7 @@ import Costumers from './costumer/Costumer';
 import Testimonials from './testimonials/Testimonials';
 import Footer from './footer/Footer';
 import GetInTouch from '../components/getInTouch/GetInTouth'
+import lazyLoading from '../lazyLoading/Lazy';
 const Loundry = () => {
   return (
     <>
@@ -22,6 +23,9 @@ const Loundry = () => {
       <GetInTouch/>
       <About />
       <Footer/>
+
+{/* criar um sistema de lazy loading */}
+      {/* <lazyLoading/> */}
 
   {/* 
     A fazer:
