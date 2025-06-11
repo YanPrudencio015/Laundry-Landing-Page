@@ -61,13 +61,13 @@ return(
                 </div>
                 <ul className="sidebar-links-list">
                     {allButtonLinks.map((value, index)=>(
-                        <Link 
+                        <a 
                             onClick={()=>{closeMenu()}} 
-                            to={`${value.url}`} 
+                            href ={`${value.url}`} 
                             className="sidebar-links"
                             >
                                 <li>{value.name}</li>
-                            </Link>
+                            </a>
                     ))}
                 </ul>
                 <Address/>

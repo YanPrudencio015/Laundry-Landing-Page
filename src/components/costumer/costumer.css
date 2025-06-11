@@ -220,7 +220,7 @@
 }
 .cos-header-title{
   font-family: "Urbanist", sans-serif;  
-  font-size: 8vw;
+  font-size: 2em;
   letter-spacing: 3vw;
   text-align: center;
   text-transform: uppercase;
@@ -257,7 +257,7 @@
 }
 .cos-square-title{
   font-family: "Urbanist", sans-serif;  
-  font-size: 6vw;
+  font-size: 1.5em;
   letter-spacing: 1vw;
   text-align: center;
   text-transform: uppercase;
@@ -275,25 +275,25 @@
   
 }
 .cos-square-items{
-  width: 99%;
-  height: 19%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: solid 1px #DDDDDD;
-  font-size: 6vw;
-  font-family: "Bebas Neue", sans-serif;
-    color: var(--SecondColor);
-}
-
-.cos-square-neighborhoods{
-  width: 99%;
+  width: 70%;
   height: 13%;
   display: flex;
   justify-content: center;
   align-items: center;
   border: solid 1px #DDDDDD;
-  font-size: 6vw;
+  font-size: 2em;
+  font-family: "Bebas Neue", sans-serif;
+    color: var(--SecondColor);
+}
+
+.cos-square-neighborhoods{
+  width: 70%;
+  height: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #DDDDDD;
+  font-size: 2em;
   font-family: "Bebas Neue", sans-serif;
     color: var(--SecondColor);
 }

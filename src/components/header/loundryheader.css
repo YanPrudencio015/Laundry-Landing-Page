@@ -457,7 +457,7 @@ position: fixed;
   @media (min-width: 425px) and (max-width: 768px) {
     .loundry-header{
         width: 100%;
-        height: 5em;
+        height: 4em;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -482,10 +482,10 @@ position: fixed;
     .header-title::after{
         content: '';
         width: 100%;
-        height: 12vh;
+        height: 2.3em;
         background-color: var(--PrimaryColor);
         position: absolute;
-        top: -7vw;
+        top: -1em;
         z-index: -1;
         border-radius: 0px 0 10px 10px;
         transition: .6s ease-in-out;
@@ -504,6 +504,7 @@ position: fixed;
     }
     .header-title-letters{
         width: 100%;
+        font-size: 4vw;
         font-size: 4vw;
         color: #000;
         letter-spacing: 5px;
@@ -619,7 +620,7 @@ position: fixed;
     }
     
     .header-menu-icon{
-        width: 10%;
+        width: 3em;
         height: 43%;
         display: flex;
         flex-direction: column;

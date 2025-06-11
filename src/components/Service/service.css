@@ -275,7 +275,7 @@
         align-items: center;
         justify-content: start;
         gap: 1%;
-        margin: 20% 0;
+        margin:0%;
     }
 
     .service-header{
@@ -284,7 +284,7 @@
         padding: 0 2%;
     }
     .service-header-title{
-        font-size: 10vw;
+        font-size: 3em;
         font-family: "Bebas Neue", sans-serif;
         
     }
@@ -297,13 +297,13 @@
         text-align: center;
     }
     .service-header-title-Description{
-        font-size: 8vw;
+        font-size: 2.5em;
         font-family: "Urbanist", sans-serif;  
         color: var(--SecondColor);
     }
 
     .service-header-Description{
-        font-size: 5vw;
+        font-size: 1.8em;
         margin: 5% 0;
         font-weight: 400;
         font-family: "Quicksand", sans-serif;

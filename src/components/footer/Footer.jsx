@@ -42,31 +42,31 @@ export default function Footer (props){
             <div className="footer-column-3">
                 <h1 className="footer-titles">Sociais</h1>
                 <ul className="footer-sociais-list">
-                    <Link 
-                        to={'https://www.instagram.com/kiloklinlavanderia/'} 
+                    <a 
+                        href='https://www.instagram.com/kiloklinlavanderia/' 
                         target="_blank" 
                         className="footer-sociais">
                         <li className="footer-sociais-item">
                             <button className="footer-sociais-btn">Instagram</button>
                         </li>
-                    </Link>
-                    <Link 
+                    </a>
+                    <a 
                         className="footer-sociais" 
-                      to={"https://wa.me/5521979721419?text=Olá,%20esse%20é%20um%20texto%20genérico!%20...%20Para%20falar%20com%20a%20Anõna"} 
-                target="_blank" 
-                rel="noopener noreferrer">
+                        href="https://wa.me/5521979721419?text=Olá,%20esse%20é%20um%20texto%20genérico!%20...%20Para%20falar%20com%20a%20Anõna" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
                         <li className="footer-sociais-item">
                             <button className="footer-sociais-btn">WhatsApp</button>    
                         </li>
-                    </Link>
-                    <Link   
+                    </a>
+                    <a   
                             className="footer-sociais"
-                            to={'https://www.facebook.com/p/Lavanderia-Kilo-Klin-100040378464721/'}  
+                            href='https://www.facebook.com/p/Lavanderia-Kilo-Klin-100040378464721/'  
                             target="_blank">
                         <li className="footer-sociais-item">
                            <button className="footer-sociais-btn">Facebook</button>
                         </li>
-                    </Link>
+                    </a>
                 </ul>
             </div>
         </section>

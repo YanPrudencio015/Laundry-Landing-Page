@@ -261,7 +261,7 @@
         width: 88%;
         height: 60%;
         background-color: hsl(202, 100%, 46%);
-        border-radius: 5px 5px 20em 20em;
+        border-radius: 10px 10px 10em 10em;
     }
 
     .promotion-sub-div {
@@ -290,15 +290,15 @@
 
     /* Individuals styles by position*/
     .line-1 {
-      font-size: 10vw;
+      font-size: 5em;
     }
 
     .line-2 {
-      font-size: 12vw;
+      font-size: 4em;
     }
 
     .line-3 {
-      font-size: 10vw;
+      font-size: 5em;
     }
 
     .promotion-title{
@@ -327,7 +327,7 @@
     }
 
     .promotion-price{
-      font-size: 15vw;
+      font-size: 6em;
         text-shadow:
         -1px -1px 0 #fff,
         1px -1px 0 #fff,
