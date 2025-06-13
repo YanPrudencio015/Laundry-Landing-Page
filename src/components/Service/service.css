@@ -12,14 +12,13 @@
 @media (max-width: 359px) {
     .service{
         width: 100%;
-        height: 125em;
-        margin: 3em 0;
+        height: 135em;
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: start;
         gap: 5%;
-        margin: 35% 0;
+        margin: 20% 0;
     }
 
 
@@ -51,7 +50,7 @@
 
     .service-header-Description{
         font-size: 7vw;
-        margin: 5% 0;
+        margin: 0% 0;
         font-weight: 400;
         font-family: "Quicksand", sans-serif;
     }
@@ -73,15 +72,15 @@
     .service-card{
         width: 90%;
         height: 20em;
-        border-radius: 0 30px 30px 30px;
+        border-radius: 0 30px 0px 30px;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 5%;
         flex-direction: column;
-        background-color: #DDDDDD;
-        box-shadow: 3px 1px 14px -2px var(--SecondColor);
+        background-color: hsl(202, 100%, 46%);
+        color: #fff;
     }
 
     .service-card-header{
@@ -122,17 +121,18 @@
         z-index: -1;
         content: '';
         width: 90%;
-        height: 1px;
-        background-color: var(--SecondColor);
+        height: 3px;
+        background-color: #fff;
         position: absolute;
         top: 100%;
         left: 50%;
         transform:translate(-50%,-50%);
     }
     .service-description{
-        font-size: 6vw;
+        font-size: 5vw;
         text-align: center;
         font-family: "Quicksand", sans-serif;
+        color: #000;
     }
 
 }
@@ -141,14 +141,14 @@
   @media (min-width: 360px) and (max-width: 425px) {
    .service{
         width: 100%;
-        height: 100em;
+        height: 110em;
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: start;
         gap: 0%;
-        margin: 35% 0;
+        margin: 20% 0;
     }
     .service-header{
         width: 100%;
@@ -193,17 +193,17 @@
         gap: 2%;
     }
     .service-card{
-        width: 90%;
+        width: 80%;
         height: 15em;
-        border-radius: 0 30px 30px 30px;
+        border-radius: 0 30px 0px 30px;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 5%;
         flex-direction: column;
-        background-color: #DDDDDD;
-        box-shadow: 3px 1px 14px -2px var(--SecondColor);
+        background-color: hsl(202, 100%, 46%);
+        box-shadow: 0px var(--SecondColor);
     }
 
     .service-card-header{
@@ -240,6 +240,7 @@
         align-self: flex-start;
         position: relative;
         text-align: center;
+        color: #fff;
     }
         .service-title::after{
         z-index: -1;
@@ -247,6 +248,7 @@
         width: 100%;
         height: 1px;
         background-color: var(--SecondColor);
+        background-color: #fff;
         position: absolute;
         top: 100%;
         left: 50%;
@@ -254,7 +256,8 @@
         
     }
     .service-description{
-        font-size: 4vw;
+        width:90%;
+        font-size: 3.5vw;
         text-align: center;
         font-family: "Quicksand", sans-serif;
     }
@@ -268,6 +271,7 @@
   .service{
         width: 100%;
         height: 130em;
+        height: 115em;
         margin: 3em 0;
         position: relative;
         display: flex;
@@ -317,24 +321,24 @@
         height: 100%;
         display: flex;
         justify-content: center;
-        flex-direction: column;
-        flex-wrap: nowrap;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
-        gap: 2%;
+        gap: 1%;
     }
     .service-card{
-        width: 80%;
+        width: 30em;
         padding: 2%;
         height: 17em;
-        border-radius: 0 15px 15px 15px;
+        border-radius: 0 15px 0px 15px;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 20%;
         flex-direction: column;
-        background-color: #DDDDDD;
-        box-shadow: 3px 1px 14px -2px var(--SecondColor);
+        background-color: hsl(202, 100%, 46%);
+        color: #fff;
     }
 
     .service-card-header{
@@ -366,7 +370,7 @@
     }
 
     .service-title{
-        font-size: 6vw;
+        font-size: 3em;
         font-family: "Jost", sans-serif;
         align-self: flex-start;
         position: relative;
@@ -376,16 +380,18 @@
         content: '';
         width: 100%;
         height: 1px;
-        background-color: var(--SecondColor);
+        background-color: #fff;
         position: absolute;
         top: 100%;
         left: 50%;
         transform:translate(-50%,-50%);
     }
     .service-description{
-        font-size: 3vw;
+        width: 22em;
+        font-size: 1.3em;
         text-align: center;
         font-family: "Quicksand", sans-serif;
+        color: #000;
     }
   }
   
@@ -393,7 +399,7 @@
   @media (min-width: 768px) and (max-width: 1024px) {
  .service{
         width: 100%;
-        height: 125em;
+        height: 130em;
         margin: 3em 0;
         position: relative;
         display: flex;
@@ -404,7 +410,7 @@
     }
     .service-header{
         width: 100%;
-        height: 24em;
+        height: 45em;
         padding: 0 2%;
         
     }
@@ -438,6 +444,7 @@
 
     .service-body{
         width: 100%;
+        height: 85em;
         display: flex;
         justify-content: center;
         flex-direction: row;
@@ -448,15 +455,15 @@
     .service-card{
         width: 45%;
         height: 26em;
-        border-radius: 0 30px 30px 30px;
+        border-radius: 0 30px 0px 30px;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 5%;
         flex-direction: column;
-        background-color: #DDDDDD;
-        box-shadow: 3px 1px 14px -2px var(--SecondColor);
+        background-color:hsl(202, 100%, 46%);
+        box-shadow: 3px 1px 14px -2px transparent;
     }
 
     .service-card-header{
@@ -487,18 +494,20 @@
     }
 
     .service-title{
-        font-size: 5vw;
+        font-size: 4vw;
         font-family: "Jost", sans-serif;
         align-self: flex-start;
         position: relative;
         text-align: center;
+        color: #fff;
     }
         .service-title::after{
         z-index: -1;
         content: '';
         width: 100%;
-        height: 1px;
+        height: 3px;
         background-color: var(--SecondColor);
+        background-color: #fff;
         position: absolute;
         top: 100%;
         left: 50%;
@@ -506,7 +515,7 @@
                 
     }
     .service-description{
-        font-size: 3vw;
+        font-size: 2.5vw;
         text-align: center;
         font-family: "Quicksand", sans-serif;
     }
@@ -517,7 +526,7 @@
  .service{
         width: 100%;
         height: 80em;
-        margin: 3em 0;
+        margin: 5em 0;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -542,7 +551,7 @@
         left: 50%;
         transform: translate(-50%,0%);
         width: 50%;
-        height: 3px;
+        height: 1px;
         background-color: var(--PrimaryColor);
     }
 
@@ -603,17 +612,11 @@
         align-items: center;
         gap: 5%;
         flex-direction: column;
-        background-color: #DDDDDD;
+        background-color: hsl(202, 100%, 46%);
         box-shadow: 0px 0px 0px 0px var(--SecondColor);
         cursor: default;
         margin: .5%;
     }
-
-
-
-
-
-
 
     .service-card-header{
         width: 90%;
@@ -650,6 +653,7 @@
         font-family: "Jost", sans-serif;
         align-self: flex-start;
         position: relative;
+        color: #fff;
     }
         .service-title::after{
         z-index: -1;
@@ -675,7 +679,7 @@
  .service{
         width: 100%;
         height: 80em;
-        margin: 3em 0;
+        margin: 5em 0;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -700,7 +704,7 @@
         left: 50%;
         transform: translate(-50%,0%);
         width: 50%;
-        height: 3px;
+        height: 1px;
         background-color: var(--PrimaryColor);
     }
 
@@ -740,7 +744,7 @@
     }
 
 
-             /* ==== service-body ===== */
+           /* ==== service-body ===== */
 
     .service-body{
         width: 100%;
@@ -749,30 +753,29 @@
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
+        gap: 0%;
     }
     .service-card{
-        width: 20%;
-        height: 12em;
-        border-radius: 0 30px 30px 30px;
-        background-image: url(/src/images/Backgrounds/worn-dots.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-color: var(--SecondColor);
+        width: 35%;
+        height: 18em;
+        border-radius: 10px;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 5%;
         flex-direction: column;
-        background-color: #DDDDDD;
-        box-shadow: 3px 1px 14px -2px var(--SecondColor);
+        background-color: hsl(202, 100%, 46%);
+        box-shadow: 0px 0px 0px 0px var(--SecondColor);
+        cursor: default;
+        margin: .5%;
     }
 
     .service-card-header{
         width: 90%;
-        height: 4em;
+        height: 5em;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         flex-direction: row;
         align-items: center;
         position: relative;
@@ -780,14 +783,16 @@
     }
 
     .service-icon{
-        width: 25%;
-        height: 100%;
-        background: var(--SecondColor);
+        width: 14%;
+        height: 70%;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 20em;
-        background-color: var(--BGColor);
+        background: var(--SecondColor);
+        position: absolute;
+        left: 1vw;
+        top: 2vh;
     }
 
     .service-iconIMG{
@@ -801,6 +806,7 @@
         font-family: "Jost", sans-serif;
         align-self: flex-start;
         position: relative;
+        color: #fff;
     }
         .service-title::after{
         z-index: -1;
@@ -815,7 +821,7 @@
                 
     }
     .service-description{
-        font-size: 1vw;
+        font-size: 1.5vw;
         text-align: center;
         font-family: "Quicksand", sans-serif;
     }

@@ -22,7 +22,7 @@
         height: 100%;
         display: flex;
         justify-content: center;
-        gap: 15%;
+        gap: 5%;
         align-items: center;
         text-align: center;
         flex-direction: column;
@@ -48,7 +48,7 @@
     .text-description{
         font-family: "Manrope", sans-serif;
         width: 90%;
-        font-size: 5vw;
+        font-size: 4.5vw;
         font-weight: 500;
         text-align: center;
     }
@@ -61,7 +61,8 @@
     .text-button{
         border: solid 3px var(--PrimaryColor);
         width: 100%;
-        height: 3em;
+        height: 2em;
+        font-size: 5vw;
         font-family: "Jost", sans-serif;
         text-transform: uppercase;
         font-weight: 800;
@@ -153,7 +154,7 @@
     .text-description{
         font-family: "Manrope", sans-serif;
         width: 90%;
-        font-size: 5vw;
+        font-size: 3.5vw;
         font-weight: 500;
         text-align: center;
     }
@@ -167,6 +168,7 @@
         border: solid 3px var(--PrimaryColor);
         width: 100%;
         height: 3em;
+        font-size: 4vw;
         font-family: "Jost", sans-serif;
         text-transform: uppercase;
         font-weight: 800;
@@ -245,7 +247,7 @@
         position: relative;
         font-weight: 400;
         width: 65%;
-        font-size: 7vw;
+        font-size: 2.5em;
     }
     .text-title::before{
         content: '';
@@ -260,7 +262,7 @@
     .text-description{
         font-family: "Manrope", sans-serif;
         width: 90%;
-        font-size: 3vw;
+        font-size: 1.3em;
         font-weight: 500;
         text-align: center;
     }
@@ -281,7 +283,7 @@
         z-index: 1;
         overflow: hidden;
         cursor: auto;
-        font-size: 4vw;
+        font-size: 1.5rem;
     }
     .text-button:before{
         content: '';
@@ -365,7 +367,7 @@
     .text-description{
         font-family: "Manrope", sans-serif;
         width: 90%;
-        font-size: 5vw;
+        font-size: 4vw;
         font-weight: 500;
         text-align: center;
     }
@@ -482,12 +484,17 @@
 
     .text-button-link{
         width: 15%;
+        height: 4em;
+        position: absolute;
+        top: 90%;
+        left: 35%;
+        transform: translate(-40%, -50%);
     }
 
     .text-button{
         border: solid 3px var(--PrimaryColor);
         width: 100%;
-        height: 3em;
+        height: 100%;
         font-family: "Jost", sans-serif;
         text-transform: uppercase;
         font-weight: 800;
@@ -505,10 +512,10 @@
         transform: translate(-50%, -50%);
         background-color: var(--PrimaryColor);
         height: 10em;
-        width: 10em;
+        width: 300%;
         border-radius: 20em;
         z-index: -1;
-        transition: .6s ease-in-out;
+        transition: .8s ease-in-out;
     }
     .text-button:hover:before{
         left: 70%;
