@@ -4,6 +4,15 @@ import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import { sidebarToggleReducer } from './redux/sideBarToggle'
 import { AnimatePresence } from 'framer-motion'
+
+// to lazy loading
+import { Suspense, lazy } from 'react'
+import LazyLoading from './lazyLoading/Lazy'
+const Main = lazy(()=> import('./components/Loundry'));
+const About = lazy(()=> import('./components/about/AboutPage'));
+const Services = lazy(()=> import('./pages/servicePage/ServicePage'));
+const Prices = lazy(()=> import('./pages/pricesPage/PricesPage'));
+
 // Components
 import LoundryHeader from './components/header/LoundryHeader'
 import SideBarHeader from './components/header/sideBar'
@@ -27,22 +36,28 @@ function App() {
 
   return (
     <Provider store={store}>
-      <div className='loundry' 
-        style={{
-          backgroundImage: `url(${background})`, 
-          backgroundAttachment: 'fixed'
-        }}>
-        <LoundryHeader />
-        <SideBarHeader />
-        <AnimatePresence mode="wait" initial={false}>
-          <Routes location={location} key={location.pathname}>
-            <Route index element={<Loundry />} />
-            <Route path='/sobre' element={<AboutPage />} />
-            <Route path='/servicos' element={<ServicesPage />} />
-            <Route path='/precos' element={<PricesPage />} />
-          </Routes>
-        </AnimatePresence>
-      </div>
+      <Suspense fallback={<LazyLoading/>}>
+        <div className='loundry' 
+          style={{
+            backgroundImage: `url(${background})`, 
+            backgroundAttachment: 'fixed'
+          }}>
+          <LoundryHeader />
+          <SideBarHeader />
+          <AnimatePresence mode="wait" initial={false}>
+            <Routes location={location} key={location.pathname}>
+              {/* <Route index element={<Loundry />} /> */}
+              <Route index element={< Main/>} />
+              {/* <Route path='/sobre' element={<AboutPage />} /> */}
+              <Route path='/sobre' element={<About />} />
+              {/* <Route path='/servicos' element={<ServicesPage />} /> */}
+              <Route path='/servicos' element={<Services />} />
+              {/* <Route path='/precos' element={<PricesPage />} /> */}
+              <Route path='/precos' element={<Prices />} />
+            </Routes>
+          </AnimatePresence>
+        </div>
+      </Suspense>
     </Provider>
   )
 }

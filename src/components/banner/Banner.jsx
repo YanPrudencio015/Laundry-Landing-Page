@@ -89,7 +89,7 @@ useEffect(() => {
 
 return (
     <div className="banner">
-        <img className="banner-image-BG" src={rightImage} alt="banner-Imagem" />
+        <img className="banner-image-BG" src={rightImage} alt="banner-Imagem"  loading="lazy"/>
         <div className="banner-texts">
             <div className="banner-text-container">
                 <h2 className={`banner-text-title ${isAnimating ? `slide-${animationDirection}-out` : `slide-${animationDirection}-in`}`}>

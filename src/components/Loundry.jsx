@@ -11,7 +11,7 @@ import Costumers from './costumer/Costumer';
 import Testimonials from './testimonials/Testimonials';
 import Footer from './footer/Footer';
 import GetInTouch from '../components/getInTouch/GetInTouth'
-import lazyLoading from '../lazyLoading/Lazy';
+import LazyLoading from '../lazyLoading/Lazy'
 const Loundry = () => {
   return (
     <>
@@ -24,21 +24,10 @@ const Loundry = () => {
       <About />
       <Footer/>
 
-{/* criar um sistema de lazy loading */}
-      {/* <lazyLoading/> */}
-
-  {/* 
-    A fazer:
-    refazer o menu sidebar sem a opção contato. - a fazer
-    criar a transição de página com o framer motion. - a fazer
-    corrigir erros de design - a fazer
-    cada pagina deverá ter um banner igual ao da primeira versão da página about
-
-  */}
     </>
   );
 };
 
-
+// trocar o botão de preços por contact ou location. O preços e serviços podem tratar da mesma coisa
 export default  transiton(Loundry);
 // export default Loundry;
