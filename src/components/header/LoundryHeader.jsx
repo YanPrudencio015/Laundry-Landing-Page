@@ -59,8 +59,6 @@ function LoundryHeader() {
 }
     },[windowHeightSize])
 
-
-
     // action to go on top
 
     function handleTopNavbar(){
@@ -71,8 +69,6 @@ function LoundryHeader() {
         })
     }
 
-
-    
     return (
         <div ref={navbar} className='loundry-header'>
             <Link to='/'>
@@ -103,7 +99,7 @@ function LoundryHeader() {
                     </p>
                 </Link> 
                 <Link className="navbar-options" to='/precos'>
-                    <p>Preços</p>
+                    <p>Localização</p>
                 </Link>
             </nav>
             <div className='header-menu-icon' onClick={handleMenuClick}>

@@ -1,7 +1,7 @@
 import React from 'react';
 import './loundry.css';
 
-import transiton from '../transition';
+import transition from '../transition';
 // Components
 import Banner from './banner/Banner';
 import About from './about/About';
@@ -22,12 +22,10 @@ const Loundry = () => {
       <Testimonials/>
       <GetInTouch/>
       <About />
-      <Footer/>
-
     </>
   );
 };
 
 // trocar o botão de preços por contact ou location. O preços e serviços podem tratar da mesma coisa
-export default  transiton(Loundry);
+export default  transition(Loundry);
 // export default Loundry;
