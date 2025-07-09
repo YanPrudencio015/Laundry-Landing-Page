@@ -1,5 +1,5 @@
 import React from "react";
-import './LocationPage.css'
+import './locationPage.css'
 import transition from "../../transition";
 import BannerPage from '../../components/bannerPages/Bannerpage'
 
