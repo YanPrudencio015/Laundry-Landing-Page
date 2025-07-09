@@ -11,8 +11,9 @@ import LavagemASecoImg from '../../images/Mobile/LavagemASeco.jpg'
 import LavarESecarImg from '../../images/Mobile/lavarESecar.jpg'
 import PassarImg from '../../images/Mobile/Passar.jpg'
 
+//component 
 
-
+import BannerPage from "../../components/bannerPages/Bannerpage";
 
 
 function ServicePage(props){
@@ -48,17 +49,11 @@ function ServicePage(props){
         price: "150.00" 
     },
 ]
+
+const title = "nossos serviços"
     return(
         <div className="servicePage">
-            <div className="serviceHeader">
-                <img className="serviceHeaderImg" src={img}/>
-                <div className="serviceHeaderText">
-                    <h2 className="serviceHeaderTextTitle">Serviços</h2>
-                    <p className="serviceHeaderTextDescription">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aspernatur cum aliquam voluptate ratione, ut optio! Earum nisi voluptatum odit dolore esse ex accusamus, blanditiis aut fugiat voluptatem ad expedita!
-                    </p>
-                </div>
-            </div>
+            <BannerPage title={title}/>
           <div className="serviPgBody">
             {CardsInfosServi.map((item, index)=>(
                 <div className="serviPgCard">

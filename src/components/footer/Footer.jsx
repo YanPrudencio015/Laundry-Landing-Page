@@ -34,8 +34,8 @@ export default function Footer (props){
                         </Link>
                         <Link 
                             className=" footer-link-item" 
-                            to={'/preco'}>
-                                <li className="footer-links">Preços</li>
+                            to={'/localizacao'}>
+                                <li className="footer-links">Localização</li>
                         </Link>
                     </ul>
             </div>

@@ -24,7 +24,6 @@ const allButtonLinks = [
     {name: 'Menu', url: "/"},
     {name: 'Serviços', url: "/servicos"},
     {name: 'Sobre', url: "/sobre"},
-    {name: 'Precos', url: "/precos"},
 ]
 
 

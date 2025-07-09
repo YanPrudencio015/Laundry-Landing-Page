@@ -4,14 +4,15 @@ import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import { sidebarToggleReducer } from './redux/sideBarToggle'
 import { AnimatePresence } from 'framer-motion'
-import './components/loundry.css'
+import './pages/mainpage/loundry.css'
 
 // to lazy loading
 import { Suspense, lazy } from 'react'
 import LazyLoading from './lazyLoading/Lazy'
-const Main = lazy(()=> import('./components/Loundry'));
-const About = lazy(()=> import('./components/about/AboutPage'));
+const Main = lazy(()=> import('./pages/mainpage/Loundry'));
+const About = lazy(()=> import('./pages/aboutPage/AboutPage'));
 const Services = lazy(()=> import('./pages/servicePage/ServicePage'));
+const Location  = lazy(()=> import('./pages/locationPage/LocationPage'))
 
 // Components
 import LoundryHeader from './components/header/LoundryHeader'
@@ -41,6 +42,7 @@ function App() {
               <Route index element={< Main/>} />
               <Route path='/sobre' element={<About />} />
               <Route path='/servicos' element={<Services />} />
+              <Route path='/localizacao' element={<Location />} />
             </Routes>
           </AnimatePresence>
           <Footer/>

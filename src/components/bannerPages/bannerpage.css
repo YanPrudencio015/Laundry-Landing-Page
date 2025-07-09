@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comfortaa:wght@300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+.slide-in {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200em;
+  background-color: #FFD400;
+  transform-origin: top;
+  z-index: 1000;
+}
+
+.slide-out {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200em;
+  background: #FFD400;
+  transform-origin: bottom;
+  z-index: 1000;
+}
+
+
+/* 
+font-family: "Open Sans", sans-serif;
+font-family: "Montserrat", sans-serif;
+font-family: "Raleway", sans-serif;
+font-family: "Nunito", sans-serif;
+font-family: "Mulish", sans-serif;
+font-family: "Quicksand", sans-serif;
+font-family: "Manrope", sans-serif;
+font-family: "Jost", sans-serif;
+font-family: "Pacifico", cursive;
+font-family: "Comfortaa", sans-serif;
+font-family: "Lobster", sans-serif;
+font-family: "Urbanist", sans-serif;  
+font-family: "Cal Sans", sans-serif;
+font-family: "Bebas Neue", sans-serif;
+font-family: "Bangers", system-ui;
+*/
+
+/* 
+colors
+#FFD400
+#3386B6
+#AA3D39
+*/
+
+:root{
+    --PrimaryColor:#FFD400;
+    --SecondColor:#3386B6;
+    --ThirdColor:#AA3D39;
+    --BGColor: #F7F7F7;
+    --SecondColorLight:rgba(51, 134, 182,.9);
+}
+::selection{
+  background-color: var(--ThirdColor);
+  color: var(--BGColor);
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    transition: .2s ease-in;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+}
+a{
+  list-style: none;
+  
+}
+
+/* Style for links that trigger transitions */
+.transition-link {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  z-index: 1;
+}
+
+/* Optional: Create a ripple effect on links */
+.transition-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.3s;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.transition-link:hover::after {
+  transform: scale(1.5);
+}
+
+.circle-transition {
+  will-change: transform;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Adicionar ao seu arquivo CSS */
+
+
+a{
+  text-decoration: none;
+}
+
+/* Mobile pequeno */
+@media (max-width: 359px) {
+   .bannerPage{
+        width: 100%;
+        height: 15em;
+        background-color: #FFD400;
+        position: relative;
+        margin-bottom: 5em;
+      }
+    .bannerPgBG{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+      }
+    .bannerPgImg{
+      width: 19em;
+      height: 35em;
+      object-fit: cover;
+      position: absolute;
+      left: 50%;
+      top: 90%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .bannerPgBGTitle{
+      z-index: -1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+      color: hsl(50, 70%, 50%);
+      font-family: "Raleway", sans-serif;
+      font-size: 10vw;
+      display: none;
+    }
+    .bannerPgTitle{
+      font-size: 5vw;
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      transform: translate(-50%, 6%);
+      z-index: 10;
+      text-transform: uppercase;
+      font-family: "Jost", sans-serif;
+      font-weight: 900;
+      border-bottom: solid 1px #000;
+      color: hsl(202, 100%, 46%);
+      text-align: center;
+    }
+
+}
+  
+  /* Mobile padrão */
+  @media (min-width: 360px) and (max-width: 425px) {
+   .bannerPage{
+        width: 100%;
+        height: 15em;
+        background-color: #FFD400;
+        position: relative;
+        margin-bottom: 5em;
+      }
+    .bannerPgBG{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+      }
+    .bannerPgImg{
+      width: 19em;
+      height: 35em;
+      object-fit: cover;
+      position: absolute;
+      left: 50%;
+      top: 90%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .bannerPgBGTitle{
+      z-index: -1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+      color: hsl(50, 70%, 50%);
+      font-family: "Raleway", sans-serif;
+      font-size: 10vw;
+      display: none;
+    }
+    .bannerPgTitle{
+      font-size: 5vw;
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      transform: translate(-50%, 6%);
+      z-index: 10;
+      text-transform: uppercase;
+      font-family: "Jost", sans-serif;
+      font-weight: 900;
+      border-bottom: solid 1px #000;
+      color: hsl(202, 100%, 46%);
+      text-align: center;
+    }
+}
+  
+
+
+  /* Tablets */
+  @media (min-width: 426px) and (max-width: 767px) {
+   .bannerPage{
+        width: 100%;
+        height: 15em;
+        background-color: #FFD400;
+        position: relative;
+        margin-bottom: 9em;
+      }
+    .bannerPgBG{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+      }
+    .bannerPgImg{
+      width: 19em;
+      height: 35em;
+      object-fit: cover;
+      position: absolute;
+      left: 50%;
+      top: 90%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .bannerPgBGTitle{
+      z-index: -1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+      color: hsl(50, 70%, 50%);
+      font-family: "Raleway", sans-serif;
+      font-size: 10vw;
+      display: none;
+    }
+    .bannerPgTitle{
+      font-size: 1.6em;
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      transform: translate(-50%, 6%);
+      z-index: 10;
+      text-transform: uppercase;
+      font-family: "Jost", sans-serif;
+      font-weight: 900;
+      border-bottom: solid 1px #000;
+      color: hsl(202, 100%, 46%);
+      text-align: center;
+    }
+  }
+  
+  /* Laptops/Desktop pequeno */
+  @media (min-width: 768px) and (max-width: 1024px) {
+  .bannerPage{
+        width: 100%;
+        height: 15em;
+        background-color: #FFD400;
+        position: relative;
+        margin-bottom: 9em;
+      }
+    .bannerPgBG{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+      }
+    .bannerPgImg{
+      width: 19em;
+      height: 35em;
+      object-fit: cover;
+      position: absolute;
+      left: 50%;
+      top: 90%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .bannerPgBGTitle{
+      z-index: -1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+      color: hsl(50, 70%, 50%);
+      font-family: "Raleway", sans-serif;
+      font-size: 10vw;
+      display: none;
+    }
+    .bannerPgTitle{
+      font-size: 1.6em;
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      transform: translate(-50%, 6%);
+      z-index: 10;
+      text-transform: uppercase;
+      font-family: "Jost", sans-serif;
+      font-weight: 900;
+      border-bottom: solid 1px #000;
+      color: hsl(202, 100%, 46%);
+      text-align: center;
+    }
+  }
+  
+  /* Desktops */
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    .bannerPage{
+        width: 100%;
+        height: 20em;
+        background-color: #FFD400;
+        position: relative;
+      }
+    .bannerPgBG{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+      }
+    .bannerPgImg{
+      width: 40em;
+      height: 40em;
+      object-fit: cover;
+      position: absolute;
+      left: 50%;
+      top: 90%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .bannerPgBGTitle{
+      z-index: -1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+      color: hsl(50, 70%, 50%);
+      font-family: "Raleway", sans-serif;
+      font-size: 6vw;
+    }
+    .bannerPgTitle{
+      font-size: 2.5vw;
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      transform: translate(-50%, 6%);
+      z-index: 10;
+      text-transform: uppercase;
+      font-family: "Jost", sans-serif;
+      font-weight: 900;
+      border-bottom: solid 1px #000;
+      color: hsl(202, 100%, 46%);
+    }
+
+  }
+  
+  /* Telas grandes */
+  @media (min-width: 1441px) {
+   .bannerPage{
+        width: 100%;
+        height: 20em;
+        background-color: #FFD400;
+        position: relative;
+      }
+    .bannerPgBG{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+      }
+    .bannerPgImg{
+      width: 40em;
+      height: 40em;
+      object-fit: cover;
+      position: absolute;
+      left: 50%;
+      top: 90%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .bannerPgBGTitle{
+      z-index: -1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+      color: hsl(50, 70%, 50%);
+      font-family: "Raleway", sans-serif;
+      font-size: 6vw;
+    }
+    .bannerPgTitle{
+      font-size: 2.5vw;
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      transform: translate(-50%, 6%);
+      z-index: 10;
+      text-transform: uppercase;
+      font-family: "Jost", sans-serif;
+      font-weight: 900;
+      border-bottom: solid 1px #000;
+      color: hsl(202, 100%, 46%);
+    }
+
+  }

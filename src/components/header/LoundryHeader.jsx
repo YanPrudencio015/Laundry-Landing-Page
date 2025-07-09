@@ -98,7 +98,7 @@ function LoundryHeader() {
                         Sobre
                     </p>
                 </Link> 
-                <Link className="navbar-options" to='/precos'>
+                <Link className="navbar-options" to='/localizacao'>
                     <p>Localização</p>
                 </Link>
             </nav>
