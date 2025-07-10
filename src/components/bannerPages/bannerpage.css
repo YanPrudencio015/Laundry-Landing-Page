@@ -158,7 +158,7 @@ a{
       display: none;
     }
     .bannerPgTitle{
-      font-size: 5vw;
+      font-size: 8vw;
       position: absolute;
       left: 50%;
       top: 100%;
@@ -168,8 +168,8 @@ a{
       font-family: "Jost", sans-serif;
       font-weight: 900;
       border-bottom: solid 1px #000;
-      color: hsl(202, 100%, 46%);
       text-align: center;
+      color: #222222;
     }
 
 }
@@ -215,7 +215,7 @@ a{
       display: none;
     }
     .bannerPgTitle{
-      font-size: 5vw;
+      font-size: 8vw;
       position: absolute;
       left: 50%;
       top: 100%;
@@ -225,8 +225,8 @@ a{
       font-family: "Jost", sans-serif;
       font-weight: 900;
       border-bottom: solid 1px #000;
-      color: hsl(202, 100%, 46%);
       text-align: center;
+      color: #222222;
     }
 }
   
@@ -239,7 +239,7 @@ a{
         height: 15em;
         background-color: #FFD400;
         position: relative;
-        margin-bottom: 9em;
+        margin-bottom: 4em;
       }
     .bannerPgBG{
         width: 100%;
@@ -273,7 +273,7 @@ a{
       display: none;
     }
     .bannerPgTitle{
-      font-size: 1.6em;
+      font-size: 2em;
       position: absolute;
       left: 50%;
       top: 100%;
@@ -283,7 +283,7 @@ a{
       font-family: "Jost", sans-serif;
       font-weight: 900;
       border-bottom: solid 1px #000;
-      color: hsl(202, 100%, 46%);
+      color: #222222;
       text-align: center;
     }
   }
@@ -295,7 +295,7 @@ a{
         height: 15em;
         background-color: #FFD400;
         position: relative;
-        margin-bottom: 9em;
+        margin-bottom: 6em;
       }
     .bannerPgBG{
         width: 100%;
@@ -329,7 +329,7 @@ a{
       display: none;
     }
     .bannerPgTitle{
-      font-size: 1.6em;
+      font-size: 3.5em;
       position: absolute;
       left: 50%;
       top: 100%;
@@ -339,7 +339,7 @@ a{
       font-family: "Jost", sans-serif;
       font-weight: 900;
       border-bottom: solid 1px #000;
-      color: hsl(202, 100%, 46%);
+      color: #222222;
       text-align: center;
     }
   }
@@ -351,6 +351,7 @@ a{
         height: 20em;
         background-color: #FFD400;
         position: relative;
+        margin-bottom: 3em;
       }
     .bannerPgBG{
         width: 100%;
@@ -393,7 +394,7 @@ a{
       font-family: "Jost", sans-serif;
       font-weight: 900;
       border-bottom: solid 1px #000;
-      color: hsl(202, 100%, 46%);
+      color: #222222;
     }
 
   }

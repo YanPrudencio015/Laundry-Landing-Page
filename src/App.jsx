@@ -12,7 +12,6 @@ import LazyLoading from './lazyLoading/Lazy'
 const Main = lazy(()=> import('./pages/mainpage/Loundry'));
 const About = lazy(()=> import('./pages/aboutPage/AboutPage'));
 const Services = lazy(()=> import('./pages/servicePage/ServicePage'));
-const Location  = lazy(()=> import('./pages/locationPage/LocationPage'))
 
 // Components
 import LoundryHeader from './components/header/LoundryHeader'
@@ -42,7 +41,6 @@ function App() {
               <Route index element={< Main/>} />
               <Route path='/sobre' element={<About />} />
               <Route path='/servicos' element={<Services />} />
-              <Route path='/localizacao' element={<Location />} />
             </Routes>
           </AnimatePresence>
           <Footer/>
@@ -51,5 +49,18 @@ function App() {
     </Provider>
   )
 }
+
+/*
+criar um novo navbar que, ao scrolar ou puxar para cima ele aparece. A ideia é substituir
+o botão que leva devolta para o topo. Dessa forma, fica mais fácil do usuário trnasitar entre
+as páginas.
+
+Refazer o menu lateral talvez colocar animação ao abri-lo. Criar um evento para fechar o menu
+no background, para isso, será necessário criar o BG como elemento irmão e não pai. 
+
+Refazer o footer colocando as informações da localização.
+
+verificar e corrigir os erros de design do site.
+*/
 
 export default App

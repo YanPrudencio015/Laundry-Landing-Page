@@ -32,11 +32,6 @@ export default function Footer (props){
                             to={'/sobre'}>
                                 <li className="footer-links">Sobre nós</li>
                         </Link>
-                        <Link 
-                            className=" footer-link-item" 
-                            to={'/localizacao'}>
-                                <li className="footer-links">Localização</li>
-                        </Link>
                     </ul>
             </div>
             <div className="footer-column-3">
