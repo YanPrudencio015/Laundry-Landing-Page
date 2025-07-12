@@ -17,6 +17,7 @@ const Services = lazy(()=> import('./pages/servicePage/ServicePage'));
 import LoundryHeader from './components/header/LoundryHeader'
 import SideBarHeader from './components/header/sideBar'
 import Footer from './components/footer/Footer'
+import Scrollheader from './components/header/secondHeader/SecondHeader'
 // Background
 import background from './images/Backgrounds/swirl.png'
 
@@ -35,6 +36,7 @@ function App() {
             backgroundAttachment: 'fixed'
           }}>
           <LoundryHeader />
+          <Scrollheader/>
           <SideBarHeader />
           <AnimatePresence mode="wait" initial={false}>
             <Routes location={location} key={location.pathname}>
