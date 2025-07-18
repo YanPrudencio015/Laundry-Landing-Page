@@ -6,16 +6,16 @@ function neighborhoods(props){
     return(
                 <div className='cos-square square2'>
                     <div className='cos-square-header'>
-                        <h1 className='cos-square-title'>Bairros Atendidos</h1>
+                        <h1 className='cos-square-title'>Neighborhoods</h1>
                     </div>
                     <div className='cos-square-body'>
-                        <p className='cos-square-neighborhoods'>Recreio</p>
-                        <p className='cos-square-neighborhoods'>Barra</p>
-                        <p className='cos-square-neighborhoods'>Peninsula</p>
-                        <p className='cos-square-neighborhoods'>Rio 2</p>
-                        <p className='cos-square-neighborhoods'>Curicica</p>
-                        <p className='cos-square-neighborhoods'>Vargem Grande</p>
-                        <p className='cos-square-neighborhoods'>Vargem Pequena</p>
+                        <p className='cos-square-neighborhoods'>Lorem</p>
+                        <p className='cos-square-neighborhoods'>Lorem</p>
+                        <p className='cos-square-neighborhoods'>Lorem</p>
+                        <p className='cos-square-neighborhoods'>Lorem</p>
+                        <p className='cos-square-neighborhoods'>Lorem</p>
+                        <p className='cos-square-neighborhoods'>Lorem</p>
+                        <p className='cos-square-neighborhoods'>Lorem</p>
                     </div>
                 </div>
     )

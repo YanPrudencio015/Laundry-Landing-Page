@@ -10,11 +10,10 @@ import './pages/mainpage/loundry.css'
 import { Suspense, lazy } from 'react'
 import LazyLoading from './lazyLoading/Lazy'
 const Main = lazy(()=> import('./pages/mainpage/Loundry'));
-const About = lazy(()=> import('./pages/aboutPage/AboutPage'));
-const Services = lazy(()=> import('./pages/servicePage/ServicePage'));
 
 // Components
-import LoundryHeader from './components/header/LoundryHeader'
+// import LoundryHeader from './components/header/LaundryHeader'
+import LaundryHeader from './components/header/LaundryHeader'
 import SideBarHeader from './components/header/sideBar'
 import Footer from './components/footer/Footer'
 import Scrollheader from './components/header/secondHeader/SecondHeader'
@@ -35,17 +34,15 @@ function App() {
             backgroundImage: `url(${background})`, 
             backgroundAttachment: 'fixed'
           }}>
-          <LoundryHeader />
+          <LaundryHeader />
           <Scrollheader/>
           <SideBarHeader />
           <AnimatePresence mode="wait" initial={false}>
             <Routes location={location} key={location.pathname}>
               <Route index element={< Main/>} />
-              <Route path='/sobre' element={<About />} />
-              <Route path='/servicos' element={<Services />} />
             </Routes>
           </AnimatePresence>
-          <Footer/>
+          {/* <Footer/> */}
         </div>
       </Suspense>
     </Provider>
@@ -60,9 +57,10 @@ as páginas.
 Refazer o menu lateral talvez colocar animação ao abri-lo. Criar um evento para fechar o menu
 no background, para isso, será necessário criar o BG como elemento irmão e não pai. 
 
-Refazer o footer colocando as informações da localização.
+refazer o a sessão de comentários dos clientes
+refazer o about
 
-verificar e corrigir os erros de design do site.
+
 */
 
 export default App

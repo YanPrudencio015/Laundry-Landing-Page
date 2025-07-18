@@ -6,7 +6,6 @@ import transition from '../../transition';
 import Banner from '../../components/banner/Banner';
 import About from '../../components/about/About';
 import Service from '../../components/Service/Service';
-import Promotion from '../../components/promotion/Promotion'
 import Costumers from '../../components/costumer/Costumer';
 import Testimonials from '../../components/testimonials/Testimonials';
 import GetInTouch from '../../components/getInTouch/GetInTouth'
@@ -14,12 +13,11 @@ const Loundry = () => {
   return (
     <>
       <Banner />
-      <Promotion/>
       <Service/>
       <Costumers/>
-      <Testimonials/>
+      {/* <Testimonials/> */}
       <GetInTouch/>
-      <About />
+      {/* <About /> */}
     </>
   );
 };

@@ -4,12 +4,11 @@
 @media (max-width: 359px) {
     .get-in-touch{
         width: 95%;
-        height: 30em;
+        height: 15em;
         background-color: var(--PrimaryColor);
         background-image: url('../../images/Backgrounds/ps-neutral.png');
         background-attachment: fixed;
         position: relative;
-        overflow: hidden;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -17,59 +16,61 @@
         z-index: 1;
         gap: 2%;
         padding: 2%;
+        border: solid 3px #fff;
+        outline: solid 6px var(--PrimaryColor);
     }
-    .get-in-touch-img{
-        position: absolute;
-        bottom: -10em;
-        left: 50%;
-        transform: translate(-50%);
-        width: 100vh;
-        height: 113vw;
-        object-fit: cover;
-        z-index: -1;
-    }
-    .get-in-touch-title{
-        width: 95%;
-        height: 4em;
-        font-size: 13vw;
-        color: hsl(50, 60%, 41%);
-        background-color: transparent;
-        font-weight: 900;
-        text-transform: uppercase;
-        text-align: start;
-        font-family: "Bebas Neue", sans-serif;
+    .getTitle{
+        font-size: 10vw;
+        width: 90%;
+        height: 2em;
         border: solid 2px #fff;
-        border-radius: 5px;
-        padding: 1%;
-    }
-    .get-in-touch-btn-link{
-        width: 70%;
-        height: 3em;
-        color: black;
-        background-color: transparent;
-        background-color: #fff;
         border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 300;
+        text-transform: uppercase;
+        align-items: center;
+        font-family: "Open Sans", sans-serif;    
     }
-    .get-in-touch-btn{
-        background-color: transparent;
+    .getList{
+        width: 90%;
+        height: 9em;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        list-style: none;
+        color: #000;
+    }
+    .getItems{
+        font-size: 10vw;
+        color: #000;
+        font-family: "Urbanist", sans-serif;  
+        background-color: #fff;
         width: 100%;
-        height: 100%;
-        font-size: 9vw;
-        text-transform: lowercase;
-        font-family: "Urbanist", sans-serif;
+        height: 2em;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+    .getItemsLink{
+        color: #000;
+
+    }
+
 }
   
   /* Mobile padrão */
   @media (min-width: 360px) and (max-width: 425px) {
-      .get-in-touch{
+     .get-in-touch{
         width: 95%;
-        height: 30em;
+        height: 13em;
         background-color: var(--PrimaryColor);
         background-image: url('../../images/Backgrounds/ps-neutral.png');
         background-attachment: fixed;
         position: relative;
-        overflow: hidden;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -77,48 +78,48 @@
         z-index: 1;
         gap: 2%;
         padding: 2%;
-        border-radius: 10px;
-
+        border: solid 3px #fff;
+        outline: solid 6px var(--PrimaryColor);
     }
-    .get-in-touch-img{
-        position: absolute;
-        bottom: -13em;
-        left: 50%;
-        transform: translate(-50%);
-        width: 75vh;
-        height: 113vw;
-        object-fit: cover;
-        z-index: -1;
-    }
-    .get-in-touch-title{
-        width: 95%;
-        height: 3em;
-        font-size: 13vw;
-        color: hsl(50, 60%, 41%);
-        background-color: transparent;
-        font-weight: 900;
-        text-transform: uppercase;
-        text-align: center;
-        font-family: "Bebas Neue", sans-serif;
+    .getTitle{
+        font-size: 10vw;
+        width: 90%;
+        height: 2em;
         border: solid 2px #fff;
-        border-radius: 5px;
-        padding: 1%;
-    }
-    .get-in-touch-btn-link{
-        width: 95%;
-        height: 5em;
-        color: black;
-        background-color: transparent;
-        background-color: #fff;
         border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 300;
+        text-transform: uppercase;
+        align-items: center;
+        font-family: "Open Sans", sans-serif;    
     }
-    .get-in-touch-btn{
-        background-color: transparent;
-        width: 100%;
-        height: 100%;
-        font-size: 9vw;
-        text-transform: lowercase;
+   .getList{
+        width: 90%;
+        height: 7em;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        list-style: none;
+        color: #000;
+    }
+    .getItems{
+        font-size: 7vw;
+        color: #000;
         font-family: "Urbanist", sans-serif;
+        background-color: #fff;
+        width: 80%;
+        height: 2em;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .getItemsLink{
+        color: #000;
+
     }
 }
   
@@ -126,256 +127,246 @@
 
   /* Tablets */
   @media (min-width: 426px) and (max-width: 767px) {
-  .get-in-touch{
+    .get-in-touch{
         width: 95%;
-        height: 30em;
+        height: 15em;
         background-color: var(--PrimaryColor);
-        background-image: url('../../images/Backgrounds/checkered-pattern.png');
-        background-image: url('../../images/Backgrounds/subtle-carbon.png');
-        background-image: url('../../images/Backgrounds/swirl.png');
-        background-image: url('../../images/Backgrounds/worn-dots.png');
-        background-image: url('../../images/Backgrounds/navy.png');
         background-image: url('../../images/Backgrounds/ps-neutral.png');
         background-attachment: fixed;
         position: relative;
-        overflow: hidden;
         display: flex;
-        justify-content: start;
+        justify-content: space-between;
         align-items: center;
         flex-direction: column;
         z-index: 1;
         gap: 2%;
         padding: 2%;
-        border-radius: 10px;
+        border: solid 3px #fff;
+        outline: solid 6px var(--PrimaryColor);
     }
-    .get-in-touch-img{
-        position: absolute;
-        bottom: -13em;
-        left: 50%;
-        transform: translate(-50%);
-        width: 37em;
-        height: 28em;
-        object-fit: cover;
-        z-index: -1;
-    }
-    .get-in-touch-title{
-        width: 8em;
-        height: 3em;
-        font-size: 3.5em;
-        color: hsl(50, 60%, 41%);
-        background-color: transparent;
-        font-weight: 900;
-        text-transform: uppercase;
-        text-align: center;
-        font-family: "Bebas Neue", sans-serif;
-        border: solid 2px #fff;
-        border-radius: 5px;
-        padding: 1%;
-    }
-    .get-in-touch-btn-link{
-        width: 25em;
-        height: 4em;
-        color: black;
-        background-color: transparent;
-        background-color: #fff;
-        border-radius: 10px;
-    }
-    .get-in-touch-btn{
-        background-color: transparent;
-        width: 100%;
-        height: 100%;
+    .getTitle{
         font-size: 2.5em;
-        text-transform: lowercase;
+        width: 90%;
+        height: 2em;
+        border: solid 2px #fff;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 300;
+        text-transform: uppercase;
+        align-items: center;
+        font-family: "Open Sans", sans-serif;    
+    }
+   .getList{
+        width: 90%;
+        height: 9em;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        list-style: none;
+        color: #000;
+    }
+    .getItems{
+        font-size: 1.5em;
+        color: #000;
         font-family: "Urbanist", sans-serif;
+        background-color: #fff;
+        width: 80%;
+        height: 2em;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .getItemsLink{
+        color: #000;
+
     }
   }
   
   /* Laptops/Desktop pequeno */
   @media (min-width: 768px) and (max-width: 1024px) {
-    .get-in-touch{
-        width: 95%;
-        height: 30em;
+     .get-in-touch{
+        width: 70%;
+        height: 20em;
         background-color: var(--PrimaryColor);
-        background-image: url('../../images/Backgrounds/checkered-pattern.png');
-        background-image: url('../../images/Backgrounds/subtle-carbon.png');
-        background-image: url('../../images/Backgrounds/swirl.png');
-        background-image: url('../../images/Backgrounds/worn-dots.png');
-        background-image: url('../../images/Backgrounds/navy.png');
         background-image: url('../../images/Backgrounds/ps-neutral.png');
         background-attachment: fixed;
         position: relative;
-        overflow: hidden;
         display: flex;
-        justify-content: end;
-        align-items: end;
+        justify-content: space-between;
+        align-items: center;
         flex-direction: column;
         z-index: 1;
         gap: 2%;
         padding: 2%;
-        border-radius: 10px;
+        border: solid 3px #fff;
+        outline: solid 6px var(--PrimaryColor);
     }
-    .get-in-touch-img{
-        position: absolute;
-        bottom: -19em;
-        left: 28%;
-        transform: translate(-50%);
-        width: 52em;
-        height: 40em;
-        object-fit: cover;
-        z-index: -1;
-    }
-    .get-in-touch-title{
-        width: 4em;
-        height: 4em;
-        font-size: 5em;
-        color: hsl(50, 60%, 41%);
-        background-color: transparent;
-        font-weight: 900;
-        text-transform: uppercase;
-        text-align: center;
-        font-family: "Bebas Neue", sans-serif;
-        border: solid 2px #fff;
-        border-radius: 5px;
-        padding: 1%;
-    }
-    .get-in-touch-btn-link{
-        width: 20em;
-        height: 6em;
-        color: black;
-        background-color: transparent;
-        background-color: #fff;
-        border-radius: 10px;
-    }
-    .get-in-touch-btn{
-        background-color: transparent;
-        width: 100%;
-        height: 100%;
+    .getTitle{
         font-size: 2.5em;
-        text-transform: lowercase;
+        width: 90%;
+        height: 2em;
+        border: solid 2px #fff;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 300;
+        text-transform: uppercase;
+        align-items: center;
+        font-family: "Open Sans", sans-serif;    
+    }
+   .getList{
+        width: 90%;
+        height: 13em;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        list-style: none;
+        color: #000;
+    }
+    .getItems{
+font-size: 2em;
+        color: #000;
         font-family: "Urbanist", sans-serif;
+        background-color: #fff;
+        width: 80%;
+        height: 2.5em;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .getItemsLink{
+        color: #000;
+
     }
   }
   
   /* Desktops */
   @media (min-width: 1025px) and (max-width: 1440px) {
-.get-in-touch{
-        width: 95%;
-        height: 15em;
+     .get-in-touch{
+        width: 70%;
+        height: 20em;
         background-color: var(--PrimaryColor);
-        background-image: url('../../images/Backgrounds/checkered-pattern.png');
+        background-image: url('../../images/Backgrounds/ps-neutral.png');
         background-attachment: fixed;
         position: relative;
-        overflow: hidden;
         display: flex;
-        justify-content: end;
-        align-items: end;
+        justify-content: space-between;
+        align-items: center;
         flex-direction: row;
         z-index: 1;
         gap: 2%;
         padding: 2%;
-        border-radius: 10px;
+        border: solid 3px #fff;
+        outline: solid 6px var(--PrimaryColor);
     }
-    .get-in-touch-img{
-        position: absolute;
-bottom: -26em;
-        left: 28%;
-        transform: translate(-50%);
-        width: 59em;
-        height: 40em;
-        object-fit: cover;
-        z-index: -1;
-    }
-    .get-in-touch-title{
-        width: 35%;
-        height: 100%;
-        font-size: 3.5vw;
-        color: hsl(50, 60%, 41%);
-        background-color: transparent;
-        font-weight: 900;
-        text-transform: uppercase;
-        text-align: center;
-        font-family: "Bebas Neue", sans-serif;
+    .getTitle{
+        font-size: 2.5em;
+        width: 90%;
+        height: 90%;
         border: solid 2px #fff;
-        border-radius: 5px;
-        padding: 1%;
-    }
-    .get-in-touch-btn-link{
-        width: 16%;
-        height: 30%;
-        color: black;
-        background-color: transparent;
-        background-color: #fff;
         border-radius: 10px;
-        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 300;
+        text-transform: uppercase;
+        align-items: center;
+        font-family: "Open Sans", sans-serif;    
     }
-    .get-in-touch-btn{
-        background-color: transparent;
-        width: 100%;
-        height: 100%;
-        font-size: 2vw;
-        text-transform: lowercase;
+   .getList{
+        width: 90%;
+        height: 13em;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        list-style: none;
+        color: #000;
+    }
+    .getItems{
+font-size: 2em;
+        color: #000;
         font-family: "Urbanist", sans-serif;
-    }  
+        background-color: #fff;
+        width: 80%;
+        height: 2.5em;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .getItemsLink{
+        color: #000;
+
+    }
   }
   
   /* Telas grandes */
   @media (min-width: 1441px) {
-.get-in-touch{
+    .get-in-touch{
         width: 95%;
         height: 15em;
         background-color: var(--PrimaryColor);
-        background-image: url('../../images/Backgrounds/checkered-pattern.png');
+        background-image: url('../../images/Backgrounds/ps-neutral.png');
         background-attachment: fixed;
         position: relative;
-        overflow: hidden;
         display: flex;
-        justify-content: end;
-        align-items: end;
-        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
         z-index: 1;
         gap: 2%;
         padding: 2%;
-        border-radius: 10px;
+        border: solid 3px #fff;
+        outline: solid 6px var(--PrimaryColor);
     }
-    .get-in-touch-img{
-        position: absolute;
-bottom: -26em;
-        left: 28%;
-        transform: translate(-50%);
-        width: 59em;
-        height: 40em;
-        object-fit: cover;
-        z-index: -1;
-    }
-    .get-in-touch-title{
-        width: 35%;
-        height: 100%;
-        font-size: 3.5vw;
-        color: hsl(50, 60%, 41%);
-        background-color: transparent;
-        font-weight: 900;
-        text-transform: uppercase;
-        text-align: center;
-        font-family: "Bebas Neue", sans-serif;
+    .getTitle{
+        font-size: 10vw;
+        width: 90%;
+        height: 2em;
         border: solid 2px #fff;
-        border-radius: 5px;
-        padding: 1%;
-    }
-    .get-in-touch-btn-link{
-        width: 16%;
-        height: 30%;
-        color: black;
-        background-color: transparent;
-        background-color: #fff;
         border-radius: 10px;
-        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 300;
+        text-transform: uppercase;
+        align-items: center;
+        font-family: "Open Sans", sans-serif;    
     }
-    .get-in-touch-btn{
-        background-color: transparent;
-        width: 100%;
-        height: 100%;
-        font-size: 2vw;
-        text-transform: lowercase;
+    .getList{
+        width: 90%;
+        height: 7em;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        list-style: none;
+        color: #000;
+    }
+    .getItems{
+        font-size: 7vw;
+        color: #000;
         font-family: "Urbanist", sans-serif;
-    }  
+        background-color: #fff;
+        width: 80%;
+        height: 2em;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .getItemsLink{
+        color: #000;
+
+    }
+
+
   }

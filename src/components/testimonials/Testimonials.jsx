@@ -50,7 +50,7 @@ export default function Testimonials() {
     <section className='testimonials-section'>
         <div className='testi-header'>
             <h1 className='testi-header-title'>Feedback</h1>
-            <h3 className='testi-header-subtitle'>O que os nosos clientes dizem</h3>
+            <h3 className='testi-header-subtitle'>What our clients says</h3>
         </div>
         <div className='testi-body'>
         <Swiper
@@ -74,9 +74,10 @@ export default function Testimonials() {
                     <i className=" testi-card-icon fa-solid fa-star"></i>
                     <i className=" testi-card-icon fa-solid fa-star"></i>
                     <i className=" testi-card-icon fa-solid fa-star"></i>
+                    <i className=" testi-card-icon fa-solid fa-star"></i>
                 </div>
                 <div className='testi-swiper-card-name'>
-                    <p className='testi-swiper-card-costumer-Name'>Lavanderia</p>
+                    <p className='testi-swiper-card-costumer-Name'>laundry</p>
                 </div>
                 <div className='testi-swiper-card-text'>
                     <h1 className='testi-swiper-card-text-comma'>"</h1>
@@ -84,7 +85,6 @@ export default function Testimonials() {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         Possimus consequatur numquam sequi, minus doloremque 
                         rerum ducimus non quam cupiditate laboriosam sapiente, 
-                        {/* testando. Está no centro ? */}
                     </p>
                 </div>
             </div>

@@ -104,16 +104,6 @@ return (
                     {Texts[turnText].subDescription}
                 </h4>
             </div>
-            <div className="banner-text-footer">
-                <a className="banner-btn-link"
-                href="https://wa.me/5521979721419?text=Olá,%20esse%20é%20um%20texto%20genérico!%20...%20Para%20falar%20com%20a%20Anõna" 
-                target="_blank">
-                    <button     className="banner-btn" >
-                        <i className="banner-whatsApp-icon fa-brands fa-whatsapp"></i>
-                        <p className="banner-btn-text">Entre em contato</p>
-                    </button>
-                </a>
-            </div>
         </div>
     </div>
 );

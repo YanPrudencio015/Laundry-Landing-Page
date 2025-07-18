@@ -7,7 +7,7 @@ function Costumers(props){
     return(
         <section className='costumers-section'>
             <div className='costumers-header'>
-                <h1 className='cos-header-title'>Quem Atendemos</h1>
+                <h1 className='cos-header-title'>Our Client</h1>
             </div>
             <div className='costumers-body'>
                 <Neighborhoods/>

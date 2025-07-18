@@ -47,7 +47,7 @@ function Scrollheader(props){
     return(
         <div className="scrollHeader"ref={headerElement}>
             <Link to={'/'}>
-            <h1 className="scrollHeaderTitle">Kiloklin</h1>
+            <h1 className="scrollHeaderTitle">Laundry</h1>
             </Link>
             <button className="scrollHeaderMenuButton" onClick={handleOpenSidebar}>
                 <div className="scrHMenuButtonLine"></div>

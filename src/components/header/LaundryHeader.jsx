@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 
-import './loundryheader.css';
+import './laundryheader.css';
 
 // React Router
 import { Link } from "react-router-dom";
@@ -11,7 +11,7 @@ import { openSidebar } from "../../redux/sideBarToggle";
 
 
 // toggle menu sidebar
-function LoundryHeader() {
+function LaundryHeader() {
     const sidebarState = useSelector((state) => state);
     const dispatch = useDispatch();
     
@@ -33,30 +33,15 @@ function LoundryHeader() {
         <div className='loundry-header'>
             <Link to='/'>
                 <h1 className='header-title'>
-                    <p className='header-sub-title'>Lavanderia</p>
-                    <div className="header-title-letters">
-                        <span className='letter'>k</span>
-                        <span className='letter'>i</span>
-                        <span className='letter'>l</span>
-                        <span className='letter'>o</span>
-                        <span className='letter'>k</span>
-                        <span className='letter'>l</span>
-                        <span className='letter'>i</span>
-                        <span className='letter'>n</span>
-                    </div>
-                    <i className="header-title-icon fa-solid fa-droplet"></i>
+                    <p className='header-sub-title'>Laundry</p>
                 </h1>
             </Link>
             <nav className='header-navbar'>
-                <Link className="navbar-options" to='/servicos'>
-                    <p>
-                        Serviços
-                    </p>
+                <Link className="navbar-options">
+                    <p>Services</p>
                 </Link> 
-                <Link className="navbar-options" to='/sobre'>
-                    <p>
-                        Sobre
-                    </p>
+                <Link className="navbar-options">
+                    <p>About</p>
                 </Link> 
             </nav>
             <div className='header-menu-icon' onClick={handleMenuClick}>
@@ -68,4 +53,4 @@ function LoundryHeader() {
     );
 }
 
-export default LoundryHeader;
+export default LaundryHeader;
