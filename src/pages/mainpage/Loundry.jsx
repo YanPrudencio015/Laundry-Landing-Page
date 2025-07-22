@@ -15,9 +15,9 @@ const Loundry = () => {
       <Banner />
       <Service/>
       <Costumers/>
-      {/* <Testimonials/> */}
+      <Testimonials/>
       <GetInTouch/>
-      {/* <About /> */}
+      <About />
     </>
   );
 };

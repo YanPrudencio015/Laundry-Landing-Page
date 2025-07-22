@@ -14,7 +14,6 @@ const Main = lazy(()=> import('./pages/mainpage/Loundry'));
 // Components
 // import LoundryHeader from './components/header/LaundryHeader'
 import LaundryHeader from './components/header/LaundryHeader'
-import SideBarHeader from './components/header/sideBar'
 import Footer from './components/footer/Footer'
 import Scrollheader from './components/header/secondHeader/SecondHeader'
 // Background
@@ -36,7 +35,6 @@ function App() {
           }}>
           <LaundryHeader />
           <Scrollheader/>
-          <SideBarHeader />
           <AnimatePresence mode="wait" initial={false}>
             <Routes location={location} key={location.pathname}>
               <Route index element={< Main/>} />
