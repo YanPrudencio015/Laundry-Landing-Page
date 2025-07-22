@@ -43,9 +43,9 @@ export default function Testimonials() {
     useEffect(()=>{
         console.log(windowsize.width);
 
-        if(windowsize.width < 425){
+        if(windowsize.width < 499){
             setSlidesPerView(1);
-        } else if(windowsize.width >= 426 && windowsize.width <= 1024){
+        } else if(windowsize.width >= 500 && windowsize.width <= 1024){
             setSlidesPerView(2);    
         }  else if(windowsize.width >= 1025){
             setSlidesPerView(4);    
@@ -114,10 +114,10 @@ export default function Testimonials() {
         <Swiper
         slidesPerView={slidesPerView}
         spaceBetween={30}
-        // autoplay={{
-        // delay: 4500,
-        // disableOnInteraction: false,
-        // }}
+        autoplay={{
+        delay: 4500,
+        disableOnInteraction: false,
+        }}
         loop={true}
         modules={[Pagination, Autoplay]}
         className="testi-mySwiper"
