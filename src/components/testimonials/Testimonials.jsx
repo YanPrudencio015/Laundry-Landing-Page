@@ -123,7 +123,7 @@ export default function Testimonials() {
         className="testi-mySwiper"
         >
         {clientTestimonials.map((value, index)=>(
-                    <SwiperSlide  className='testi-swiper-slide'>
+                    <SwiperSlide key={index} className='testi-swiper-slide'>
             <div className='testi-swiper-card'>
                 <div className='testi-swiper-card-img-border'>
                     <img src={value.img} className='testi-swiper-card-img'/>
