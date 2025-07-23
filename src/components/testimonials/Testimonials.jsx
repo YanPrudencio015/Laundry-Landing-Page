@@ -114,10 +114,10 @@ export default function Testimonials() {
         <Swiper
         slidesPerView={slidesPerView}
         spaceBetween={30}
-        autoplay={{
-        delay: 4500,
-        disableOnInteraction: false,
-        }}
+        // autoplay={{
+        // delay: 4500,
+        // disableOnInteraction: false,
+        // }}
         loop={true}
         modules={[Pagination, Autoplay]}
         className="testi-mySwiper"

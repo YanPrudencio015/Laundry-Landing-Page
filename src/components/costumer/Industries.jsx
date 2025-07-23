@@ -14,7 +14,6 @@ function Industries(props){
                         <p className='cos-square-items'>Industries</p>
                         <p className='cos-square-items'>Industries</p>
                         <p className='cos-square-items'>Industries</p>
-                        <p className='cos-square-items'>Industries</p>
                     </div>
                 </div>
     )

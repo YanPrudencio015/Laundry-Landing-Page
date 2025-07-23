@@ -237,7 +237,7 @@
       align-items: end;
    }
     .testi-swiper-card{
-        width: 95%;
+        width: 24em;
         height: 25em;
         background-color: hsl(202, 100%, 46%);
         border-radius: 30px;
@@ -279,7 +279,7 @@
    }
    .testi-card-icon{
       margin: 0 2%;
-      font-size: 6vw;
+      font-size: 1.5em;
    }
    .testi-swiper-card-name{
       width: 100%;
@@ -318,7 +318,7 @@
    .testi-swiper-card-costumers-testimonials{
         width: 100%;
         height: 80%;
-        font-size: 7vw;
+        font-size: 1.5em;
         font-family: "Urbanist", sans-serif;
         color: #fff;
         display: flex;
