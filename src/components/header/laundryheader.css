@@ -3,16 +3,17 @@
 @media (max-width: 359px) {
     .loundry-header{
         width: 100%;
-        height: 15vw;
+        height: 2.5em;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         padding: 0 2%;
         align-items: center;
         color: #000;
         position: relative;
-        margin-bottom: 0.5em;
+        margin-bottom: 1em;
     }
+
 .header-title{
         position: relative;
         display: flex;
@@ -171,7 +172,7 @@ position: fixed;
         height: 15vw;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         padding: 0 2%;
         align-items: center;
         color: #000;
@@ -332,7 +333,7 @@ position: fixed;
         height: 4em;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         padding: 0 2%;
         align-items: center;
         color: #000;
@@ -530,12 +531,12 @@ position: fixed;
     }
 
     .header-navbar{
-        display: none;
-        justify-content: space-between;
+        display: flex;
+        justify-content: space-around;
         align-items: center;
         height: 100%;
-        width: 33vw;
-        font-size: 1.4vw;
+        width: 35%;
+        font-size: 3vw;
         font-family: "Jost", sans-serif;
         font-weight: 300;
     }
@@ -546,25 +547,9 @@ position: fixed;
         color: #000;
     }
     .navbar-options:hover{
-        color: var(--BGColor);
+        color: #00879E;
     }
-    .header-navbar >.navbar-options::before{
-        position: absolute;
-        top: -10em;
-        left: 50%;
-        transform: translate(-50%, 0px);
-        content: '';
-        width: 120%;
-        height: 5em;
-        background-color: #00879E;
-        z-index: -1;
-        border-radius: 0 0 5em 5em;
-        transition: .8s ease-in-out;
-    }
-    .navbar-options:hover::before{
-        transition: .3s ease-in-out;
-        top: -2.5em;
-    }
+
 
     .socials{
         width: 5%;
@@ -708,24 +693,7 @@ position: fixed;
         color: #000;
     }
     .navbar-options:hover{
-        color: var(--BGColor);
-    }
-    .header-navbar >.navbar-options::before{
-        position: absolute;
-        top: -10em;
-        left: 50%;
-        transform: translate(-50%, 0px);
-        content: '';
-        width: 120%;
-        height: 5em;
-        background-color: hsl(189, 100%, 31%);
-        z-index: -1;
-        border-radius: 0 0 5em 5em;
-        transition: .8s ease-in-out;
-    }
-    .navbar-options:hover::before{
-        transition: .3s ease-in-out;
-        top: -2.5em;
+        color: #00879E;
     }
 
     .socials{

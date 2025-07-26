@@ -188,39 +188,36 @@
   /* Desktops */
   @media (min-width: 1025px) and (max-width: 1440px) {
    .about{
-        width: 45%;
+        width: 80%;
         height: 30em;
         margin: 2em 0;
         display: flex;
         flex-direction: column-reverse;
-        align-items: start;
+        align-items: center;
         justify-content: center;
         gap: .0em;
         border-radius: 2px;
         position: relative;
         z-index: 1;
-        background-color: hsla(0, 0%, 0%, 0.1);
-        border-radius: 1em 3em 3em 1em;
-      }
+        background-color: hsla(0, 0%, 0%, 0.6);
+        border-radius: 1em 1em 1em 1em;
+   }
    .aboutTextSquare{
-
-   width: 80%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   background-color: rgba(0, 0, 0, 0.5);
-   background-color: rgba(255, 212, 0, .1);
-   border-radius: 0 3em 0 0;
- }
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 0 0 0 0;
+   }
  .AboutText{
-        font-size: 1.5em;
+        font-size: 2em;
         color: #fff;
         font-weight: 100;
         font-family: "Urbanist", sans-serif;
         width: 70%;
-
- }
+   }
  .aboutTitle{
     font-size: 6em;
     color: #fff;
@@ -228,53 +225,49 @@
     text-align: center;
  }
  .aboutImage{
-   width: 70%;
-   height: 100%;
-   object-fit: cover;
-   position: absolute;
-   z-index: -1;
-   filter: brightness(0.4);
-   border-radius: 1em 5em 5em 1em;
-
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        z-index: -1;
+        filter: brightness(0.4);
+        border-radius: 1em 1em 1em 1em;
  }
   }
   
   /* Telas grandes */
   @media (min-width: 1441px) {
    .about{
-        width: 45%;
+        width: 80%;
         height: 30em;
         margin: 2em 0;
         display: flex;
         flex-direction: column-reverse;
-        align-items: start;
+        align-items: center;
         justify-content: center;
         gap: .0em;
         border-radius: 2px;
         position: relative;
         z-index: 1;
-        background-color: hsla(0, 0%, 0%, 0.1);
-        border-radius: 1em 3em 3em 1em;
-      }
+        background-color: hsla(0, 0%, 0%, 0.6);
+        border-radius: 1em 1em 1em 1em;
+   }
    .aboutTextSquare{
-
-   width: 80%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   background-color: rgba(0, 0, 0, 0.5);
-   background-color: rgba(255, 212, 0, .1);
-   border-radius: 0 3em 0 0;
- }
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 0 0 0 0;
+   }
  .AboutText{
-        font-size: 1.5em;
+        font-size: 2em;
         color: #fff;
         font-weight: 100;
         font-family: "Urbanist", sans-serif;
         width: 70%;
-
- }
+   }
  .aboutTitle{
     font-size: 6em;
     color: #fff;
@@ -282,13 +275,12 @@
     text-align: center;
  }
  .aboutImage{
-   width: 70%;
-   height: 100%;
-   object-fit: cover;
-   position: absolute;
-   z-index: -1;
-   filter: brightness(0.4);
-   border-radius: 1em 5em 5em 1em;
-
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        z-index: -1;
+        filter: brightness(0.4);
+        border-radius: 1em 1em 1em 1em;
  }
   }

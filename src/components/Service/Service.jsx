@@ -5,7 +5,7 @@ import ServiceBody from "./ServiceBody";
 
 function Service(props){
     return(
-        <section className="service">
+        <section className="service" id="services">
             <ServiceHeader/>
             <ServiceBody/>
         </section>

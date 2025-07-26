@@ -4,7 +4,7 @@ import './about.css';
 import img from '../../images/about-image.jpg'
 export default function About(props) {
     return (
-        <section className="about">
+        <section className="about" id="about">
            <div className="aboutTextSquare">
                 <p className="AboutText">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 

@@ -18,7 +18,7 @@ function ServiceBody(props){
                         Minima culpa quisquam perferendis facere sunt optio.
                     </div>
                 </div>
-                ))}
+                 ))}
             </section>
     )
 }

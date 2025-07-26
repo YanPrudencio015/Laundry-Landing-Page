@@ -2,124 +2,332 @@
 
 /* Mobile pequeno */
 @media (max-width: 359px) {
-    .get-in-touch{
-        width: 95%;
-        height: 15em;
-        background-color: var(--PrimaryColor);
-        background-image: url('../../images/Backgrounds/ps-neutral.png');
-        background-attachment: fixed;
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        z-index: 1;
-        gap: 2%;
-        padding: 2%;
-        border: solid 3px #fff;
-        outline: solid 6px var(--PrimaryColor);
-    }
-    .getTitle{
-        font-size: 10vw;
-        width: 90%;
-        height: 2em;
-        border: solid 2px #fff;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: 300;
-        text-transform: uppercase;
-        align-items: center;
-        font-family: "Open Sans", sans-serif;    
-    }
-    .getList{
-        width: 90%;
-        height: 9em;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column;
-        list-style: none;
-        color: #000;
-    }
-    .getItems{
-        font-size: 10vw;
-        color: #000;
-        font-family: "Urbanist", sans-serif;  
-        background-color: #fff;
-        width: 100%;
-        height: 2em;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .getItemsLink{
-        color: #000;
 
+    .getInTouch{
+        width: 95%;
+        height: 60em;
+        background-color: hsl(202, 100%, 46%);
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
     }
+    .FieldOne{
+        width: 90%;
+        height: 30em;
+        background-color:#fff;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .FieldOneTitles{
+      width: 100%;
+      height: 6em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .FieldOneTitle{
+      font-weight: 200;
+      font-family: "Cal Sans", sans-serif;
+      color: hsl(202, 100%, 46%);
+    }
+    .FieldOneSubtitle{
+      font-family: "Bebas Neue", sans-serif;
+    }
+    .inputsFieldsSquare{
+      border: solid 1px #fff;
+      width: 100%;
+      height: 20em;
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      flex-direction: column;
+      align-items: center;
+    }
+    .nameInputs, .emailInputs{
+      width: 90%;
+      height: 2em;
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 2px;
+      padding: 10px;
+      font-size: 4vw;
+        font-weight: 200;
+        font-family: "Urbanist", sans-serif;      }
+    .fieldTextInput{
+        padding: 10px;
+        border-radius: 10px;
+        font-weight: 500;
+        resize: none;
+        width: 19em;
+        height: 15em;
+        background-color: rgba(0, 0, 0, 0.1);
+        font-family: "Urbanist", sans-serif;
 
 }
+    .getInTouchBtn{
+      width: 80%;
+      height: 2.5em;
+      background-color: hsl(202, 100%, 46%);
+      color: #fff;
+      font-size: 6vw;
+      font-family: "Urbanist", sans-serif;  
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+    }
+    .getInTouchBtn::before{
+      z-index: -1;
+      position: absolute;
+      right: 10%;
+      top: 0%;
+      content: "";
+      width: 50em;
+      height: 50em;
+      background-color: rgba(255, 255, 255, .1);
+      border-radius: 20em;
+      transition: .6s ease-in;
+    }
+    .getInTouchBtn:hover::before{
+      right: -80%;
+      top: -150%;
+      transition: .3s ease-in;
+    }
+    .getInTouchBtn:active{
+      background-color: #FFD400;
+      transition: .1s ;
+      color: #000;
+    }
+
+
+    /* ===== FieldTwo ====== */
+
+    .FieldTwo{
+      width: 90%;
+      height: 25em;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      padding: 2em 0;
+    }
+    .fieldTwoTitle{
+        font-weight: 100;
+        font-family: "Cal Sans", sans-serif;
+        color: #fff;
+    }
+    .fieldTwoList{
+      width: 100%;
+      height: 10em;
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      justify-content: space-between;
+      list-style: none;
+    }
+    .fieldTwoItem{
+      width: 100%;
+      height: 3em;
+      display: flex;
+      /* background-color: #fff; */
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 2%;
+    }
+    .feldTwoItemIcon{
+      color: hsl(202, 100%, 46%);
+      color: rgba(255, 255, 255, .5);
+    }
+
+    .fieldTwoItemInfo{
+      width: 60%;
+      font-size: 4vw;
+      font-family: "Comfortaa", sans-serif;
+    }
+
+    .fieldTwoSocialMedia{
+      width: 100%;
+      height: 5em;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      align-items: center;
+    }
+    .fieldTwoSocialMediaIcon{
+      font-size: 9vw;
+      color: rgba(255, 255, 255, .5);
+    }
+  }
   
   /* Mobile padrão */
   @media (min-width: 360px) and (max-width: 425px) {
-     .get-in-touch{
-        width: 95%;
-        height: 13em;
-        background-color: var(--PrimaryColor);
-        background-image: url('../../images/Backgrounds/ps-neutral.png');
-        background-attachment: fixed;
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        z-index: 1;
-        gap: 2%;
-        padding: 2%;
-        border: solid 3px #fff;
-        outline: solid 6px var(--PrimaryColor);
-    }
-    .getTitle{
-        font-size: 10vw;
-        width: 90%;
-        height: 2em;
-        border: solid 2px #fff;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: 300;
-        text-transform: uppercase;
-        align-items: center;
-        font-family: "Open Sans", sans-serif;    
-    }
-   .getList{
-        width: 90%;
-        height: 7em;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column;
-        list-style: none;
-        color: #000;
-    }
-    .getItems{
-        font-size: 7vw;
-        color: #000;
-        font-family: "Urbanist", sans-serif;
-        background-color: #fff;
-        width: 80%;
-        height: 2em;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .getItemsLink{
-        color: #000;
 
+    .getInTouch{
+        width: 95%;
+        height: 65em;
+        background-color: hsl(202, 100%, 46%);
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+    }
+    .FieldOne{
+        width: 90%;
+        height: 38em;
+        background-color:#fff;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .FieldOneTitles{
+      width: 100%;
+      height: 6em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .FieldOneTitle{
+      font-weight: 200;
+      font-family: "Cal Sans", sans-serif;
+      color: hsl(202, 100%, 46%);
+    }
+    .FieldOneSubtitle{
+      font-family: "Bebas Neue", sans-serif;
+    }
+    .inputsFieldsSquare{
+      border: solid 1px #fff;
+      width: 100%;
+      height: 25em;
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      flex-direction: column;
+      align-items: center;
+    }
+    .nameInputs, .emailInputs{
+      width: 90%;
+      height: 3em;
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 2px;
+      padding: 10px;
+      font-size: 4vw;
+              font-weight: 200;
+        font-family: "Urbanist", sans-serif;  
+    }
+    .fieldTextInput{
+        padding: 10px;
+        border-radius: 10px;
+        font-weight: 500;
+        resize: none;
+        width: 22em;
+        height: 25em;
+        background-color: rgba(0, 0, 0, 0.1);
+        font-family: "Urbanist", sans-serif;
+
+}
+    .getInTouchBtn{
+      width: 80%;
+      height: 2.5em;
+      background-color: hsl(202, 100%, 46%);
+      color: #fff;
+      font-size: 6vw;
+      font-family: "Urbanist", sans-serif;  
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+    }
+    .getInTouchBtn::before{
+      z-index: -1;
+      position: absolute;
+      right: 50%;
+      top: 0%;
+      content: "";
+      width: 50em;
+      height: 50em;
+      background-color: rgba(255, 255, 255, .1);
+      border-radius: 20em;
+      transition: .6s ease-in;
+    }
+    .getInTouchBtn:hover::before{
+      right: -80%;
+      top: -150%;
+      transition: .3s ease-in;
+    }
+    .getInTouchBtn:active{
+      background-color: #FFD400;
+      transition: .1s ;
+      color: #000;
+    }
+
+
+    /* ===== FieldTwo ====== */
+
+    .FieldTwo{
+      width: 90%;
+      height: 25em;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      padding: 2em 0;
+    }
+    .fieldTwoTitle{
+        font-weight: 100;
+        font-family: "Cal Sans", sans-serif;
+        color: #fff;
+    }
+    .fieldTwoList{
+      width: 100%;
+      height: 10em;
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      justify-content: space-between;
+      list-style: none;
+    }
+    .fieldTwoItem{
+      width: 100%;
+      height: 3em;
+      display: flex;
+      /* background-color: #fff; */
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 2%;
+    }
+    .feldTwoItemIcon{
+      color: hsl(202, 100%, 46%);
+      color: rgba(255, 255, 255, .5);
+    }
+
+    .fieldTwoItemInfo{
+      width: 60%;
+      font-size: 4vw;
+      font-family: "Comfortaa", sans-serif;
+    }
+
+    .fieldTwoSocialMedia{
+      width: 100%;
+      height: 5em;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      align-items: center;
+    }
+    .fieldTwoSocialMediaIcon{
+      font-size: 9vw;
+      color: rgba(255, 255, 255, .5);
     }
 }
   
@@ -127,246 +335,726 @@
 
   /* Tablets */
   @media (min-width: 426px) and (max-width: 767px) {
-    .get-in-touch{
+    .getInTouch{
+        width: 95%;
+        height: 65em;
+        background-color: hsl(202, 100%, 46%);
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+    }
+    .FieldOne{
+        width: 90%;
+        height: 38em;
+        background-color:#fff;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .FieldOneTitles{
+      width: 100%;
+      height: 6em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .FieldOneTitle{
+      font-weight: 200;
+      font-family: "Cal Sans", sans-serif;
+      color: hsl(202, 100%, 46%);
+      font-size: 3em;
+    }
+    .FieldOneSubtitle{
+      font-family: "Bebas Neue", sans-serif;
+    }
+    .inputsFieldsSquare{
+      border: solid 1px #fff;
+      width: 100%;
+      height: 25em;
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      flex-direction: column;
+      align-items: center;
+    }
+    .nameInputs, .emailInputs{
+      width: 90%;
+      height: 2.5em;
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 2px;
+      padding: 10px;
+      font-size: 4vw;
+      font-weight: 200;
+      font-family: "Urbanist", sans-serif;  
+    }
+    .fieldTextInput{
+        padding: 15px;
+        border-radius: 10px;
+        font-weight: 500;
+        resize: none;
         width: 95%;
         height: 15em;
-        background-color: var(--PrimaryColor);
-        background-image: url('../../images/Backgrounds/ps-neutral.png');
-        background-attachment: fixed;
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        z-index: 1;
-        gap: 2%;
-        padding: 2%;
-        border: solid 3px #fff;
-        outline: solid 6px var(--PrimaryColor);
-    }
-    .getTitle{
-        font-size: 2.5em;
-        width: 90%;
-        height: 2em;
-        border: solid 2px #fff;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: 300;
-        text-transform: uppercase;
-        align-items: center;
-        font-family: "Open Sans", sans-serif;    
-    }
-   .getList{
-        width: 90%;
-        height: 9em;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column;
-        list-style: none;
-        color: #000;
-    }
-    .getItems{
-        font-size: 1.5em;
-        color: #000;
+        background-color: rgba(0, 0, 0, 0.1);
         font-family: "Urbanist", sans-serif;
-        background-color: #fff;
-        width: 80%;
-        height: 2em;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        font-size: 1em;
+        font-weight: 500;
+      }
+    .getInTouchBtn{
+      width: 80%;
+      height: 2em;
+      background-color: hsl(202, 100%, 46%);
+      color: #fff;
+      font-size: 1.5em;
+      font-family: "Urbanist", sans-serif;  
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
     }
-    .getItemsLink{
-        color: #000;
+    .getInTouchBtn::before{
+      z-index: -1;
+      position: absolute;
+      right: 50%;
+      top: 0%;
+      content: "";
+      width: 50em;
+      height: 50em;
+      background-color: rgba(255, 255, 255, .1);
+      border-radius: 20em;
+      transition: .6s ease-in;
+    }
+    .getInTouchBtn:hover::before{
+      right: -80%;
+      top: -150%;
+      transition: .3s ease-in;
+    }
+    .getInTouchBtn:active{
+      background-color: #FFD400;
+      transition: .1s ;
+      color: #000;
+    }
 
+
+    /* ===== FieldTwo ====== */
+
+    .FieldTwo{
+      width: 90%;
+      height: 25em;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      padding: 2em 0;
+    }
+    .fieldTwoTitle{
+        font-weight: 100;
+        font-family: "Cal Sans", sans-serif;
+        color: #fff;
+        font-size: 2.5em;
+    }
+    .fieldTwoList{
+      width: 100%;
+      height: 10em;
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      justify-content: space-between;
+      list-style: none;
+    }
+    .fieldTwoItem{
+      width: 100%;
+      height: 3em;
+      display: flex;
+      /* background-color: #fff; */
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 2%;
+    }
+    .feldTwoItemIcon{
+      color: hsl(202, 100%, 46%);
+      color: rgba(255, 255, 255, .5);
+    }
+
+    .fieldTwoItemInfo{
+        width: 80%;
+        font-size: 1.1em;
+      font-family: "Comfortaa", sans-serif;
+    }
+
+    .fieldTwoSocialMedia{
+      width: 100%;
+      height: 5em;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      align-items: center;
+    }
+    .fieldTwoSocialMediaIcon{
+      font-size: 2em;
+      color: rgba(255, 255, 255, .5);
     }
   }
   
   /* Laptops/Desktop pequeno */
   @media (min-width: 768px) and (max-width: 1024px) {
-     .get-in-touch{
+    .getInTouch{
         width: 70%;
-        height: 20em;
-        background-color: var(--PrimaryColor);
-        background-image: url('../../images/Backgrounds/ps-neutral.png');
-        background-attachment: fixed;
+        height: 45em;
+        background-color: hsl(202, 100%, 46%);
+        display: flex;
+        justify-content: end;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 5px;
         position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        z-index: 1;
-        gap: 2%;
-        padding: 2%;
-        border: solid 3px #fff;
-        outline: solid 6px var(--PrimaryColor);
     }
-    .getTitle{
-        font-size: 2.5em;
-        width: 90%;
-        height: 2em;
-        border: solid 2px #fff;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: 300;
-        text-transform: uppercase;
-        align-items: center;
-        font-family: "Open Sans", sans-serif;    
-    }
-   .getList{
-        width: 90%;
-        height: 13em;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column;
-        list-style: none;
-        color: #000;
-    }
-    .getItems{
-font-size: 2em;
-        color: #000;
-        font-family: "Urbanist", sans-serif;
+    .FieldOne{
+        width: 69%;
+        height: 38em;
         background-color: #fff;
-        width: 80%;
-        height: 2.5em;
-        border-radius: 10px;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
+        flex-direction: column;
         align-items: center;
+        text-align: center;
+        border-radius: 12px;
+        position: absolute;
+        left: -18%;
+        border: solid 2px hsl(202, 100%, 46%);
     }
-    .getItemsLink{
-        color: #000;
+    .FieldOneTitles{
+      width: 100%;
+      height: 6em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .FieldOneTitle{
+      font-weight: 200;
+      font-family: "Cal Sans", sans-serif;
+      color: hsl(202, 100%, 46%);
+      font-size: 3em;
+    }
+    .FieldOneSubtitle{
+      font-family: "Bebas Neue", sans-serif;
+    }
+    .inputsFieldsSquare{
+      border: solid 1px #fff;
+      width: 100%;
+      height: 25em;
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      flex-direction: column;
+      align-items: center;
+    }
+    .nameInputs, .emailInputs{
+        width: 90%;
+        height: 1.5em;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 7px;
+        padding: 10px;
+        font-size: 3vw;
+        font-weight: 200;
+        font-family: "Urbanist", sans-serif;  
+    }
+    .fieldTextInput{
+        padding: 15px;
+        border-radius: 10px;
+        font-weight: 500;
+        resize: none;
+        width: 95%;
+        height: 10em;
+        background-color: rgba(0, 0, 0, 0.1);
+        font-family: "Urbanist", sans-serif;
+        font-size: 1em;
+        font-weight: 500;
 
+}
+    .getInTouchBtn{
+        width: 80%;
+        height: 3em;
+        background-color: hsl(202, 100%, 46%);
+        color: #fff;
+        font-size: 1.5em;
+        font-family: "Urbanist", sans-serif;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        margin: 0.5em 0;
+        cursor: pointer
     }
+    .getInTouchBtn::before{
+      z-index: -1;
+      position: absolute;
+      right: 50%;
+      top: 0%;
+      content: "";
+      width: 50em;
+      height: 50em;
+      background-color: rgba(255, 255, 255, .1);
+      border-radius: 20em;
+      transition: .6s ease-in;
+    }
+    .getInTouchBtn:hover::before{
+      right: -80%;
+      top: -150%;
+      transition: .3s ease-in;
+    }
+    .getInTouchBtn:active{
+      background-color: #FFD400;
+      transition: .1s ;
+      color: #000;
+    }
+
+
+    /* ===== FieldTwo ====== */
+
+    .FieldTwo{
+      width: 50%;
+      height: 25em;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      padding: 2em 0;
+    }
+    .fieldTwoTitle{
+        font-weight: 100;
+        font-family: "Cal Sans", sans-serif;
+        color: #fff;
+        font-size: 2.5em;
+    }
+    .fieldTwoList{
+      width: 100%;
+      height: 10em;
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      justify-content: space-between;
+      list-style: none;
+    }
+    .fieldTwoItem{
+      width: 100%;
+      height: 3em;
+      display: flex;
+      /* background-color: #fff; */
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 2%;
+    }
+    .feldTwoItemIcon{
+      color: hsl(202, 100%, 46%);
+      color: rgba(255, 255, 255, .5);
+    }
+
+    .fieldTwoItemInfo{
+        width: 80%;
+        font-size: 1.1em;
+      font-family: "Comfortaa", sans-serif;
+    }
+
+    .fieldTwoSocialMedia{
+      width: 100%;
+      height: 5em;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      align-items: center;
+    }
+    .fieldTwoSocialMediaIcon{
+      font-size: 2em;
+      color: rgba(255, 255, 255, .5);
+    }
+
   }
   
   /* Desktops */
   @media (min-width: 1025px) and (max-width: 1440px) {
-     .get-in-touch{
+ 
+      .getInTouch{
         width: 70%;
-        height: 20em;
-        background-color: var(--PrimaryColor);
-        background-image: url('../../images/Backgrounds/ps-neutral.png');
-        background-attachment: fixed;
+        height: 30em;
+        background-color: hsl(202, 100%, 46%);
+        display: flex;
+        justify-content: end;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 5px;
         position: relative;
+    }
+    .FieldOne{
+        width: 50%;
+        height: 28em;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-radius: 12px;
+        position: absolute;
+        left: -7%;
+        border: solid 2px hsl(202, 100%, 46%);
+    }
+    .FieldOneTitles{
+      width: 100%;
+      height: 6em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .FieldOneTitle{
+      font-weight: 200;
+      font-family: "Cal Sans", sans-serif;
+      color: hsl(202, 100%, 46%);
+      font-size: 3em;
+    }
+    .FieldOneSubtitle{
+      font-family: "Bebas Neue", sans-serif;
+    }
+    .inputsFieldsSquare{
+      border: solid 1px #fff;
+      width: 100%;
+      height: 25em;
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      flex-direction: column;
+      align-items: center;
+    }
+    .nameInputs, .emailInputs{
+        width: 90%;
+        height: 2em;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 10px;
+        font-size: 1.5vw;
+        font-weight: 200;
+        font-family: "Urbanist", sans-serif;  
+    }
+    .fieldTextInput{
+        padding: 15px;
+        border-radius: 10px;
+        font-weight: 500;
+        resize: none;
+        width: 95%;
+        height: 10em;
+        background-color: rgba(0, 0, 0, 0.1);
+        font-family: "Urbanist", sans-serif;
+        font-size: 1em;
+        font-weight: 500;
+
+}
+    .getInTouchBtn{
+        width: 80%;
+        height: 3em;
+        background-color: hsl(202, 100%, 46%);
+        color: #fff;
+        font-size: 1.5em;
+        font-family: "Urbanist", sans-serif;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        margin: 0.5em 0;
+        cursor: pointer;
+    }
+    .getInTouchBtn::before{
+      z-index: -1;
+      position: absolute;
+      right: 50%;
+      top: 0%;
+      content: "";
+      width: 50em;
+      height: 50em;
+      background-color: rgba(255, 255, 255, .1);
+      border-radius: 20em;
+      transition: .6s ease-in;
+    }
+    .getInTouchBtn:hover::before{
+      right: -80%;
+      top: -150%;
+      transition: .3s ease-in;
+    }
+    .getInTouchBtn:active{
+      background-color: #FFD400;
+      transition: .1s ;
+      color: #000;
+    }
+
+
+    /* ===== FieldTwo ====== */
+
+    .FieldTwo{
+        width: 36%;
+        height: 25em;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        z-index: 1;
-        gap: 2%;
-        padding: 2%;
-        border: solid 3px #fff;
-        outline: solid 6px var(--PrimaryColor);
-    }
-    .getTitle{
-        font-size: 2.5em;
-        width: 90%;
-        height: 90%;
-        border: solid 2px #fff;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: 300;
-        text-transform: uppercase;
-        align-items: center;
-        font-family: "Open Sans", sans-serif;    
-    }
-   .getList{
-        width: 90%;
-        height: 13em;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
         flex-direction: column;
-        list-style: none;
-        color: #000;
+        align-items: center;
+        padding: 2em 0;
     }
-    .getItems{
-font-size: 2em;
-        color: #000;
-        font-family: "Urbanist", sans-serif;
-        background-color: #fff;
+    .fieldTwoTitle{
+        font-weight: 100;
+        font-family: "Cal Sans", sans-serif;
+        color: #fff;
+        font-size: 2.5em;
+    }
+    .fieldTwoList{
+      width: 100%;
+      height: 10em;
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      justify-content: space-between;
+      list-style: none;
+    }
+    .fieldTwoItem{
+      width: 100%;
+      height: 3em;
+      display: flex;
+      /* background-color: #fff; */
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 2%;
+    }
+    .feldTwoItemIcon{
+      color: hsl(202, 100%, 46%);
+      color: rgba(255, 255, 255, .5);
+    }
+
+    .fieldTwoItemInfo{
         width: 80%;
-        height: 2.5em;
-        border-radius: 10px;
+        font-size: 1.1em;
+      font-family: "Comfortaa", sans-serif;
+    }
+
+    .fieldTwoSocialMedia{
+      width: 100%;
+      height: 5em;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      align-items: center;
+    }
+    .fieldTwoSocialMediaIcon{
+        width: 1.6em;
+        height: 1.5em;
+        font-size: 2em;
+        color: rgba(255, 255, 255, .5);
+        cursor: pointer;
+        transition: .2s ease-in-out;
+        border: solid 2px transparent;
+        transition: .2s ease-in-out;
+        border-radius: 5px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .getItemsLink{
-        color: #000;
-
+    .fieldTwoSocialMediaIcon:hover{
+        border: solid 2px rgba(255, 255, 255, .5);
+        transition: .2s ease-in-out;
+        border-radius: 5px;
     }
   }
   
   /* Telas grandes */
   @media (min-width: 1441px) {
-    .get-in-touch{
-        width: 95%;
-        height: 15em;
-        background-color: var(--PrimaryColor);
-        background-image: url('../../images/Backgrounds/ps-neutral.png');
-        background-attachment: fixed;
+
+      .getInTouch{
+        width: 70%;
+        height: 30em;
+        background-color: hsl(202, 100%, 46%);
+        display: flex;
+        justify-content: end;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 5px;
         position: relative;
+    }
+    .FieldOne{
+        width: 50%;
+        height: 28em;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-radius: 12px;
+        position: absolute;
+        left: -7%;
+        border: solid 2px hsl(202, 100%, 46%);
+    }
+    .FieldOneTitles{
+      width: 100%;
+      height: 6em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .FieldOneTitle{
+      font-weight: 200;
+      font-family: "Cal Sans", sans-serif;
+      color: hsl(202, 100%, 46%);
+      font-size: 3em;
+    }
+    .FieldOneSubtitle{
+      font-family: "Bebas Neue", sans-serif;
+    }
+    .inputsFieldsSquare{
+      border: solid 1px #fff;
+      width: 100%;
+      height: 25em;
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      flex-direction: column;
+      align-items: center;
+    }
+    .nameInputs, .emailInputs{
+        width: 90%;
+        height: 2em;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 10px;
+        font-size: 1.5vw;
+        font-weight: 200;
+        font-family: "Urbanist", sans-serif;  
+    }
+    .fieldTextInput{
+        padding: 15px;
+        border-radius: 10px;
+        font-weight: 500;
+        resize: none;
+        width: 95%;
+        height: 10em;
+        background-color: rgba(0, 0, 0, 0.1);
+        font-family: "Urbanist", sans-serif;
+        font-size: 1em;
+        font-weight: 500;
+
+}
+    .getInTouchBtn{
+        width: 80%;
+        height: 3em;
+        background-color: hsl(202, 100%, 46%);
+        color: #fff;
+        font-size: 1.5em;
+        font-family: "Urbanist", sans-serif;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        margin: 0.5em 0;
+        cursor: pointer;
+    }
+    .getInTouchBtn::before{
+      z-index: -1;
+      position: absolute;
+      right: 50%;
+      top: 0%;
+      content: "";
+      width: 50em;
+      height: 50em;
+      background-color: rgba(255, 255, 255, .1);
+      border-radius: 20em;
+      transition: .6s ease-in;
+    }
+    .getInTouchBtn:hover::before{
+      right: -80%;
+      top: -150%;
+      transition: .3s ease-in;
+    }
+    .getInTouchBtn:active{
+      background-color: #FFD400;
+      transition: .1s ;
+      color: #000;
+    }
+
+
+    /* ===== FieldTwo ====== */
+
+    .FieldTwo{
+        width: 36%;
+        height: 25em;
         display: flex;
         justify-content: space-between;
-        align-items: center;
         flex-direction: column;
-        z-index: 1;
-        gap: 2%;
-        padding: 2%;
-        border: solid 3px #fff;
-        outline: solid 6px var(--PrimaryColor);
-    }
-    .getTitle{
-        font-size: 10vw;
-        width: 90%;
-        height: 2em;
-        border: solid 2px #fff;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
         align-items: center;
-        font-weight: 300;
-        text-transform: uppercase;
-        align-items: center;
-        font-family: "Open Sans", sans-serif;    
+        padding: 2em 0;
     }
-    .getList{
-        width: 90%;
-        height: 7em;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column;
-        list-style: none;
-        color: #000;
+    .fieldTwoTitle{
+        font-weight: 100;
+        font-family: "Cal Sans", sans-serif;
+        color: #fff;
+        font-size: 2.5em;
     }
-    .getItems{
-        font-size: 7vw;
-        color: #000;
-        font-family: "Urbanist", sans-serif;
-        background-color: #fff;
+    .fieldTwoList{
+      width: 100%;
+      height: 10em;
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      justify-content: space-between;
+      list-style: none;
+    }
+    .fieldTwoItem{
+      width: 100%;
+      height: 3em;
+      display: flex;
+      /* background-color: #fff; */
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 2%;
+    }
+    .feldTwoItemIcon{
+      color: hsl(202, 100%, 46%);
+      color: rgba(255, 255, 255, .5);
+    }
+
+    .fieldTwoItemInfo{
         width: 80%;
-        height: 2em;
-        border-radius: 10px;
+        font-size: 1.1em;
+      font-family: "Comfortaa", sans-serif;
+    }
+
+    .fieldTwoSocialMedia{
+      width: 100%;
+      height: 5em;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      align-items: center;
+    }
+    .fieldTwoSocialMediaIcon{
+        width: 1.6em;
+        height: 1.5em;
+        font-size: 2em;
+        color: rgba(255, 255, 255, .5);
+        cursor: pointer;
+        transition: .2s ease-in-out;
+        border: solid 2px transparent;
+        transition: .2s ease-in-out;
+        border-radius: 5px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .getItemsLink{
-        color: #000;
-
+    .fieldTwoSocialMediaIcon:hover{
+        border: solid 2px rgba(255, 255, 255, .5);
+        transition: .2s ease-in-out;
+        border-radius: 5px;
     }
-
-
   }

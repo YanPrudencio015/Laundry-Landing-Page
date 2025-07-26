@@ -15,12 +15,35 @@ const Main = lazy(()=> import('./pages/mainpage/Loundry'));
 // import LoundryHeader from './components/header/LaundryHeader'
 import LaundryHeader from './components/header/LaundryHeader'
 import Footer from './components/footer/Footer'
-import Scrollheader from './components/header/secondHeader/SecondHeader'
 // Background
 import background from './images/Backgrounds/swirl.png'
 
 // Create Redux store
 const store = createStore(sidebarToggleReducer)
+
+
+function ScrollToTrach(){
+
+  const location = useLocation()
+      useEffect(() => {
+        if (location.hash) {
+            const element = document.getElementById(location.hash.substring(1));
+            if (element) {
+                const headerHeight = 80; // Altura do seu header fixo
+                const elementPosition = element.offsetTop - headerHeight;
+                
+                window.scrollTo({
+                    top: elementPosition,
+                    behavior: 'smooth'
+                });
+            }
+
+        }
+    }, [location]);
+    
+    return null;
+
+}
 
 function App() {
   const location = useLocation();
@@ -34,13 +57,13 @@ function App() {
             backgroundAttachment: 'fixed'
           }}>
           <LaundryHeader />
-          <Scrollheader/>
           <AnimatePresence mode="wait" initial={false}>
+            <ScrollToTrach/>  
             <Routes location={location} key={location.pathname}>
               <Route index element={< Main/>} />
             </Routes>
           </AnimatePresence>
-          {/* <Footer/> */}
+          <Footer/>
         </div>
       </Suspense>
     </Provider>

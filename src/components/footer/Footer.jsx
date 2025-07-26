@@ -1,49 +1,44 @@
 import React from "react";
 import './footer.css'
-import img from '../../images/wave-haikei.png'
 import { Link } from "react-router-dom";
 
 
 export default function Footer (props){
     return (
-        <section className="footer-section">
-            <div className="footer-column-1">
-                  Loundry
-            </div>
-            <div className="footer-column-2">
-                <h1 className="footer-titles">Links</h1>
-                    <ul className="footer-link-list">
-                        <Link 
-                            className="footer-link-item" 
-                            >
-                                <li className="footer-links">Serviços</li>
+        <section className="footer">
+            <Link to={"#header"}>
+                <div className="footerTitle">
+                    Loundry
+                </div>
+            </Link>
+            <div className="footerLink">
+                    <h1 className="footerLinkTitle">
+                        Links
+                    </h1>
+                    <ul className="footerLinkList">
+                        <Link to={"#services"} className="footerLinkItem">
+                                <li className="footer-links">Services</li>
                         </Link>
-                        <Link 
-                            className=" footer-link-item" 
-                            >
-                                <li className="footer-links">Sobre nós</li>
+                        <Link to={"#getInTouch"} className=" footerLinkItem">
+                                <li className="footer-links">Get in touch</li>
+                        </Link>
+                        <Link to={"#about"} className=" footerLinkItem">
+                                <li className="footer-links">About</li>
                         </Link>
                     </ul>
             </div>
-            <div className="footer-column-3">
-                <h1 className="footer-titles">Sociais</h1>
-                <ul className="footer-sociais-list">
-                    <a 
-                        href='https://www.instagram.com' 
-                        target="_blank" 
-                        className="footer-sociais">
-                        <li className="footer-sociais-item">
-                            <button className="footer-sociais-btn">Instagram</button>
-                        </li>
-                    </a>
-                    <a   
-                            className="footer-sociais"
-                            href='https://www.facebook.com/'  
-                            target="_blank">
-                        <li className="footer-sociais-item">
-                           <button className="footer-sociais-btn">Facebook</button>
-                        </li>
-                    </a>
+            <div className="footerContact">
+                <h1 className="footerContactTitle">Contact Us</h1>
+                <ul className="footerSociaisList">
+                    <li className="footerSociaisItem">
+                        123 Market Street, Suite 400, Riverview City, CA 90210
+                    </li>
+                    <li className="footerSociaisItem">
+                        hello@youser.com
+                    </li>
+                    <li className="footerSociaisItem">
+                        +123 15554565
+                    </li>
                 </ul>
             </div>
         </section>

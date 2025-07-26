@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect} from "react";
 
 import './laundryheader.css';
 
@@ -18,37 +18,25 @@ function LaundryHeader() {
     useEffect(() => {
         console.log("Current state:", sidebarState);
     }, [sidebarState]);
-    
-    const handleMenuClick = () => {
-        dispatch(openSidebar());
-    };
-
-
-
-
-
-
 
     return (
-        <div className='loundry-header'>
+        <div className='loundry-header' id="header">
             <Link to='/'>
-                <h1 className='header-title'>
+                <h1 className='header-title' >
                     <p className='header-sub-title'>Laundry</p>
                 </h1>
             </Link>
             <nav className='header-navbar'>
-                <Link className="navbar-options">
+                <Link className="navbar-options" to={"#services"}>
                     <p>Services</p>
                 </Link> 
-                <Link className="navbar-options">
+                <Link to={"#getInTouch"} className="navbar-options">
+                    <p>Contact</p>
+                </Link> 
+                <Link to={"#about"} className="navbar-options">
                     <p>About</p>
                 </Link> 
             </nav>
-            <div className='header-menu-icon' onClick={handleMenuClick}>
-                <div className="bar-1"></div>
-                <div className="bar-2"></div>
-                <div className="bar-3"></div>
-            </div>
         </div>
     );
 }

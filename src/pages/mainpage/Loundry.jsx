@@ -9,6 +9,7 @@ import Service from '../../components/Service/Service';
 import Costumers from '../../components/costumer/Costumer';
 import Testimonials from '../../components/testimonials/Testimonials';
 import GetInTouch from '../../components/getInTouch/GetInTouth'
+import FAQ from '../../components/faqs/FAQS';
 const Loundry = () => {
   return (
     <>
@@ -18,6 +19,7 @@ const Loundry = () => {
       <Testimonials/>
       <GetInTouch/>
       <About />
+      <FAQ/>
     </>
   );
 };

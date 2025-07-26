@@ -1,756 +1,398 @@
 
 /* Mobile pequeno */
 @media (max-width: 359px) {
- .footer-section{
-    background-image: url('../../images/wave-haikei.png');
-    background-color: transparent;
-    background-color: aqua;
-    background-size: cover;
+.footer{
+  width: 100%;
+  height: 40em;
+  background-color: #113F67;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerTitle{
+  font-size: 10vw;
+  font-family: "Urbanist", sans-serif;  
+  color: #fff;
+}
+.footerLink{
+  width: 100%;
+  height: 15em;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+
+}
+.footerLinkTitle{
+    font-size: 9vw;
+    text-transform: uppercase;
+    font-family: "Urbanist", sans-serif;  
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .footerLinkList{
     width: 100%;
-    height: 30em;
-    border: none;
+    height: 11em;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2%;
+    justify-content: space-around;
     flex-direction: column;
- }
-
-
-/* === footer-column-1 ==== */
-.footer-column-1{
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 0 2%;
-    flex-direction: column;
-}
-.footer-title-letters{
-    width: 50%;
-    font-size: 12vw;
-    font-weight: 900;
+  }
+  .footerLinkItem{
+    font-size: 8vw;
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+  }
+
+  .footerContact{
+    height: 14em;
     display: flex;
-    position: relative;
-    color: rgba(255, 255, 255, 0.2);
-}
-.footer-title-letters::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footerContactTitle{
+    font-size: 9vw;
+    color: rgba(0, 0, 0, 0.5);    
+    font-family: "Urbanist", sans-serif;
+  }
+  .footerSociaisList{
     width: 100%;
-    height: 1px;
-    background-color:#fff;
-}
-
-.footer-letter {
-        display: inline-block;
-        font-family: "Nunito", sans-serif;
-
-}
-
-    .footer-letter:nth-child(4){
-        margin-right: 2%;
-    }
-    .footer-letter:nth-child(1),.letter:nth-child(5){
-        transform: rotateZ(10deg);
-    }
-    .footer-letter:nth-child(2),.letter:nth-child(7){
-        transform: rotateZ(8deg);
-    }
-    .footer-letter:nth-child(3),.letter:nth-child(6){
-        transform: rotateZ(5deg);
-    }
-    .footer-letter:nth-child(8){
-        transform: rotateZ(-8deg);
-    }
-
-    /* footer-column-2 */
-
-    .footer-column-2{
-        width: 100%;
-        height: 40%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .footer-titles{
-        font-family: "Open Sans", sans-serif;
-        font-size: 11vw;
-        color: rgba(255, 255, 255, 0.2);
-        position: relative;
-    }
-    .footer-link-list, .footer-sociais-list{
-        list-style: none;
-        font-size: 8vw;
-        color: #fff;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 3%;
-        flex-direction: column;
-        font-family: "Jost", sans-serif;
-    }
-
-    /* ==== footer-column-3 ===== */
-    .footer-column-3{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 5%;
-    }
-
-    .footer-sociais-list{
-        flex-direction: row;
-    }
-    .footer-sociais-btn{
-        font-size: 5.5vw;
-        color: #fff;
-        border: none;
-        background-color: transparent;
-        font-family: "Urbanist", sans-serif;  
-    }
-
-    .footer-link-item{
-        color: #fff;
-    }
-
-
+    height: 10em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+  }
+  .footerSociaisItem{
+    color: #fff;
+    width: 90%;
+    font-size: 6vw;
+    font-family: "Urbanist", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
 }
   
   /* Mobile padrão */
   @media (min-width: 360px) and (max-width: 425px) {
-  .footer-section{
-    background-image: url('../../images/wave-haikei.png');
-    background-color: transparent;
-    background-color: aqua;
-    background-size: cover;
+ .footer{
+  width: 100%;
+  height: 40em;
+  background-color: #113F67;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerTitle{
+  font-size: 10vw;
+  font-family: "Urbanist", sans-serif;  
+  color: #fff;
+}
+.footerLink{
+  width: 100%;
+  height: 15em;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+
+}
+.footerLinkTitle{
+    font-size: 9vw;
+    text-transform: uppercase;
+    font-family: "Urbanist", sans-serif;  
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .footerLinkList{
     width: 100%;
-    height: 40em;
-    border: none;
+    height: 8em;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2%;
+    justify-content: space-around;
     flex-direction: column;
- }
-
-
-/* === footer-column-1 ==== */
-.footer-column-1{
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 0 2%;
-    flex-direction: column;
-}
-.footer-title-letters{
-    width: 50%;
-    font-size: 12vw;
-    font-weight: 900;
+  }
+  .footerLinkItem{
+    font-size: 8vw;
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+  }
+
+  .footerContact{
+    height: 14em;
     display: flex;
-    position: relative;
-    color: rgba(255, 255, 255, 0.2);
-
-}
-.footer-title-letters::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footerContactTitle{
+    font-size: 9vw;
+    color: rgba(0, 0, 0, 0.5);;
+    font-family: "Urbanist", sans-serif;  
+  }
+  .footerSociaisList{
     width: 100%;
-    height: 1px;
-    background-color:#fff;
-}
-
-.footer-letter {
-        display: inline-block;
-        font-family: "Nunito", sans-serif;
-}
-
-    .footer-letter:nth-child(4){
-        margin-right: 2%;
-    }
-    .footer-letter:nth-child(1),.letter:nth-child(5){
-        transform: rotateZ(10deg);
-    }
-    .footer-letter:nth-child(2),.letter:nth-child(7){
-        transform: rotateZ(8deg);
-    }
-    .footer-letter:nth-child(3),.letter:nth-child(6){
-        transform: rotateZ(5deg);
-    }
-    .footer-letter:nth-child(8){
-        transform: rotateZ(-8deg);
-    }
-
- /* footer-column-2 */
-
-    .footer-column-2{
-        width: 100%;
-        height: 40%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .footer-titles{
-        font-family: "Open Sans", sans-serif;
-        font-size: 11vw;
-        color: rgba(255, 255, 255, 0.2);
-        position: relative;
-    }
-    .footer-link-list, .footer-sociais-list{
-        list-style: none;
-        font-size: 8vw;
-        color: #fff;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 3%;
-        flex-direction: column;
-        font-family: "Jost", sans-serif;
-    }
-
-    /* ==== footer-column-3 ===== */
-    .footer-column-3{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 5%;
-    }
-
-    .footer-sociais-list{
-        flex-direction: row;
-    }
-    .footer-sociais-btn{
-        font-size: 5.5vw;
-        color: #fff;
-        border: none;
-        background-color: transparent;
-        font-family: "Urbanist", sans-serif;  
-    }
-
-
-    .footer-link-item{
-        color: #fff;
-    }
-
+    height: 10em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+  }
+  .footerSociaisItem{
+    color: #fff;
+    width: 90%;
+    font-size: 6vw;
+    font-family: "Urbanist", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
   }
   
   /* Tablets */
   @media (min-width: 425px) and (max-width: 768px) {
-.footer-section{
-    background-image: url('../../images/wave-haikei.png');
-    background-color: transparent;
-    background-color: aqua;
-    background-size: cover;
+.footer{
+  width: 100%;
+  height: 40em;
+  background-color: #113F67;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerTitle{
+  font-size: 3em;
+  font-family: "Urbanist", sans-serif;  
+  color: #fff;
+}
+.footerLink{
+  width: 100%;
+  height: 13em;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+
+}
+.footerLinkTitle{
+    font-size: 3.5em;
+    text-transform: uppercase;
+    font-family: "Urbanist", sans-serif;  
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .footerLinkList{
     width: 100%;
-    height: 30em;
-    border: none;
+    height: 8em;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2%;
+    justify-content: space-around;
     flex-direction: column;
- }
-
-
-/* === footer-column-1 ==== */
-.footer-column-1{
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 0 2%;
-    flex-direction: row;
-}
-.footer-title-letters{
-    width: 4em;
+  }
+  .footerLinkItem{
+    font-size: 2em;
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+  }
+
+  .footerContact{
+    height: 14em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footerContactTitle{
     font-size: 3em;
-    font-weight: 900;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    color: rgba(255, 255, 255, 0.2);
-}
-.footer-title-letters::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Urbanist", sans-serif;
+  }
+  .footerSociaisList{
     width: 100%;
-    height: 1px;
-    background-color:#fff;
-}
-
-.footer-letter {
-        display: inline-block;
-        font-family: "Nunito", sans-serif;
-}
-
-    .footer-letter:nth-child(4){
-        margin-right: 2%;
-    }
-    .footer-letter:nth-child(1),.letter:nth-child(5){
-        transform: rotateZ(10deg);
-    }
-    .footer-letter:nth-child(2),.letter:nth-child(7){
-        transform: rotateZ(8deg);
-    }
-    .footer-letter:nth-child(3),.letter:nth-child(6){
-        transform: rotateZ(5deg);
-    }
-    .footer-letter:nth-child(8){
-        transform: rotateZ(-8deg);
-    }
-
-     /* footer-column-2 */
-
-    .footer-column-2{
-        width: 100%;
-        height: 40%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .footer-titles{
-        font-family: "Open Sans", sans-serif;
-        font-size: 2em;
-        color: rgba(255, 255, 255, 0.2);
-        position: relative;
-    }
-    .footer-link-list, .footer-sociais-list{
-        list-style: none;
-        font-size: 1.5em;
-        color: #fff;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 3%;
-        flex-direction: column;
-        font-family: "Jost", sans-serif;
-    }
-
-
-      /* ==== footer-column-3 ===== */
-    .footer-column-3{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 5%;
-    }
-
-    .footer-sociais-list{
-        flex-direction: row;
-    }
-    .footer-sociais-btn{
-        font-size: 1em;
-        color: #fff;
-        border: none;
-        background-color: transparent;
-        font-family: "Urbanist", sans-serif;  
-    }
-
-
-    .footer-link-item{
-        color: #fff;
-    }
-
+    height: 10em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+  }
+  .footerSociaisItem{
+    color: #fff;
+    width: 90%;
+    font-size: 1.5em;
+    font-family: "Urbanist", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
   }
   
   /* Laptops/Desktop pequeno */
   @media (min-width: 769px) and (max-width: 1024px) {
- .footer-section{
-    background-image: url('../../images/wave-haikei.png');
-    background-color: transparent;
-    background-color: aqua;
-    background-size: cover;
-    width: 100%;
-    height: 30em;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2%;
-    flex-direction: row;
- }
-
-
-/* === footer-column-1 ==== */
-.footer-column-1{
-    width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 2%;
-    flex-direction: column;
+.footer{
+  width: 100%;
+  height: 20em;
+  background-color: #113F67;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  gap: 2em;
 }
-.footer-title-letters{
-    width: 4em;
+
+.footerTitle{
+  font-size: 3em;
+  font-family: "Urbanist", sans-serif;  
+  color: #fff;
+}
+.footerLink{
+  width: 60%;
+  height: 13em;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+.footerLinkTitle{
     font-size: 3em;
-    font-weight: 900;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    color: rgba(255, 255, 255, 0.2);
-}
-.footer-title-letters::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
+    text-transform: uppercase;
+    font-family: "Urbanist", sans-serif;  
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .footerLinkList{
     width: 100%;
-    height: 1px;
-    background-color:#fff;
-}
+    height: 8em;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footerLinkItem{
+    font-size: 2em;
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+  }
 
-.footer-letter {
-        display: inline-block;
-        font-family: "Nunito", sans-serif;
-
-}
-
-    .footer-letter:nth-child(4){
-        margin-right: 2%;
-    }
-    .footer-letter:nth-child(1),.letter:nth-child(5){
-        transform: rotateZ(10deg);
-    }
-    .footer-letter:nth-child(2),.letter:nth-child(7){
-        transform: rotateZ(8deg);
-    }
-    .footer-letter:nth-child(3),.letter:nth-child(6){
-        transform: rotateZ(5deg);
-    }
-    .footer-letter:nth-child(8){
-        transform: rotateZ(-8deg);
-    }
-
-
-       /* footer-column-2 */
-
-    .footer-column-2{
-        width: 100%;
-        height: 40%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .footer-titles{
-        font-family: "Open Sans", sans-serif;
-        font-size: 2em;
-        color: rgba(255, 255, 255, 0.2);
-        position: relative;
-    }
-    .footer-link-list, .footer-sociais-list{
-        list-style: none;
-        font-size: 1.5em;
-        color: #fff;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 3%;
-        flex-direction: column;
-        font-family: "Jost", sans-serif;
-    }
-
-
-
-
-       /* ==== footer-column-3 ===== */
-    .footer-column-3{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 5%;
-    }
-
-    .footer-sociais-list{
-        flex-direction: column;
-    }
-    .footer-sociais-btn{
-        font-size: 1em;
-        color: #fff;
-        border: none;
-        background-color: transparent;
-        font-family: "Urbanist", sans-serif;  
-    }
-
-
-    .footer-link-item{
-        color: #fff;
-    }
-
-
+  .footerContact{
+    width: 60%;
+    height: 14em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footerContactTitle{
+    font-size: 3em;
+    color: rgba(0, 0, 0, 0.5);;
+    font-family: "Urbanist", sans-serif;
+  }
+  .footerSociaisList{
+    width: 100%;
+    height: 10em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+  }
+  .footerSociaisItem{
+    color: #fff;
+    width: 90%;
+    font-size: 1.5em;
+    font-family: "Urbanist", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
   }
   
   /* Desktops */
-  @media (min-width: 1025px) and (max-width: 1440px) {
-   .footer-section{
-    background-image: url('../../images/wave-haikei.png');
-    background-color: transparent;
-    background-color: aqua;
-    background-size: cover;
-    width: 100%;
-    height: 30em;
-    border: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 2%;
-    flex-direction: row;
- }
-
-
-/* === footer-column-1 ==== */
-.footer-column-1{
-    width: 20%;
-    height: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 2%;
-    flex-direction: column;
-}
-.footer-title-letters{
-    width: 100%;
-    font-size: 3.5vw;
-    font-weight: 900;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    color: rgba(255, 255, 255, 0.2);
-}
-.footer-title-letters::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 1px;
-    background-color:#fff;
+  @media (min-width: 1025px){
+ .footer{
+  width: 100%;
+  height: 20em;
+  background-color: #113F67;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  gap: 2em;
+  padding: 0 2%;
 }
 
-.footer-letter {
-    display: inline-block;
-    font-family: "Nunito", sans-serif;
+.footerTitle{
+  font-size: 2.5em;
+  font-family: "Urbanist", sans-serif;  
+  color: #fff;
 }
-
-    .footer-letter:nth-child(4){
-        margin-right: 2%;
-    }
-    .footer-letter:nth-child(1),.letter:nth-child(5){
-        transform: rotateZ(10deg);
-    }
-    .footer-letter:nth-child(2),.letter:nth-child(7){
-        transform: rotateZ(8deg);
-    }
-    .footer-letter:nth-child(3),.letter:nth-child(6){
-        transform: rotateZ(5deg);
-    }
-    .footer-letter:nth-child(8){
-        transform: rotateZ(-8deg);
-    }
-
-
-     /* footer-column-2 */
-
-    .footer-column-2{
-        width: 15%;
-        height: 40%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .footer-titles{
-        font-family: "Open Sans", sans-serif;
-        font-size: 2em;
-        color: rgba(255, 255, 255, 0.2);
-        position: relative;
-    }
-    .footer-link-list, .footer-sociais-list{
-        list-style: none;
-        font-size: 1.5em;
-        color: #fff;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 3%;
-        flex-direction: column;
-        font-family: "Jost", sans-serif;
-    }
-
-   /* ==== footer-column-3 ===== */
-    .footer-column-3{
-        width: 10%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 5%;
-    }
-
-    .footer-sociais-list{
-        flex-direction: column;
-    }
-    .footer-sociais-btn{
-        font-size: 1em;
-        color: #fff;
-        border: none;
-        background-color: transparent;
-        font-family: "Urbanist", sans-serif;  
-        cursor: pointer;
-    }
-
-
-    .footer-link-item{
-        color: #fff;
-    }
+.footerLink{
+  width: 60%;
+  height: 13em;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+.footerLinkTitle{
+    font-size: 3em;
+    text-transform: uppercase;
+    font-family: "Urbanist", sans-serif;  
+    color: rgba(0, 0, 0, 0.5);
   }
-  
-  /* Telas grandes */
-  @media (min-width: 1441px) {
-  .footer-section{
-    background-image: url('../../images/wave-haikei.png');
-    background-color: transparent;
-    background-color: aqua;
-    background-size: cover;
+  .footerLinkList{
     width: 100%;
-    height: 30em;
-    border: none;
+    height: 8em;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footerLinkItem{
+    font-size: 1em;
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+  }
+
+  .footerContact{
+    width: 60%;
+    height: 14em;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 2%;
-    flex-direction: row;
- }
-
-
-/* === footer-column-1 ==== */
-.footer-column-1{
-    width: 20%;
-    height: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 2%;
     flex-direction: column;
-}
-.footer-title-letters{
+  }
+  .footerContactTitle{
+    font-size: 3em;
+    color: rgba(0, 0, 0, 0.5);;
+    font-family: "Urbanist", sans-serif;  
+  }
+  .footerSociaisList{
     width: 100%;
-    font-size: 3.5vw;
-    font-weight: 900;
+    height: 10em;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    position: relative;
-    color: rgba(255, 255, 255, 0.2);
-}
-.footer-title-letters::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 1px;
-    background-color:#fff;
-}
-
-.footer-letter {
-    display: inline-block;
-    font-family: "Nunito", sans-serif;
-}
-
-    .footer-letter:nth-child(4){
-        margin-right: 2%;
-    }
-    .footer-letter:nth-child(1),.letter:nth-child(5){
-        transform: rotateZ(10deg);
-    }
-    .footer-letter:nth-child(2),.letter:nth-child(7){
-        transform: rotateZ(8deg);
-    }
-    .footer-letter:nth-child(3),.letter:nth-child(6){
-        transform: rotateZ(5deg);
-    }
-    .footer-letter:nth-child(8){
-        transform: rotateZ(-8deg);
-    }
-
-
-      /* footer-column-2 */
-
-    .footer-column-2{
-        width: 15%;
-        height: 40%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .footer-titles{
-        font-family: "Open Sans", sans-serif;
-        font-size: 2em;
-        color: rgba(255, 255, 255, 0.2);
-        position: relative;
-    }
-    .footer-link-list, .footer-sociais-list{
-        list-style: none;
-        font-size: 1.5em;
-        color: #fff;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 3%;
-        flex-direction: column;
-        font-family: "Jost", sans-serif;
-    }
-
-   /* ==== footer-column-3 ===== */
-    .footer-column-3{
-        width: 10%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 5%;
-    }
-
-    .footer-sociais-list{
-        flex-direction: column;
-    }
-    .footer-sociais-btn{
-        font-size: 1em;
-        color: #fff;
-        border: none;
-        background-color: transparent;
-        font-family: "Urbanist", sans-serif;  
-        cursor: pointer;
-    }
-
-    .footer-link-item{
-        color: #fff;
-    }
+    flex-direction: column;
+    list-style: none;
+  }
+  .footerSociaisItem{
+    color: #fff;
+    width: 90%;
+    font-size: 1em;
+    font-family: "Urbanist", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
   }
