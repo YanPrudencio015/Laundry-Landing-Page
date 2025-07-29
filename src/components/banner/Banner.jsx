@@ -4,8 +4,6 @@ import './banner.css'
 import BGBannerDesktop from '../../images/Desktop/laundry-Banner-BG.jpg';
 import BGBannertablet from '../../images/Tablet/laundry-Banner-BG.jpg';
 import BGBannerMobile from '../../images/Mobile/laundry-Banner-BG.jpg';
-import { Link } from "react-router-dom";
-
 
 function Banner(props){
 

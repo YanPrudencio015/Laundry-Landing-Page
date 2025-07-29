@@ -1,14 +1,4 @@
 
-*{
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
-    box-sizing: border-box;
-    transition: .2s ease-in;
-}
-
-/* Mobile pequeno */
 @media (max-width: 359px) {
 
        .loundry-services-section{
@@ -125,7 +115,6 @@
       .service-list-item{
         width: 90%;
         height: 2.5em;
-        /* background-color: #3386B6; */
         border-radius: 10px;
         display: flex;
         justify-content: start;
@@ -190,8 +179,6 @@
 
 
 }
-  
-  /* Mobile padrão */
   @media (min-width: 360px) and (max-width: 425px) {
        .loundry-services-section{
         width: 95%;
@@ -373,10 +360,6 @@
 
 
 }
-  
-
-
-  /* Tablets */
   @media (min-width: 426px) and (max-width: 767px) {
 
     .loundry-services-section{
@@ -555,13 +538,8 @@
     .service-list-item-title{
       font-weight: 400;
     }
-
-
-
-
   }
   
-  /* Laptops/Desktop pequeno */
   @media (min-width: 768px) and (max-width: 1024px) {
 
     .loundry-services-section{
@@ -574,7 +552,6 @@
       flex-direction: row;
       align-items: center;
       border: solid 1px var(--SecondColor);
-      /* background-color: var(--SecondColor); */
      }
      .service-image-square{
       width: 31em;
@@ -674,7 +651,6 @@
       gap: 10px;
       position: relative;
       z-index: 1;
-      /* background-color: #FFD400; */
     }
     .service-list-item{
       width: 90%;
@@ -692,7 +668,6 @@
       overflow: hidden;
       transition: .6s ease-in-out;
       cursor: pointer;
-      /* background-color: #AA3D39; */
     }
     .service-list-item:before{
       content: '';
@@ -750,15 +725,12 @@
       border-radius: 10px;
       position: absolute;
       top: 10px;
-      /* vai somando em 60px Desktop */
       background-color: rgba(51, 134, 182, .6);
       z-index: -1;
     }
   }
   
-  /* Desktops */
   @media (min-width: 1025px) and (max-width: 1440px) {
-
        .loundry-services-section{
         width: 98%;
         height: 30em;
@@ -769,7 +741,6 @@
         flex-direction: row;
         align-items: center;
         border: solid 1px var(--SecondColor);
-        /* background-color: var(--SecondColor); */
        }
        .service-image-square{
         width: 31em;
@@ -869,7 +840,6 @@
         gap: 10px;
         position: relative;
         z-index: 1;
-        /* background-color: #FFD400; */
       }
       .service-list-item{
         width: 90%;
@@ -887,7 +857,6 @@
         overflow: hidden;
         transition: .6s ease-in-out;
         cursor: pointer;
-        /* background-color: #AA3D39; */
       }
       .service-list-item:before{
         content: '';
@@ -945,14 +914,11 @@
         border-radius: 10px;
         position: absolute;
         top: 10px;
-        /* vai somando em 60px Desktop */
         background-color: rgba(51, 134, 182, .6);
         z-index: -1;
       }
-
   }
   
-  /* Telas grandes */
   @media (min-width: 1441px) {
 
         .loundry-services-section{
@@ -965,7 +931,6 @@
           flex-direction: row;
           align-items: center;
           border: solid 1px var(--SecondColor);
-          /* background-color: var(--SecondColor); */
          }
          .service-image-square{
           width: 31em;
@@ -1006,7 +971,6 @@
           bottom: 0;
           overflow: hidden;
         }
-  
         .text-info{
           font-family: "Urbanist", sans-serif;
           position: relative;
@@ -1068,7 +1032,6 @@
         .service-list-item{
           width: 90%;
           height: 2.5em;
-          /* background-color: #3386B6; */
           border-radius: 10px;
           display: flex;
           justify-content: start;
@@ -1130,5 +1093,4 @@
         .service-list-item-title{
           font-weight: 400;
         }
-  
   }

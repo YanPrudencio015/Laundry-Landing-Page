@@ -5,20 +5,7 @@ import './laundryheader.css';
 // React Router
 import { Link } from "react-router-dom";
 
-// Redux
-import { useSelector, useDispatch } from 'react-redux';
-import { openSidebar } from "../../redux/sideBarToggle";
-
-
-// toggle menu sidebar
 function LaundryHeader() {
-    const sidebarState = useSelector((state) => state);
-    const dispatch = useDispatch();
-    
-    useEffect(() => {
-        console.log("Current state:", sidebarState);
-    }, [sidebarState]);
-
     return (
         <div className='loundry-header' id="header">
             <Link to='/'>
@@ -38,7 +25,6 @@ function LaundryHeader() {
                 </Link> 
             </nav>
         </div>
-    );
-}
+    );}
 
 export default LaundryHeader;

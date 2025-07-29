@@ -1,5 +1,3 @@
-import { icons } from "./icons"
-import { ServicesImages } from "./imgs"
 export const ServiceCardInfos = [
     {
         frontTitle:'Service title',

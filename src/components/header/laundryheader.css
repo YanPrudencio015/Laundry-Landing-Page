@@ -1,5 +1,3 @@
-
-/* Mobile pequeno */
 @media (max-width: 359px) {
     .loundry-header{
         width: 100%;
@@ -164,8 +162,7 @@ position: fixed;
 
 
 }
-  
-  /* Mobile padrão */
+
   @media (min-width: 360px) and (max-width: 425px) {
     .loundry-header{
         width: 100%;
@@ -325,8 +322,6 @@ position: fixed;
 
 
   }
-  
-  /* Tablets */
   @media (min-width: 426px) and (max-width: 768px) {
     .loundry-header{
         width: 100%;
@@ -487,8 +482,6 @@ position: fixed;
 
 
   }
-  
-  /* Laptops/Desktop pequeno */
   @media (min-width: 769px) and (max-width: 1024px) {
     .loundry-header{
         width: 100%;
@@ -633,8 +626,7 @@ position: fixed;
 
 
   }
-  
-  /* Desktops */
+
   @media (min-width: 1025px) and (max-width: 1440px) {
     .loundry-header{
         width: 100%;
@@ -776,8 +768,6 @@ position: fixed;
 
 
   }
-  
-  /* Telas grandes */
   @media (min-width: 1441px) {
     .loundry-header{
         width: 100%;

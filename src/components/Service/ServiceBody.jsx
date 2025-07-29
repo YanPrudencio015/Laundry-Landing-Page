@@ -3,7 +3,6 @@ import './service.css';
 import { ServiceCardInfos } from "../services/informations/cardsInfo";
 
 function ServiceBody(props){
-
     return(
             <section className="service-body">
                 {ServiceCardInfos.map((value, index)=>(
@@ -17,10 +16,7 @@ function ServiceBody(props){
                         explicabo facilis eligendi quia consectetur beatae. 
                         Minima culpa quisquam perferendis facere sunt optio.
                     </div>
-                </div>
-                 ))}
+                </div>))}
             </section>
-    )
-}
-
+    )}
 export default ServiceBody;

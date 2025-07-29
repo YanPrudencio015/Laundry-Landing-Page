@@ -1,49 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comfortaa:wght@300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Cal+Sans&display=swap');
 
-
-
-.slide-in {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200em;
-  background-color: #FFD400;
-  transform-origin: top;
-  z-index: 1000;
-}
-
-.slide-out {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 200em;
-  background: #FFD400;
-  transform-origin: bottom;
-  z-index: 1000;
-}
-
-
 /* 
-font-family: "Open Sans", sans-serif;
-font-family: "Montserrat", sans-serif;
-font-family: "Raleway", sans-serif;
-font-family: "Nunito", sans-serif;
-font-family: "Mulish", sans-serif;
-font-family: "Quicksand", sans-serif;
-font-family: "Manrope", sans-serif;
-font-family: "Jost", sans-serif;
-font-family: "Pacifico", cursive;
-font-family: "Comfortaa", sans-serif;
-font-family: "Lobster", sans-serif;
-font-family: "Urbanist", sans-serif;  
-font-family: "Cal Sans", sans-serif;
-font-family: "Bebas Neue", sans-serif;
-font-family: "Bangers", system-ui;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-family: "Mulish", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Manrope", sans-serif;
+  font-family: "Jost", sans-serif;
+  font-family: "Pacifico", cursive;
+  font-family: "Comfortaa", sans-serif;
+  font-family: "Lobster", sans-serif;
+  font-family: "Urbanist", sans-serif;  
+  font-family: "Cal Sans", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "Bangers", system-ui;
+
 */
-
-
 :root{
     --PrimaryColor:#FFD400;
     --SecondColor:#3386B6;
@@ -80,7 +54,6 @@ a{
   z-index: 1;
 }
 
-/* Optional: Create a ripple effect on links */
 .transition-link::after {
   content: '';
   position: absolute;
@@ -103,15 +76,10 @@ a{
   will-change: transform;
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.15);
 }
-
-/* Adicionar ao seu arquivo CSS */
-
-
 a{
   text-decoration: none;
 }
 
-/* Mobile pequeno */
 @media (max-width: 359px) {
        .loundry{
         background-color: var(--BGColor);
@@ -122,10 +90,7 @@ a{
         flex-direction: column;   
         justify-content: center;
        }
-
 }
-  
-  /* Mobile padrão */
   @media (min-width: 360px) and (max-width: 425px) {
     .loundry{
         background-color: var(--BGColor);
@@ -135,13 +100,9 @@ a{
         align-items: center;
         flex-direction: column;   
        }
-
 }
   
-
-
-  /* Tablets */
-  @media (min-width: 426px) and (max-width: 767px) {
+@media (min-width: 426px) and (max-width: 767px) {
     .loundry{
         background-color: var(--BGColor);
         width: 100%;
@@ -150,10 +111,8 @@ a{
         align-items: center;
         flex-direction: column;   
     }
-
   }
   
-  /* Laptops/Desktop pequeno */
   @media (min-width: 768px) and (max-width: 1024px) {
     .loundry{
         background-color: var(--BGColor);
@@ -165,7 +124,6 @@ a{
     }
   }
   
-  /* Desktops */
   @media (min-width: 1025px) and (max-width: 1440px) {
     .loundry{
         background-color: var(--BGColor);
@@ -174,14 +132,9 @@ a{
         display: flex;
         align-items: center;
         flex-direction: column;   
-        /* gap: 5%; */
-       }
-
-     
+       }     
   }
-  
-  /* Telas grandes */
-  @media (min-width: 1441px) {
+    @media (min-width: 1441px) {
         .loundry{
          background-color: #F7F7F7;
          width: 100%;
@@ -190,6 +143,4 @@ a{
          align-items: center;
          flex-direction: column;   
         }
-
-  
   }

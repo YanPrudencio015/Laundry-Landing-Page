@@ -1,5 +1,4 @@
 
-/* Mobile pequeno */
 @media (max-width: 359px) {
     .faqs{
         width: 95%;
@@ -116,7 +115,6 @@
 
 }
   
-  /* Mobile padrão */
   @media (min-width: 360px) and (max-width: 425px) {
         .faqs{
         width: 95%;
@@ -231,9 +229,6 @@
 }
 }
   
-
-
-  /* Tablets */
   @media (min-width: 426px) and (max-width: 767px) {
         .faqs{
         width: 95%;
@@ -347,9 +342,7 @@
     transition: .6s ease-in-out; 
 }
   }
-  
-  /* Laptops/Desktop pequeno */
-  @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 768px) and (max-width: 1024px) {
        .faqs{
         width: 95%;
         height: 53em;
@@ -463,7 +456,6 @@
 }
   }
   
-  /* Desktops */
   @media (min-width: 1025px) and (max-width: 1440px) {
       .faqs{
         width: 70%;
@@ -580,9 +572,7 @@
     cursor: default;
 }
   }
-  
-  /* Telas grandes */
-  @media (min-width: 1441px) {
+    @media (min-width: 1441px) {
        .faqs{
         width: 70%;
         height: 40em;

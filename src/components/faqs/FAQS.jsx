@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import './faqs.css'
-import { number } from "framer-motion";
-import { coreModule } from "@reduxjs/toolkit/query";
+// import { number } from "framer-motion";
+// import { coreModule } from "@reduxjs/toolkit/query";
 
 
 const questions = [

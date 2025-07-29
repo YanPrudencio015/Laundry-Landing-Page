@@ -15,8 +15,5 @@ function ServiceHeader(props){
                     </p>
                 </div>
             </section>
-
-    )
-}
-
+    )}
 export default ServiceHeader;

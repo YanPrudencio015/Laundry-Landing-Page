@@ -6,6 +6,7 @@ function Services() {
     const [count, setCount] = useState(0);
     const [isPaused, setIsPaused] = useState(false);
     const [windowSize, setwindowSize] = useState({width:window.innerWidth, height: window.innerHeight})
+   
     // auto interval to change service's buttons
     useEffect(() => {
         // only stop the progress to next button if doens't  paused
@@ -36,11 +37,9 @@ function Services() {
 
     // to check the currently windown Size
     useEffect(()=>{
-        
         function handleWindowSize(){
             setwindowSize({width: window.innerWidth, height:window.innerHeight});
         }
-
         window.addEventListener('resize', handleWindowSize);
 
         return ()=>{
@@ -106,7 +105,6 @@ function Services() {
                 </ul>
             </div>
         </div>
-    )
-}
+    )}
 
 export default Services;
