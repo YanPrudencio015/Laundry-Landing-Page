@@ -32,7 +32,7 @@ It showcases my ability to build fast, accessible, and responsive marketing page
 ## 📸 Preview
 
 ### 🖥 Desktop  
-![Laundry Landing Page Desktop](./screenshots/laundry-desktop.png)
+![Laundry Landing Page Desktop](./screenshots/laundry-preview.png)
 
 ### 📱 Mobile  
 ![Laundry Landing Page Mobile](./screenshots/laundry-mobile.png)
