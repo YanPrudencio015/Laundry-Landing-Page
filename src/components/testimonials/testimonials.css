@@ -1,28 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comfortaa:wght@300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-
-
-/* 
-  font-family: "Open Sans", sans-serif;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Raleway", sans-serif;
-  font-family: "Nunito", sans-serif;
-  font-family: "Mulish", sans-serif;
-  font-family: "Quicksand", sans-serif;
-  font-family: "Manrope", sans-serif;
-  font-family: "Jost", sans-serif;
-  font-family: "Pacifico", cursive;
-  font-family: "Comfortaa", sans-serif;
-  font-family: "Lobster", sans-serif;
-  font-family: "Urbanist", sans-serif;  
-  font-family: "Cal Sans", sans-serif;
-  font-family: "Bebas Neue", sans-serif;
-  font-family: "Bangers", system-ui;
-
-*/
-
-/* Mobile pequeno */
 @media (max-width: 359px) {
  .testimonials-section{
     width: 100%;
@@ -178,7 +154,6 @@
 }
 
   
-  /* Mobile padrão */
   @media (min-width: 360px) and (max-width: 425px) {
  .testimonials-section{
     width: 100%;
@@ -329,25 +304,21 @@
 
 }
   
-
-
-  /* Tablets */
   @media (min-width: 426px) and (max-width: 767px) {
  .testimonials-section{
         width: 100%;
-        height: 40em;
+        height: 45em;
         display: flex;
-        justify-content: center;
-        gap: 5%;
+        justify-content: space-between;
+        gap: 0%;
         flex-direction: column;
         align-items: center;
-        margin: 0 0 10% 0;
+        margin: 0 0 10% 0;    
  }
 
  .testi-header{
       width: 100%;
-      height: 10%;
-      height: 20%;
+      height: 10em;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -355,12 +326,12 @@
    }
 
  .testi-header-title{
-    font-size: 6em;
+    font-size: 4em;
     font-family: "Bebas Neue", sans-serif;
  }
  .testi-header-subtitle{
-        font-size: 2em;
-        width: 50%;
+        font-size: 1em;
+        width: 8em;
         text-align: center;
         font-family: "Cal Sans", sans-serif;
  }
@@ -370,14 +341,14 @@
  /* ===== testi-body ===== */
 
  .testi-body{
-   width: 100%;
-   height: 27em;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   gap: 5%;
-   position: relative;
+      width: 100%;
+        height: 34em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5%;
+        position: relative;
    }
 
    /* =====Swiper===== */
@@ -398,7 +369,7 @@
    }
     .testi-swiper-card{
         width: 20em;
-        height: 15em;
+        height: 30em;
         background-color: hsl(202, 100%, 46%);
         border-radius: 30px;
         position: relative;
@@ -412,13 +383,14 @@
 
    .testi-swiper-card-img-border{
         position: absolute;
-        top: -16%;
+        top: -5%;
         left: 50%;
         transform: translateX(-50%);
-        width: 5em;
-        height: 5em;
+        width: 9em;
+        height: 9em;
         border-radius: 20em;
         border: solid 12px transparent;
+        outline: solid 1px #fff;
         overflow: hidden;
    }
 
@@ -432,13 +404,14 @@
    .testi-swiper-card-stars{
       color: #fff;
       width: 100%;
+      height: 3em;
       display: flex;
       justify-content: center;
       align-items: center;
    }
    .testi-card-icon{
       margin: 0 2%;
-      font-size: 1em;
+      font-size: 1.5em;
    }
    .testi-swiper-card-name{
       width: 100%;
@@ -449,12 +422,12 @@
       text-align: center;
    }
    .testi-swiper-card-costumer-Name{
-      font-size: 1em;
+      font-size: 2em;
       font-family: "Urbanist", sans-serif; 
       color: #fff;
    }
    .testi-swiper-card-text{
-        height: 63%;
+        height: 12em;
         width: 100%;
         display: flex;
         justify-content: end;
@@ -466,8 +439,8 @@
    }
    .testi-swiper-card-text-comma{
       position: absolute;
-        font-size: 2em;
-        top: 15%;
+        font-size: 7em;
+        top: 30%;
       font-family: "Open Sans", sans-serif;
       font-family: "Jost", sans-serif;
       transform: translateY(-50%);
@@ -477,7 +450,7 @@
    .testi-swiper-card-costumers-testimonials{
         width: 100%;
         height: 80%;
-        font-size: .8em;
+        font-size: 1.5em;
         font-family: "Urbanist", sans-serif;
         color: #fff;
         display: flex;
@@ -550,7 +523,7 @@
    }
     .testi-swiper-card{
         width: 90%;
-        height: 25em;
+        height: 32em;
         background-color: hsl(202, 100%, 46%);
         border-radius: 30px;
         position: relative;
@@ -564,12 +537,13 @@
 
    .testi-swiper-card-img-border{
         position: absolute;
-        top: -30%;
+        top: -15%;
         left: 50%;
         transform: translateX(-50%);
         width: 11em;
         height: 11em;
         border-radius: 20em;
+        outline: solid 2px #fff;
         border: solid 12px transparent;
         overflow: hidden;
    }
@@ -628,7 +602,7 @@
 
    .testi-swiper-card-costumers-testimonials{
         width: 100%;
-        height: 80%;
+        height: 10em;
         font-size: 1.4em;
         font-family: "Urbanist", sans-serif;
         color: #fff;

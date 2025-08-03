@@ -7,10 +7,10 @@ export default function About(props) {
         <section className="about" id="about">
            <div className="aboutTextSquare">
                 <p className="AboutText">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Pariatur tenetur neque natus quasi fuga reiciendis sapiente 
-                    accusamus alias earum, recusandae doloremque incidunt 
-                    aliquid rem quae nesciunt porro id? Nesciunt, amet?
+                    We are a dedicated team offering high-quality laundry services designed
+                    to fit your busy lifestyle. With modern equipment, eco-friendly processes, 
+                    and exceptional attention to detail, we aim to bring convenience and 
+                    reliability to your everyday routine.
                 </p>
            </div>
            <h1 className="aboutTitle">About us</h1>

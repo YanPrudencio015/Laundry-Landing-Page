@@ -7,11 +7,9 @@ import { Link } from "react-router-dom";
 
 function LaundryHeader() {
     return (
-        <div className='loundry-header' id="header">
-            <Link to='/'>
-                <h1 className='header-title' >
-                    <p className='header-sub-title'>Laundry</p>
-                </h1>
+        <header className='loundry-header' id="header">
+            <Link to='/'className='header-title' >
+                    <h1 className='header-sub-title'>BlueWave Cleaners</h1>
             </Link>
             <nav className='header-navbar'>
                 <Link className="navbar-options" to={"#services"}>
@@ -24,7 +22,7 @@ function LaundryHeader() {
                     <p>About</p>
                 </Link> 
             </nav>
-        </div>
+        </header>
     );}
 
 export default LaundryHeader;

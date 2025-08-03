@@ -6,12 +6,9 @@ function ServiceHeader(props){
             <section className="service-header">
                 <h3 className="service-header-title">Our Services</h3>
                 <div className="service-header-Description-section">
-                    <h1 className="service-header-title-Description">Generic Title</h1>
+                    <h1 className="service-header-title-Description"> FreshFold Laundry</h1>
                     <p className="service-header-Description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Quis similique saepe autem repudiandae neque unde sequi, 
-                        adipisci inventore ullam ratione numquam! 
-                        Ex amet perspiciatis sunt et modi autem dolor eius?
+                            At our laundry, we provide reliable and efficient services tailored to your daily routine. From everyday garments to delicate fabrics, we handle your clothes with care, so you can focus on what matters most.
                     </p>
                 </div>
             </section>

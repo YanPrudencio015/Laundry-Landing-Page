@@ -5,7 +5,7 @@ import Neighborhoods from './Neightborhood'
 import Industries from './Industries'
 function Costumers(props){
     return(
-        <section className='costumers-section'>
+        <div className='costumers-section'>
             <div className='costumers-header'>
                 <h1 className='cos-header-title'>Our Client</h1>
             </div>
@@ -13,7 +13,7 @@ function Costumers(props){
                 <Neighborhoods/>
                 <Industries/>
             </div>
-        </section>
+        </div>
     )
 }
 

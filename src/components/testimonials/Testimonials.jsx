@@ -56,50 +56,50 @@ export default function Testimonials() {
     const clientTestimonials = [
         {
             img:img1,
-            name:"Laundry",
-            testimonials:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus consequatur numquam sequi, minus doloremque rerum ducimus non quam cupiditate laboriosam sapiente',
+            name:"Jack Thompson",
+            testimonials:"It’s so easy to book and they always show up on time.",
 
         },
         {
             img:img2,
-            name:"Laundry",
-            testimonials:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus consequatur numquam sequi, minus doloremque rerum ducimus non quam cupiditate laboriosam sapiente',
+            name:" Emily Carter",
+            testimonials:"Always reliable. I’ve stopped doing my own laundry completely.",
 
         },
         {
             img:img3,
-            name:"Laundry",
-            testimonials:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus consequatur numquam sequi, minus doloremque rerum ducimus non quam cupiditate laboriosam sapiente',
+            name:" Sara Lee",
+            testimonials:"The express service saved me so much time during finals week.",
 
         },
         {
             img:img4,
-            name:"Laundry",
-            testimonials:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus consequatur numquam sequi, minus doloremque rerum ducimus non quam cupiditate laboriosam sapiente',
+            name:"Priya Nair",
+            testimonials:"Their eco-friendly wash is a big win for me.",
 
         },
         {
             img:img5,
-            name:"Laundry",
-            testimonials:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus consequatur numquam sequi, minus doloremque rerum ducimus non quam cupiditate laboriosam sapiente',
+            name:"Carlos Mendez",
+            testimonials:'CleanWave Laundry is part of my weekly routine now.',
 
         },
         {
             img:img6,
-            name:"Laundry",
-            testimonials:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus consequatur numquam sequi, minus doloremque rerum ducimus non quam cupiditate laboriosam sapiente',
+            name:"David M.",
+            testimonials:"Their attention to detail is impressive. My clothes always come back fresh, clean, and perfectly folded.",
 
         },
         {
             img:img7,
-            name:"Laundry",
-            testimonials:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus consequatur numquam sequi, minus doloremque rerum ducimus non quam cupiditate laboriosam sapiente',
+            name:"Carlos R.",
+            testimonials:"Excellent customer service and super fast turnaround. I trust them with all my business shirts!",
 
         },
         {
             img:img8,
-            name:"Laundry",
-            testimonials:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus consequatur numquam sequi, minus doloremque rerum ducimus non quam cupiditate laboriosam sapiente',
+            name:" Aisha Grant",
+            testimonials:"Honestly, it’s the best laundry service I’ve used.",
 
         },
     ]
@@ -114,10 +114,10 @@ export default function Testimonials() {
         <Swiper
         slidesPerView={slidesPerView}
         spaceBetween={30}
-        autoplay={{
-        delay: 4500,
-        disableOnInteraction: false,
-        }}
+        // autoplay={{
+        // delay: 4500,
+        // disableOnInteraction: false,
+        // }}
         loop={true}
         modules={[Pagination, Autoplay]}
         className="testi-mySwiper"
@@ -126,7 +126,7 @@ export default function Testimonials() {
                     <SwiperSlide key={index} className='testi-swiper-slide'>
             <div className='testi-swiper-card'>
                 <div className='testi-swiper-card-img-border'>
-                    <img src={value.img} className='testi-swiper-card-img'/>
+                    <img src={value.img} alt='client_profile_photo' className='testi-swiper-card-img'/>
                 </div>
                 <div className='testi-swiper-card-stars'>
                     <i className=" testi-card-icon fa-solid fa-star"></i>

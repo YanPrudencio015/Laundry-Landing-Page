@@ -2,7 +2,7 @@
 @media (max-width: 359px) {
     .faqs{
         width: 95%;
-        height: 48em;
+        height: 22em;
         background-color:hsl(202, 100%, 46%);
         border-radius: 10px;
         margin: 5em 0;
@@ -11,7 +11,23 @@
         align-items: center;
         justify-content: center;
         gap: 2em;
+        transition: .6s ease-in-out;
     }
+    .faqsOpened{
+        width: 95%;
+        height: 48em;
+        background-color:hsl(202, 100%, 46%);
+        border-radius: 10px;
+        margin: 5em 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;   
+        transition: .6s ease-in-out;
+    }
+    
+    
     .faqsTexts{
         width: 100%;
         height: 6em;
@@ -20,20 +36,32 @@
         align-items: center;
         justify-content: center;
     }
-.faqsText{
-    font-family: "Jost", sans-serif;
-    font-weight: 600;
+    .faqsText{
+        font-family: "Jost", sans-serif;
+        font-weight: 600;
+    }
+    
+    .faqsList{
+        width: 100%;
+        height: 20em;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+        transition: .6s ease-in-out;
+    }
+    .faqsListOpened{
+        width: 100%;
+        height: 38em;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 5em;
+        transition: .6s ease-in-out;
 }
 
-.faqsList{
-    width: 100%;
-    height: 38em;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 5em;
-}
 
 .faqsItem{
     width: 95%;
@@ -75,10 +103,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 7vw;
+    font-size: 5.5vw;
+    text-align: center;
     z-index: 2;
     border-radius: 10px;
-    font-family: "Urbanist", sans-serif;  
+    font-family: "Urbanist", sans-serif;
 }
 .faqsItemText{
     width: 100%;
@@ -118,6 +147,19 @@
   @media (min-width: 360px) and (max-width: 425px) {
         .faqs{
         width: 95%;
+        height: 30em;
+        background-color:hsl(202, 100%, 46%);
+        border-radius: 10px;
+        margin: 5em 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+        transition: .6s ease-in-out;
+    }
+    .faqsOpened{
+        width: 95%;
         height: 53em;
         background-color:hsl(202, 100%, 46%);
         border-radius: 10px;
@@ -127,6 +169,7 @@
         align-items: center;
         justify-content: center;
         gap: 2em;
+        transition: .6s ease-in-out;
     }
     .faqsTexts{
         font-size: 7vw;
@@ -144,6 +187,15 @@
 }
 
 .faqsList{
+    width: 100%;
+    height: 38em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+}
+.faqsListOpened{
     width: 100%;
     height: 38em;
     display: flex;
@@ -192,7 +244,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 7vw;
+    text-align: center;
+    font-size: 5vw;
     z-index: 2;
     border-radius: 10px;
     font-family: "Urbanist", sans-serif;  
@@ -232,6 +285,19 @@
   @media (min-width: 426px) and (max-width: 767px) {
         .faqs{
         width: 95%;
+        height: 26em;
+        background-color:hsl(202, 100%, 46%);
+        border-radius: 10px;
+        margin: 5em 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+        transition: .6s ease-in-out;
+    }
+        .faqsOpened{
+        width: 95%;
         height: 53em;
         background-color:hsl(202, 100%, 46%);
         border-radius: 10px;
@@ -241,6 +307,8 @@
         align-items: center;
         justify-content: center;
         gap: 2em;
+        transition: .6s ease-in-out;
+
     }
     .faqsTexts{
         font-size: 2em;
@@ -264,7 +332,18 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    gap: 1em;
+    transition: .6s ease-in-out;
+}
+.faqsListOpened{
+    width: 100%;
+    height: 48em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap: 5em;
+    transition: .6s ease-in-out;
 }
 
 .faqsItem{
@@ -301,15 +380,16 @@
     border-radius: 10px;
 }
 .faqsItemTitle{
-    width: 100%;
-    height: 3em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    z-index: 2;
-    border-radius: 10px;
-    font-family: "Urbanist", sans-serif;  
+        width: 100%;
+        height: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        text-align: center;
+        z-index: 2;
+        border-radius: 10px;
+        font-family: "Urbanist", sans-serif;  
 }
 .faqsItemText{
     width: 100%;
@@ -345,6 +425,18 @@
     @media (min-width: 768px) and (max-width: 1024px) {
        .faqs{
         width: 95%;
+        height: 30em;
+        background-color:hsl(202, 100%, 46%);
+        border-radius: 10px;
+        margin: 5em 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+    }
+       .faqsOpened{
+        width: 95%;
         height: 53em;
         background-color:hsl(202, 100%, 46%);
         border-radius: 10px;
@@ -371,6 +463,15 @@
 }
 
 .faqsList{
+    width: 100%;
+    height: 48em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+.faqsListOpened{
     width: 100%;
     height: 48em;
     display: flex;
@@ -459,6 +560,18 @@
   @media (min-width: 1025px) and (max-width: 1440px) {
       .faqs{
         width: 70%;
+        height: 25em;
+        background-color:hsl(202, 100%, 46%);
+        border-radius: 10px;
+        margin: 5em 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+    }
+      .faqsOpened{
+        width: 70%;
         height: 40em;
         background-color:hsl(202, 100%, 46%);
         border-radius: 10px;
@@ -485,6 +598,15 @@
 }
 
 .faqsList{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+.faqsListOpened{
     width: 100%;
     height: 48em;
     display: flex;
@@ -534,10 +656,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
+    font-size: 1.5em;
     z-index: 2;
     border-radius: 10px;
     font-family: "Urbanist", sans-serif;  
+    text-align: center;
 }
 .faqsItemText{
     width: 100%;
@@ -575,6 +698,18 @@
     @media (min-width: 1441px) {
        .faqs{
         width: 70%;
+        height: 25em;
+        background-color:hsl(202, 100%, 46%);
+        border-radius: 10px;
+        margin: 5em 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+    }
+      .faqsOpened{
+        width: 70%;
         height: 40em;
         background-color:hsl(202, 100%, 46%);
         border-radius: 10px;
@@ -601,6 +736,15 @@
 }
 
 .faqsList{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+.faqsListOpened{
     width: 100%;
     height: 48em;
     display: flex;
@@ -650,10 +794,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
+    font-size: 1.5em;
     z-index: 2;
     border-radius: 10px;
     font-family: "Urbanist", sans-serif;  
+    text-align: center;
 }
 .faqsItemText{
     width: 100%;

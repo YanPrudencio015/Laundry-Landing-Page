@@ -11,10 +11,7 @@ function ServiceBody(props){
                         <div className="service-title">{value.frontTitle}</div>
                     </div>
                     <div className="service-description">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                        Optio, totam numquam iste, ut harum illo mollitia deserunt 
-                        explicabo facilis eligendi quia consectetur beatae. 
-                        Minima culpa quisquam perferendis facere sunt optio.
+                        {value.backDesc}
                     </div>
                 </div>))}
             </section>

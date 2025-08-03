@@ -8,7 +8,7 @@ export default function Footer (props){
         <section className="footer">
             <Link to={"#header"}>
                 <div className="footerTitle">
-                    Loundry
+                BlueWave Cleaners
                 </div>
             </Link>
             <div className="footerLink">
@@ -31,16 +31,17 @@ export default function Footer (props){
                 <h1 className="footerContactTitle">Contact Us</h1>
                 <ul className="footerSociaisList">
                     <li className="footerSociaisItem">
-                        123 Market Street, Suite 400, Riverview City, CA 90210
+                       123 Market Street, Suite 400, Riverview City, CA 90210
                     </li>
                     <li className="footerSociaisItem">
-                        hello@youser.com
+                       hello@cleanwave.com
                     </li>
                     <li className="footerSociaisItem">
-                        +123 15554565
+                      +1 (234) 567-8910
                     </li>
                 </ul>
             </div>
+            <p className="formalText">© 2025 CleanWave Laundry. All rights reserved.</p>
         </section>
     )
     

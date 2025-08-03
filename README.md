@@ -1,44 +1,76 @@
-# Laundry Landing Page 🧼
+# Laundry Landing Page 🧼  
+Responsive, Accessible, and Built with React and Pure CSS
 
-A clean and responsive landing page for a fictional laundry service, originally designed for a real client who ended up not moving forward with the delivery. I used this opportunity to refine my skills in layout, responsiveness, and component organization.
+A clean and responsive landing page for a fictional laundry service, originally created for a real client. Although the client decided not to proceed — as they already had a website — I used this opportunity to strengthen my skills in layout, responsiveness, and component structure using React and pure CSS.
+
+---
 
 ## 🧩 Features
 
-- Fully responsive layout using pure HTML and CSS
-- Mobile-first approach
-- Clear visual hierarchy and structured sections
-- Hosted on Vercel
+- Fully responsive layout using semantic HTML and pure CSS
+- Mobile-first design
+- Clear visual hierarchy and sectioning
+- Built with React components
+- Deployed on Vercel
+
+---
 
 ## 🎯 Purpose
 
-This project was created for a real client in the laundry services niche. Although it was not delivered in production due to the client already having a website, I completed and improved the landing page to use as part of my portfolio.
+This project was developed for a real-world client in the laundry services niche. Although it wasn’t published, I completed and refined the landing page to include in my portfolio.
 
-It demonstrates my ability to build marketing pages from scratch using semantic HTML, CSS, and responsive design principles.
+It showcases my ability to build fast, accessible, and responsive marketing pages from scratch using modern frontend technologies.
+
+---
 
 ## 🧪 Demo
 
 🔗 [Live Site](https://laundry-landing-page-jet.vercel.app/)
 
-📷 Preview:  
-![Laundry Landing Page Screenshot](./screenshots/laundry-preview.png)
+---
+
+## 📸 Preview
+
+### 🖥 Desktop  
+![Laundry Landing Page Desktop](./screenshots/laundry-desktop.png)
+
+### 📱 Mobile  
+![Laundry Landing Page Mobile](./screenshots/laundry-mobile.png)
+
+---
 
 ## 🛠 Tech Stack
 
 - Vite
-- HTML5
-- CSS3
+- React.js
+- HTML5 + CSS3
 - Git & GitHub
-- Vercel (Deploy)
+- Vercel (deployment)
+
+---
 
 ## 📚 What I learned
 
 - Structuring landing pages for real clients
-- Using semantic HTML to improve accessibility
+- Using semantic HTML to enhance accessibility
 - Building responsive layouts with pure CSS
-- Communicating visual intent using typography and spacing
+- Organizing components and maintaining clean code
+- Communicating visual intent through typography and spacing
 
-## 🚀 Next steps
+---
 
-- Add basic accessibility improvements (`alt`, color contrast)
-- Add a simulated contact form
-- Replace placeholder text with real content
+## 🧑‍💻 Running locally
+
+1. Clone the repository:
+```bash
+git clone https://github.com/YanPrudencio015/Laundry-Landing-Page.git
+
+Navigate to the project folder:
+cd Laundry-Landing-Page
+
+Install dependencies and start the development server:
+npm install
+npm run dev
+
+Open your browser and go to:
+http://localhost:5173

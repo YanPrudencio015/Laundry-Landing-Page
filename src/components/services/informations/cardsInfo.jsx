@@ -1,32 +1,26 @@
 export const ServiceCardInfos = [
     {
-        frontTitle:'Service title',
-        backTitle:'Service ',
-        backDesc:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et error rerum velit ullam, omnis illum tempore neque.'
+        frontTitle:'Standard Laundry',
+        backDesc:'Washing, drying and folding of your everyday clothes.'
     },
     {
-        frontTitle:'Service title',
-        backTitle:'Service ',
-        backDesc:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et error rerum velit ullam, omnis illum tempore neque.'
+        frontTitle:'Dry Cleaning',
+        backDesc:'Professional cleaning for delicate and formal wear.'
     },
     {
-        frontTitle:'Service title',
-        backTitle:'Service ',
-        backDesc:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et error rerum velit ullam, omnis illum tempore neque.'
+        frontTitle:'Express 24h',
+        backDesc:'Get your laundry back in less than 24 hours — fresh and clean.'
     },
     {
-        frontTitle:'Service title',
-        backTitle:'Service ',
-        backDesc:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et error rerum velit ullam, omnis illum tempore neque.'
+        frontTitle:'Pickup & Delivery',
+        backDesc:'We pick up and deliver your laundry at your convenience.'
     },
     {
-        frontTitle:'Service title',
-        backTitle:'Service ',
-        backDesc:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et error rerum velit ullam, omnis illum tempore neque.'
+        frontTitle:'Eco Wash',
+        backDesc:'Environmentally-friendly wash using less water and energy.'
     },
     {
-        frontTitle:'Service title',
-        backTitle:'Service ',
-        backDesc:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et error rerum velit ullam, omnis illum tempore neque.'
+        frontTitle:'Ironing Services',
+        backDesc:'Get your clothes perfectly pressed and wrinkle-free.'
     },
 ]

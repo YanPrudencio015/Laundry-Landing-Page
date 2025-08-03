@@ -8,6 +8,7 @@
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
+    position: relative;
   }
 
   .footerTitle{
@@ -75,6 +76,13 @@
       align-items: center;
       text-align: center;
     }
+    .formalText{
+        position: absolute;
+        bottom: 3px;
+        font-family: "Urbanist", sans-serif;
+        color: #fff;
+        font-size: 4vw;
+    }
   }
     @media (min-width: 360px) and (max-width: 425px) {
  .footer{
@@ -82,9 +90,10 @@
   height: 40em;
   background-color: #113F67;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .footerTitle{
@@ -152,6 +161,14 @@
     align-items: center;
     text-align: center;
   }
+
+      .formalText{
+        position: absolute;
+        bottom: 20px;
+        font-family: "Urbanist", sans-serif;
+        color: #fff;
+        font-size: 4vw;
+    }
   }
     @media (min-width: 425px) and (max-width: 768px) {
 .footer{
@@ -159,9 +176,10 @@
   height: 40em;
   background-color: #113F67;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .footerTitle{
@@ -229,6 +247,14 @@
     align-items: center;
     text-align: center;
   }
+
+      .formalText{
+        position: absolute;
+        bottom: 3px;
+        font-family: "Urbanist", sans-serif;
+        color: #fff;
+        font-size: 1em;
+    }
   }
   
   @media (min-width: 769px) and (max-width: 1024px) {
@@ -237,10 +263,11 @@
   height: 20em;
   background-color: #113F67;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
   gap: 2em;
+  position: relative;
 }
 
 .footerTitle{
@@ -308,6 +335,20 @@
     align-items: center;
     text-align: center;
   }
+      .formalText{
+        position: absolute;
+        bottom: 3px;
+        font-family: "Urbanist", sans-serif;
+        color: #fff;
+        font-size: 2vw;
+    }
+        .formalText{
+        position: absolute;
+        bottom: 3px;
+        font-family: "Urbanist", sans-serif;
+        color: #fff;
+        font-size: 4vw;
+    }
   }
     @media (min-width: 1025px){
  .footer{
@@ -320,6 +361,7 @@
   align-items: center;
   gap: 2em;
   padding: 0 2%;
+  position: relative;
 }
 
 .footerTitle{
@@ -387,4 +429,11 @@
     align-items: center;
     text-align: center;
   }
+      .formalText{
+        position: absolute;
+        bottom: 3px;
+        font-family: "Urbanist", sans-serif;
+        color: #fff;
+        font-size: 1vw;
+    }
   }

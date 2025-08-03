@@ -9,19 +9,19 @@ function Banner(props){
 
     const Texts = [
         {
-            title:'Banner Title', 
-            description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', 
-            subDescription:'Banner Subdescription'
+            title:'Fast. Clean. Delivered.', 
+            description:"From doorstep pickup to spotless delivery — we've got you covered.", 
+            subDescription:'Laundry made effortless.'
         },
         {
-            title:'second Title', 
-            description:'When an unknown printer took a galley of type and scrambled it to make a type specimen book.', 
-            subDescription:'Second Subdescription'
+            title:'Care for Your Clothes', 
+            description:'Eco-friendly, professional laundry services tailored to your needs.', 
+            subDescription:'Because your clothes deserve the best.'
         },
         {
-            title:'Third Title', 
-            description:'It is a long established fact that a reader will be distracted by the readable content of a page.', 
-            subDescription:'Third Subdescription'
+            title:'Time-Saving Laundry Solutions', 
+            description:"Free yourself from the chore. Schedule a pickup and we’ll do the rest.", 
+            subDescription:'24h turnaround. No hassle.'
         }
     ] 
 

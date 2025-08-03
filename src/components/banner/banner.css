@@ -346,7 +346,7 @@ font-family: "Comfortaa", sans-serif;
     overflow: hidden;
   }
   .banner-text-container {
-    width: 100%;
+    width: 80%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -356,19 +356,19 @@ font-family: "Comfortaa", sans-serif;
 }
   .banner-text-title{
   font-family: "Jost", sans-serif;
-  font-size: 3em;
+  font-size: 2em;
   letter-spacing: 3px;
   text-transform: uppercase;
   }
   
   .banner-text-desc{
   font-family: "Mulish", sans-serif;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 500;
   }
   .banner-text-subDesc{
   font-family: "Urbanist", sans-serif;
-  font-size: 3vw;
+  font-size: 0.5em;
   font-weight: 100;
   }
   .banner-text-footer{
